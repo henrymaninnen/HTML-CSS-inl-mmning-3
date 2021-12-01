@@ -25,3 +25,10 @@ $lightblue: #62ECFF;
 h1{
     @include primaryText;
 }
+
+
+
+.header {
+    color: $lightblue;
+    height: 200px;
+}
