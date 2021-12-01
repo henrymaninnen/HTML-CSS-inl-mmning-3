@@ -7,6 +7,8 @@ ol {
   padding: 0;
 }
 $lightblue: #62ECFF;
+$darkGreen: #052321;
+ 
 
 
 //MIXING AND VARIABLES
@@ -14,6 +16,10 @@ $lightblue: #62ECFF;
     font-size: 22px;
     font-family: sans-serif;
     font-weight: 500;
+}
+
+@mixin mainGradient{
+    background-image: linear-gradient($darkGreen, rgb(0, 0, 0));
 }
 @mixin secondaryText {
     color: #fff;
