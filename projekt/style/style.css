@@ -6,15 +6,22 @@ ol {
   padding: 0;
 }
 
-.container {
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
   background-color: black;
+}
+
+.container {
   height: 100vh;
-  width: 100vw;
+  margin: 20px 30px;
 }
 
 header {
   height: 100px;
-  background-color: blue;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,14 +46,8 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header {
-  color: #62ECFF;
-  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
