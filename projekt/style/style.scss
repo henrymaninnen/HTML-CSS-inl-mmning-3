@@ -30,7 +30,19 @@ $darkGreen: #052321;
     font-weight: 500;
 }
 
-<<<<<<< HEAD
+
+@mixin darkTransparent{
+    background: #000000;
+    opacity: 0.4;
+}
+
+@mixin lightTransparent{
+    
+    background: #FFFFFF;
+    opacity: 0.4;
+}
+
+
 
 
 header {
@@ -41,7 +53,7 @@ header {
     background-color: burlywood;
     height: 100vh;
     width: 100%;
-=======
+
 //HEADER
 .container{
     background-color: black;
@@ -56,6 +68,7 @@ header{
 header nav{
     display: none;
 
+
 h1{
     @include primaryText;
 }
@@ -66,5 +79,5 @@ h1{
     color: $lightblue;
     height: 200px;
 
->>>>>>> f5b09bf682445d55ec12d7e2a4bbbdd8a9ae4330
+
 }
