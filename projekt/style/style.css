@@ -6,9 +6,38 @@ ol {
   padding: 0;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+header {
+  background-color: blanchedalmond;
+  height: 100px;
+}
+
+.container {
+  background-color: burlywood;
+  height: 100vh;
+  width: 100%;
+=======
 h1 {
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 500;
+>>>>>>> 31140f59c139cb32aa1337027a9d71d4bfd681e6
+=======
+.container {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  height: 100px;
+  background-color: blue;
+  color: white;
+}
+
+header nav {
+  display: none;
+>>>>>>> f5b09bf682445d55ec12d7e2a4bbbdd8a9ae4330
 }
 /*# sourceMappingURL=style.css.map */
