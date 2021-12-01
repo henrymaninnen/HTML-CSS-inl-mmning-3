@@ -22,6 +22,17 @@ $lightblue: #62ECFF;
     font-weight: 500;
 }
 
-h1{
-    @include primaryText;
+//HEADER
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+header nav{
+    display: none;
 }
