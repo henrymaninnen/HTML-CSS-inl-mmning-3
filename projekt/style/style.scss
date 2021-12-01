@@ -20,6 +20,8 @@ $darkGreen: #052321;
 
 @mixin mainGradient{
     background-image: linear-gradient($darkGreen, rgb(0, 0, 0));
+    height: 100%;
+    width: 100%;
 }
 @mixin secondaryText {
     color: #fff;
