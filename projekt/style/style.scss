@@ -51,7 +51,7 @@ body{
 //HEADER
 .container{
     height: 100vh;
-    margin: 20px 30px;
+    margin: 10px 30px;
 }
 header{
     height: 100px;
@@ -59,15 +59,20 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 header nav{
     display: none;
 }
+
+
+
 .nav-mobile{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-mobile{
-
+.nav-mobile a,
+.nav-mobile i{
+    font-size: 22px;
 }
