@@ -30,6 +30,7 @@ $darkGreen: #052321;
     font-weight: 500;
 }
 
+<<<<<<< HEAD
 
 
 header {
@@ -40,4 +41,30 @@ header {
     background-color: burlywood;
     height: 100vh;
     width: 100%;
+=======
+//HEADER
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+header nav{
+    display: none;
+
+h1{
+    @include primaryText;
+}
+
+
+
+.header {
+    color: $lightblue;
+    height: 200px;
+
+>>>>>>> f5b09bf682445d55ec12d7e2a4bbbdd8a9ae4330
 }
