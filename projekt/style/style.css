@@ -6,6 +6,13 @@ ol {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+
 header {
   background-color: blanchedalmond;
   height: 100px;
@@ -18,14 +25,17 @@ header {
 }
 
 .container {
+
   background-color: black;
+}
+
+.container {
   height: 100vh;
-  width: 100vw;
+  margin: 20px 30px;
 }
 
 header {
   height: 100px;
-  background-color: blue;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +60,6 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -124,4 +133,3 @@ header nav {
   text-decoration: none;
   color: #62ECFF;
 }
-/*# sourceMappingURL=style.css.map */
