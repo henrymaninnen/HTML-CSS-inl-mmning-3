@@ -42,7 +42,6 @@ $darkGreen: #052321;
     opacity: 0.4;
 }
 
-<<<<<<< HEAD
 
 
 
@@ -56,8 +55,6 @@ header {
     width: 100%;
 }
 
-=======
->>>>>>> 98f3e2901bb4d9afc895d7273af7441d9e5b9d50
 //HEADER
 .container{
     background-color: black;
@@ -76,7 +73,7 @@ header nav{
     display: none;
 }
 
-}
+
 .nav-mobile{
     display: flex;
     justify-content: space-between;
@@ -92,5 +89,14 @@ header i{
     color: $lightblue;
     height: 200px;
 
+
+}
+
+.footer-container {
+    background-color: burlywood;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 
 }
