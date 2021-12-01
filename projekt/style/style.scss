@@ -7,6 +7,8 @@ ol {
   padding: 0;
 }
 $lightblue: #62ECFF;
+$darkGreen: #052321;
+ 
 
 
 //MIXING AND VARIABLES
@@ -14,6 +16,12 @@ $lightblue: #62ECFF;
     font-size: 22px;
     font-family: sans-serif;
     font-weight: 500;
+}
+
+@mixin mainGradient{
+    background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+    height: 100%;
+    width: 100%;
 }
 @mixin secondaryText {
     color: #fff;
@@ -35,4 +43,15 @@ header{
 }
 header nav{
     display: none;
+
+h1{
+    @include primaryText;
+}
+
+
+
+.header {
+    color: $lightblue;
+    height: 200px;
+
 }
