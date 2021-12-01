@@ -83,6 +83,11 @@ header i{
    
 }
 
+header a{
+   @include primaryText;
+
+
+
 
 .header{
     color: $lightblue;
