@@ -70,10 +70,66 @@ header nav {
   height: 200px;
 }
 
+/* this is the footer */
 .footer-container {
-  background-color: burlywood;
-  height: 100px;
+  background-color: #000000;
+  height: 150px;
   width: 100%;
   position: absolute;
   bottom: 0px;
+  border: 1px solid white;
+}
+
+.footer-container footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container footer .small-text-box {
+  margin-top: 20px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif, Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.7em;
+}
+
+.footer-container footer .footer-boxes-container {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 5px;
+}
+
+.footer-container footer .footer-boxes-container .footer-boxes a i {
+  margin: 10px;
+  color: #fff;
+  font-size: 1em;
+}
+
+.footer-container footer .footer-boxes-container .jobb {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #62ECFF;
 }
