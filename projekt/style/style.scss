@@ -30,6 +30,20 @@ $darkGreen: #052321;
     font-weight: 500;
 }
 
+//HEADER
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+header nav{
+    display: none;
+
 h1{
     @include primaryText;
 }
@@ -39,4 +53,5 @@ h1{
 .header {
     color: $lightblue;
     height: 200px;
+
 }
