@@ -30,6 +30,17 @@ $darkGreen: #052321;
     font-weight: 500;
 }
 
+@mixin darkTransparent{
+    background: #000000;
+    opacity: 0.4;
+}
+
+@mixin lightTransparent{
+    
+    background: #FFFFFF;
+    opacity: 0.4;
+}
+
 h1{
     @include primaryText;
 }
