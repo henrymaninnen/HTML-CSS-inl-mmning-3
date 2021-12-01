@@ -1,0 +1,15 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #62ECFF;
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
