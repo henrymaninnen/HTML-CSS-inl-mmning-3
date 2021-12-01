@@ -23,13 +23,14 @@ $lightblue: #62ECFF;
     font-weight: 500;
 }
 
-h1{
-    @include primaryText;
+
+
+header {
+    background-color: blanchedalmond;
+    height: 100px;
 }
-
-
-
-.header {
-    color: $lightblue;
-    height: 200px;
+.container{
+    background-color: burlywood;
+    height: 100vh;
+    width: 100%;
 }
