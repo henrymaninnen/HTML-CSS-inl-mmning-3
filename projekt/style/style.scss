@@ -10,7 +10,6 @@ $lightblue: #62ECFF;
 $darkGreen: #052321;
  
 
-
 //MIXING AND VARIABLES
 @mixin primaryText {
     font-size: 22px;
@@ -92,11 +91,65 @@ header i{
 
 }
 
+
+
+
+/* this is the footer */
 .footer-container {
-    background-color: burlywood;
-    height: 100px;
+    background-color: #000000;
+    height: 150px;
     width: 100%;
     position: absolute;
     bottom: 0px;
+    border: 1px solid white;
+    footer{
+        
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        
+
+        .small-text-box {
+            margin-top: 20px;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif, Georgia, 'Times New Roman', Times, serif;
+            font-size: 0.7em;
+            
+            }
+        .footer-boxes-container{
+            gap: 20px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 5px;
+        
+        .footer-boxes {
+            
+            
+            a{
+    
+                i{
+                    margin: 10px;
+                    color: #fff;
+                    font-size: 1em;
+                    
+                }
+            }
+        
+        }
+        
+        .jobb {
+            margin-top: 10px;
+            text-decoration: none;
+            color:$lightblue
+        }
+
+    }
+
+
+}
 
 }
