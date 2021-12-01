@@ -6,24 +6,6 @@ ol {
   padding: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-header {
-  background-color: blanchedalmond;
-  height: 100px;
-}
-
-.container {
-  background-color: burlywood;
-  height: 100vh;
-  width: 100%;
-=======
-h1 {
-  font-size: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
->>>>>>> 31140f59c139cb32aa1337027a9d71d4bfd681e6
-=======
 .container {
   background-color: black;
   height: 100vh;
@@ -34,10 +16,37 @@ header {
   height: 100px;
   background-color: blue;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav {
   display: none;
->>>>>>> f5b09bf682445d55ec12d7e2a4bbbdd8a9ae4330
+}
+
+.nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  color: #62ECFF;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */

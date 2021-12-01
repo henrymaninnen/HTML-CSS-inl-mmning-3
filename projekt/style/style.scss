@@ -16,12 +16,12 @@ $darkGreen: #052321;
     font-size: 22px;
     font-family: sans-serif;
     font-weight: 500;
+    color: white;
+    text-decoration: none;
 }
 
 @mixin mainGradient{
     background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
-    height: 100%;
-    width: 100%;
 }
 @mixin secondaryText {
     color: #fff;
@@ -42,6 +42,7 @@ $darkGreen: #052321;
     opacity: 0.4;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -55,6 +56,8 @@ header {
     width: 100%;
 }
 
+=======
+>>>>>>> 98f3e2901bb4d9afc895d7273af7441d9e5b9d50
 //HEADER
 .container{
     background-color: black;
@@ -65,16 +68,24 @@ header{
     height: 100px;
     background-color: blue;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 header nav{
     display: none;
 }
 
-
-h1{
-    @include primaryText;
 }
-
+.nav-mobile{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    align-items: center;
+}
+header i{
+   
+}
 
 
 .header{
