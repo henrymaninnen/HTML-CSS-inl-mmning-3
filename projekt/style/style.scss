@@ -44,32 +44,9 @@ $darkGreen: #052321;
     background: #FFFFFF;
     opacity: 0.4;
 }
-<<<<<<< HEAD
 body{
     background-color: black;
 }
-=======
-
-body{
-    background-color: black;
-}
-
-
-
-
-
-header {
-    background-color: blanchedalmond;
-    height: 100px;
-}
-.container{
-    background-color: burlywood;
-    height: 100vh;
-    width: 100%;
-}
-
-
->>>>>>> f4d3419e4f5802fc09077265bbe97f06bac6c2fc
 //HEADER
 .container{
     height: 100vh;
@@ -94,18 +71,15 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .nav-mobile a,
 .nav-mobile i{
-    font-size: 22px;
-=======
+}
 
 .nav-mobile{
 
 }
->>>>>>> f4d3419e4f5802fc09077265bbe97f06bac6c2fc
-=======
+
 header i{
    
 }
@@ -122,25 +96,24 @@ header a{
 
 
 }
-
+}
 
 
 
 /* this is the footer */
 .footer-container {
     background-color: #000000;
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    border: 1px solid white;
-    footer{
+    height: 100px;
+    width: inherit;
+    
+    .footer{
         
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+        border: 1px solid white;
         
 
         .small-text-box {
@@ -182,13 +155,7 @@ header a{
     }
 
 
->>>>>>> 6b61df400459330c8950c14443b3a6470f8c0992
-}
-
-<<<<<<< HEAD
-}
-=======
 
 }
 
->>>>>>> f4d3419e4f5802fc09077265bbe97f06bac6c2fc
+}
