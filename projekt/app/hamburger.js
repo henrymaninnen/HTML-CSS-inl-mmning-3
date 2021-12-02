@@ -1,9 +1,7 @@
-const hamburger = document.querySelector("#hamburger");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
 hamburger.addEventListener("click", function () {
-    var nav = document.querySelector("nav");
-    if (nav.style.display === "block") {
-      nav.style.display = "none";
-    } else {
-      nav.style.display = "block";
-    }
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 })
