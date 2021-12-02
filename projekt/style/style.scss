@@ -45,10 +45,16 @@ $darkGreen: #052321;
     opacity: 0.4;
 }
 
+
 body{
   background-color: #262626;
 }
 
+
+
+body{
+    background-color: black;
+}
 
 //HEADER
 .container{
@@ -91,6 +97,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     gap: 60px;
   }
   
@@ -152,6 +159,21 @@ body{
       left: 0;
     }
   }
+
+}
+
+.nav-mobile a,
+.nav-mobile i{
+}
+
+.nav-mobile{
+
+}
+
+header i{
+   
+}
+
 header a{
    @include primaryText;
 
@@ -162,25 +184,24 @@ header a{
     color: $lightblue;
     height: 200px;
 }
-
+}
 
 
 
 /* this is the footer */
 .footer-container {
     background-color: #000000;
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    border: 1px solid white;
-    footer{
+    height: 100px;
+    width: inherit;
+    
+    .footer{
         
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+        border: 1px solid white;
         
 
         .small-text-box {
@@ -222,7 +243,14 @@ header a{
     }
 
 
+
     }
 }
+}
+
+=======
+
+}
+
 }
 
