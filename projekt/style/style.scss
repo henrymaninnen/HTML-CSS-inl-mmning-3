@@ -90,19 +90,14 @@ $firstFont: 'Roboto', sans-serif;
 
 
 body{
-  background-color: #856262;
+
+  background-color: $darkGreen;
 }
 
-
-
-body{
-    background-color: black;
-}
 
 //HEADER
 .container{
     margin: 10px 30px;
-    background-color: #262626;
 }
 
 *{
@@ -112,9 +107,7 @@ body{
     font-family: 'Roboto', sans-serif;
   }
   
-  header{
-    background-color: #262626;
-  }
+
   
   li{
     list-style: none;
@@ -150,7 +143,7 @@ body{
   }
   
   .nav-link:hover{
-    color: dodgerblue;
+    color: $lightblue;
   }
   
   .hamburger{
@@ -187,9 +180,9 @@ body{
       position: fixed;
       left: -100%;
       top: 80px;
-      gap: 0;
+      gap: 10px;
       flex-direction: column;
-      background-color: #262626;
+      background-color: $darkGreen;
       width: 100%;
       text-align: center;
       transition: 0.3s;
@@ -203,11 +196,6 @@ body{
       left: 0;
     }
   }
-
-
-
-
-
 
 
 
@@ -270,9 +258,9 @@ body{
 
     }
 }
+
+
 //end of footer
-
-
 
 //style index
 
@@ -384,5 +372,6 @@ body{
   
 
 }
+
 
 
