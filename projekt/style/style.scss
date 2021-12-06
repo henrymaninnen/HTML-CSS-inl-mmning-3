@@ -15,7 +15,22 @@ $firstFont: 'Roboto', sans-serif;
  
 
 //MIXING 
-
+@mixin secondaryTextSmall {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'jost', Times, serif;
+    font-weight: 500;
+    
+}
+@mixin primaryTextBlue {
+    font-family: 'jost', Times, serif;
+    font-size: 24px;
+    color: $lightblue;
+    font-weight: 500;
+    line-height: 35px;
+    
+    
+}
 @mixin primaryText {
     font-size: 22px;
     font-family: sans-serif;
@@ -46,6 +61,18 @@ $firstFont: 'Roboto', sans-serif;
     opacity: 0.4;
 }
 
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexCenterColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin flexSpaceBetween{
     display: flex;
     justify-content: space-between;
@@ -56,6 +83,8 @@ $firstFont: 'Roboto', sans-serif;
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 
 
@@ -196,13 +225,13 @@ body{
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        border: 1px solid white;
+        
         
 
         .small-text-box {
             margin-top: 20px;
             color: #FFFFFF;
-            font-family: 'Roboto', sans-serif, Georgia, 'Times New Roman', Times, serif;
+            font-family: $firstFont;
             font-size: 0.7em;
             
             }
@@ -241,6 +270,97 @@ body{
 
     }
 }
+//end of footer
+
+
+
+//style index
+
+//picture on index page
+@media(max-width:768px){
+.photo-index-container {
+    height: 134px;
+    width: 100%;
+    position: relative;
+    
+    
+    img{
+        height: 134px;
+        width: 100%;
+        //opacity: 0.7;
+    }
+
+    .photo-index-text{
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: inherit;
+        width: inherit;
+        gap: 10px;
+    h1{
+        @include primaryText;
+        
+        
+        
+    }
+    h2{
+        @include secondaryText;
+        
+    }
+}
+    
+}
+//main content
+
+
+.index-main-container{
+        height: 750px;
+        width: 100%;
+        position: relative;
+        
+
+        .index-main-photo{
+            height: 600px;
+            width: 100%;
+            
+            
+        }
+
+        .index-main-container-boxes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 700px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            margin-left: 20px;
+            
+           .index-main-boxes{
+               height: 100px;
+               width: 90%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               
+               
+               h1{
+                @include primaryTextBlue
+                    
+               }
+               p{
+                @include secondaryTextSmall
+               }
+           }
+            
+
+        }
+        
+    }
+}
 
 // refrence page
 
@@ -249,11 +369,20 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .main{
-    height: 400px;
-    width: 100%;
-    background-color: #62ECFF;
+@include mainGradient();
+
+  .main-reference{
+    @include flexCenterColumn()
+
+    .back-img-stars{
+      width: 100%;
+      height: 300px;
+    }
+
+
   }
+  
+
 }
 
 
