@@ -188,6 +188,7 @@ body{
     height: 100px;
     width: inherit;
     
+    
     .footer{
         
         height: 100%;
@@ -244,7 +245,15 @@ body{
 // refrence page
 
 .refrence-body{
-  background-image: linear-gradient(red, yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .main{
+    height: 400px;
+    width: 100%;
+    background-color: #62ECFF;
+  }
 }
 
 
