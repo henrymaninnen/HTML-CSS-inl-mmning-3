@@ -6,15 +6,31 @@ ol {
   margin: 0;
   padding: 0;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
+
+//VARIABLES
+
 $lightblue: #62ECFF;
 $darkGreen: #052321;
+$firstFont: 'Roboto', sans-serif;
  
 
-//MIXING AND VARIABLES
+//MIXING 
+@mixin secondaryTextSmall {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'jost', Times, serif;
+    font-weight: 500;
+    
+}
+@mixin primaryTextBlue {
+    font-family: 'jost', Times, serif;
+    font-size: 24px;
+    color: $lightblue;
+    font-weight: 500;
+    line-height: 35px;
+    
+    
+}
 @mixin primaryText {
     font-size: 22px;
     font-family: sans-serif;
@@ -45,10 +61,39 @@ $darkGreen: #052321;
     opacity: 0.4;
 }
 
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexCenterColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
 
 body{
+
   background-color: $darkGreen;
 }
+
 
 //HEADER
 .container{
@@ -59,6 +104,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
   }
   
 
@@ -153,37 +199,12 @@ body{
 
 
 
-.nav-mobile a,
-.nav-mobile i{
-}
-
-.nav-mobile{
-
-}
-
-header i{
-   
-}
-
-header a{
-   @include primaryText;
-
-
-
-
-.header{
-    color: $lightblue;
-    height: 200px;
-}
-}
-
-
-
 /* this is the footer */
 .footer-container {
     background-color: #000000;
     height: 100px;
     width: inherit;
+    
     
     .footer{
         
@@ -192,13 +213,13 @@ header a{
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        border: 1px solid white;
+        
         
 
         .small-text-box {
             margin-top: 20px;
             color: #FFFFFF;
-            font-family: 'Roboto', sans-serif, Georgia, 'Times New Roman', Times, serif;
+            font-family: $firstFont;
             font-size: 0.7em;
             
             }
@@ -237,5 +258,120 @@ header a{
 
     }
 }
+
+
+//end of footer
+
+//style index
+
+//picture on index page
+@media(max-width:768px){
+.photo-index-container {
+    height: 134px;
+    width: 100%;
+    position: relative;
+    
+    
+    img{
+        height: 134px;
+        width: 100%;
+        //opacity: 0.7;
+    }
+
+    .photo-index-text{
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: inherit;
+        width: inherit;
+        gap: 10px;
+    h1{
+        @include primaryText;
+        
+        
+        
+    }
+    h2{
+        @include secondaryText;
+        
+    }
+}
+    
+}
+//main content
+
+
+.index-main-container{
+        height: 750px;
+        width: 100%;
+        position: relative;
+        
+
+        .index-main-photo{
+            height: 600px;
+            width: 100%;
+            
+            
+        }
+
+        .index-main-container-boxes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 700px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            margin-left: 20px;
+            
+           .index-main-boxes{
+               height: 100px;
+               width: 90%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               
+               
+               h1{
+                @include primaryTextBlue
+                    
+               }
+               p{
+                @include secondaryTextSmall
+               }
+           }
+            
+
+        }
+        
+    }
+}
+
+// refrence page
+
+.refrence-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+@include mainGradient();
+
+  .main-reference{
+    @include flexCenterColumn()
+
+    .back-img-stars{
+      width: 100%;
+      height: 300px;
+    }
+
+
+  }
+  
+
+}
+
 
 
