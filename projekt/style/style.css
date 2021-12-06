@@ -291,7 +291,41 @@ a {
 }
 
 .refrence-body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(yellow));
-  background-image: linear-gradient(red, yellow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
+  background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
+}
+
+.refrence-body .main-reference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.refrence-body .main-reference .back-img-stars {
+  width: 100%;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
