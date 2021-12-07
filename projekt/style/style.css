@@ -404,6 +404,12 @@ a {
 .main-reference .contentBox-reference-1 .reference .grade .grades .gradeRect {
   height: 20px;
   width: 20px;
+  background-color: #62ecff;
+}
+
+.main-reference .contentBox-reference-1 .reference .grade .grades .gradeRectWhite {
+  height: 20px;
+  width: 20px;
   background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -379,6 +379,11 @@ a {
           .gradeRect {
             height: 20px;
             width: 20px;
+            background-color: $lightblue;
+          }
+          .gradeRectWhite {
+            height: 20px;
+            width: 20px;
             background-color: #fff;
           }
         }
