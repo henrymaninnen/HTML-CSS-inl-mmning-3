@@ -13,6 +13,7 @@ $darkTransparentBox:rgba(0, 0, 0, 0.6);
 $lightblue: #62ecff;
 $darkGreen: #052321;
 $firstFont: "Roboto", sans-serif;
+$container-margin: 10px 10px;
 
 //MIXING
 @mixin secondaryTextSmall { //mobile font size (use 20px for desktop)
@@ -37,6 +38,22 @@ $firstFont: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
 }
+@mixin primaryTextDark {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #3A3A3A;
+  text-decoration: none;
+}
+@mixin secondaryTextDark {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #3A3A3A;
+  text-decoration: none;
+}
+
+
 
 @mixin mainGradient {
   background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
@@ -115,7 +132,7 @@ a {
 }
 
 .nav-branding {
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 .nav-menu {
@@ -137,6 +154,7 @@ a {
 .hamburger {
   display: none;
   cursor: pointer;
+  font-size: 24px;
 }
 
 .bar {
@@ -167,7 +185,7 @@ a {
   .nav-menu {
     position: absolute;
     left: -100%;
-    top: 80px;
+    top: 69px;
     gap: 10px;
     z-index: 10;
     flex-direction: column;
@@ -516,5 +534,74 @@ a {
         }
       }
     }
+  }
+}
+//CONTACT PAGE
+.contact-head {
+  background-image: url(../img/unsplash_mk7D-4UCfmg.png);
+  width: 100vw;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+ .contact-head-text{
+   padding:20px;
+   h1{
+     margin-bottom: 20px;
+     @include primaryTextDark();
+   }
+   p{
+    @include secondaryTextDark();
+   }
+ }
+}
+.contact-main{
+  background-image: url(../img/unsplash_e0uCDHd19U4.png);
+  width: 100vw;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+ 
+
+  form{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background: rgba(138, 138, 138, .7);
+    width: 95vw;
+    padding: 40px 10px 10px 10px;
+    position: absolute;
+    bottom: -180px;
+    
+    .form-text{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .form-name{
+      display: flex;
+    }
+    input{
+      padding: 14px 0;
+      margin: 2px;
+      border-radius: 3px;
+    }
+    input[type="text"]::placeholder {  
+                  
+      /* Firefox, Chrome, Opera */ 
+      padding-left: 14px; 
+  } 
+  button{
+    margin-top: 10px;
+    width: 50%;
+    align-self: center;
+    padding: 14px 0;
+    border: none;
+    background-color: #62ECFF;
+    border-radius: 3px;
+  }
   }
 }
