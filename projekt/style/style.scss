@@ -265,7 +265,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
 
-        h1 {
+        h2 {
           @include primaryTextBlue;
         }
         p {
@@ -368,7 +368,7 @@ a {
   .index-main-container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 800px;
     background-image: url(../img/unsplash_9SoCnyQmkzI.png);
     background-size: cover;
 
@@ -390,7 +390,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
 
-        h1 {
+        h2 {
           @include primaryTextBlue;
           font-size: 30px;
         }

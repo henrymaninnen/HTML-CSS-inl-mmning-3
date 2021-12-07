@@ -210,7 +210,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .index-main-container .index-main-container-boxes .index-main-boxes h1 {
+  .index-main-container .index-main-container-boxes .index-main-boxes h2 {
     font-family: "jost", Times, serif;
     font-size: 24px;
     color: #62ecff;
@@ -338,7 +338,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
+    height: 800px;
     background-image: url(../img/unsplash_9SoCnyQmkzI.png);
     background-size: cover;
   }
@@ -367,7 +367,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .index-main-container .index-main-container-boxes .index-main-boxes h1 {
+  .index-main-container .index-main-container-boxes .index-main-boxes h2 {
     font-family: "jost", Times, serif;
     font-size: 24px;
     color: #62ecff;
