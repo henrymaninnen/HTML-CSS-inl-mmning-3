@@ -167,6 +167,7 @@ a {
     left: -100%;
     top: 80px;
     gap: 10px;
+    z-index: 10;
     flex-direction: column;
     background-color: $darkGreen;
     width: 100%;
