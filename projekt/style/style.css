@@ -5,9 +5,10 @@ ol {
   margin: 0;
   padding: 0;
 }
-body {
 
+body {
   background-color: #052321;
+  margin: 0;
 }
 
 .container {
@@ -19,9 +20,8 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 
 li {
   list-style: none;
@@ -69,7 +69,7 @@ a {
 }
 
 .nav-link:hover {
-  color: #62ECFF;
+  color: #62ecff;
 }
 
 .hamburger {
@@ -125,20 +125,6 @@ a {
   }
 }
 
-header a {
-  font-size: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-
-header a .header {
-  color: #62ECFF;
-  height: 200px;
-}
-
-
 /* this is the footer */
 .footer-container {
   background-color: #000000;
@@ -165,7 +151,7 @@ header a .header {
 
 .footer-container .footer .small-text-box {
   margin-top: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 0.7em;
 }
@@ -197,7 +183,7 @@ header a .header {
 .footer-container .footer .footer-boxes-container .jobb {
   margin-top: 10px;
   text-decoration: none;
-  color: #62ECFF;
+  color: #62ecff;
 }
 
 @media (max-width: 768px) {
@@ -282,21 +268,27 @@ header a .header {
             justify-content: space-between;
   }
   .index-main-container .index-main-container-boxes .index-main-boxes h1 {
-    font-family: 'jost', Times, serif;
+    font-family: "jost", Times, serif;
     font-size: 24px;
-    color: #62ECFF;
+    color: #62ecff;
     font-weight: 500;
     line-height: 35px;
   }
   .index-main-container .index-main-container-boxes .index-main-boxes p {
     color: #fff;
     font-size: 14px;
-    font-family: 'jost', Times, serif;
+    font-family: "jost", Times, serif;
     font-weight: 500;
   }
 }
 
-.refrence-body {
+.back-img-stars {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.main-reference {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,11 +302,47 @@ header a .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  margin-top: 90%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
   background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
 }
 
-.refrence-body .main-reference {
+.main-reference .contentBox-reference-1 {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+
+.main-reference .contentBox-reference-1 #textBox1 {
+  padding: 5%;
+  width: 100%;
+}
+
+.main-reference .contentBox-reference-1 .reference-h1 {
+  font-weight: 300;
+}
+
+.main-reference .contentBox-reference-1 .reference-p {
+  font-weight: 300;
+  margin-top: 10%;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+  line-height: 2;
+}
+
+.main-reference .contentBox-reference-1 .reference-h2 {
+  color: #62ecff;
+  font-weight: 300;
+  margin-top: 20%;
+}
+
+.main-reference .contentBox-reference-1 .reference-companylogo {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.main-reference .contentBox-reference-1 .reference {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,10 +356,54 @@ header a .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 5%;
+  padding: 5%;
 }
 
-.refrence-body .main-reference .back-img-stars {
+.main-reference .contentBox-reference-1 .reference h2 {
+  font-weight: 300;
+}
+
+.main-reference .contentBox-reference-1 .reference p {
+  margin-top: 3%;
+}
+
+.main-reference .contentBox-reference-1 .reference .grade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
   width: 100%;
-  height: 300px;
+}
+
+.main-reference .contentBox-reference-1 .reference .grade h3 {
+  font-weight: 300;
+  width: 50%;
+}
+
+.main-reference .contentBox-reference-1 .reference .grade .grades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-right: 40%;
+}
+
+.main-reference .contentBox-reference-1 .reference .grade .grades .gradeRect {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
