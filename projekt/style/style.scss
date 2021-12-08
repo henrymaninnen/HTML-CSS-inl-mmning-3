@@ -205,8 +205,11 @@ a {
 }
 
 
+
+ //index mobile
 //style index mobile
 //@media (max-width: 1240px){
+
   .photo-index-container {
     height: 134px;
     width: 100%;
@@ -277,7 +280,7 @@ a {
 /* this is the footer for mobile */
 .footer-container {
   background-color: #000000;
-  height: 180px;
+  height: 160px;
   width: inherit;
   
 
@@ -289,6 +292,7 @@ a {
     align-items: center;
 
     .link-pages{
+      color: $lightblue;
       a{
         color: $lightblue;
       }
@@ -307,7 +311,8 @@ a {
       flex-flow: column;
       align-items: center;
       justify-content: flex-end;
-      margin: 5px;
+      margin-bottom: 20px;
+      
 
       .footer-boxes {
         a {
@@ -320,6 +325,7 @@ a {
       }
 
       .jobb {
+        color: $lightblue;
         margin-top: 10px;
         text-decoration: none;
         
@@ -377,9 +383,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    
     background-image: url(../img/unsplash_9SoCnyQmkzI.png);
-    background-size: cover;
+    
+    
+    
 
   
 
@@ -439,12 +447,12 @@ a {
       justify-content: flex-end;
       margin: 5px;
       gap: 30px;
+      margin-bottom: 20px;
 
       .footer-boxes {
         a {
           i {
             margin: 10px;
-            color: #fff;
             font-size: 2em;
           }
         }
