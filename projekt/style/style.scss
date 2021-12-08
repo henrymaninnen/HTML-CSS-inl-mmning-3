@@ -606,20 +606,11 @@ a {
     display: flex;
     border-radius: 10px;
     flex-direction: column;
-
     background: rgba(22, 21, 21, 0.7);
     width: 95w;
     padding: 40px 10px 10px 10px;
     position: absolute;
     bottom: -230px;
-
-
-    background: rgba(138, 138, 138, .7);
-    width: 95vw;
-    padding: 40px 10px 10px 10px;
-    position: absolute;
-    bottom: -180px;
-    
 
     .form-text{
       display: flex;
@@ -630,13 +621,9 @@ a {
     }
     input{
       padding: 14px 0;
-
       display: flex;
       flex-basis: 100%;
       gap: 5px;
-
-      margin: 2px;
-
       border-radius: 3px;
     }
     input[type="text"]::placeholder {

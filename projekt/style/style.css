@@ -669,19 +669,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
   background: rgba(22, 21, 21, 0.7);
   width: 95w;
   padding: 40px 10px 10px 10px;
   position: absolute;
   bottom: -230px;
-
-  background: rgba(138, 138, 138, 0.7);
-  width: 95vw;
-  padding: 40px 10px 10px 10px;
-  position: absolute;
-  bottom: -180px;
-
 }
 
 .contact-main form .form-text {
@@ -702,16 +694,12 @@ a {
 
 .contact-main form input {
   padding: 14px 0;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   gap: 5px;
-
-  margin: 2px;
-
   border-radius: 3px;
 }
 
