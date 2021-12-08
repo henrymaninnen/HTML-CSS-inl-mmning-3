@@ -615,9 +615,9 @@ a {
 }
 
 .contact-head {
-  background-image: url(../img/unsplash_mk7D-4UCfmg.png);
+  background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100vw;
-  height: 60vh;
+  height: 40vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -625,36 +625,36 @@ a {
 
 .contact-head .contact-head-text {
   padding: 20px;
-  max-width: 6210px;
 }
 
 .contact-head .contact-head-text h1 {
-  margin-bottom: 20px;
+  margin: 10px 0 30px 0;
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 500;
-  color: #3A3A3A;
+  color: white;
   text-decoration: none;
 }
 
 .contact-head .contact-head-text p {
-  font-size: 18px;
+  color: #fff;
+  font-size: 16px;
   font-family: sans-serif;
   font-weight: 500;
-  color: #3A3A3A;
-  text-decoration: none;
+  color: white;
 }
 
 .contact-main {
-  background-image: url(../img/unsplash_e0uCDHd19U4.png);
-  width: 100vw;
-  height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -672,8 +672,7 @@ a {
   background: rgba(22, 21, 21, 0.7);
   width: 95w;
   padding: 40px 10px 10px 10px;
-  position: absolute;
-  bottom: -230px;
+  margin-top: -40px;
 }
 
 .contact-main form .form-text {
@@ -750,6 +749,5 @@ a {
 .contact-offices img {
   height: 100px;
   background-size: cover;
-  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */
