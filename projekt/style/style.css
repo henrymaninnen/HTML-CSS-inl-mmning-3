@@ -626,18 +626,18 @@ a {
 }
 
 .contact-main {
-  background-image: url(../img/unsplash_e0uCDHd19U4.png);
+  background-color: #052321;
   width: 100vw;
   height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .contact-main form {
@@ -649,11 +649,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(138, 138, 138, 0.7);
+  background: rgba(43, 42, 42, 0.7);
   width: 95vw;
   padding: 40px 10px 10px 10px;
   position: absolute;
-  bottom: -180px;
+  top: -230px;
 }
 
 .contact-main form .form-text {
@@ -675,7 +675,12 @@ a {
 
 .contact-main form input {
   padding: 14px 0;
-  margin: 2px;
+  gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   border-radius: 3px;
 }
 
