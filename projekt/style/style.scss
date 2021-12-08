@@ -205,8 +205,7 @@ a {
 }
 
 
-//style index mobile
-//@media (max-width: 1240px){
+
   .photo-index-container {
     height: 134px;
     width: 100%;
@@ -329,7 +328,7 @@ a {
   //end of footer
 }
 
-//}
+
 
 
 
@@ -593,25 +592,25 @@ a {
  }
 }
 .contact-main{
-  background-color: $darkGreen;
+  background-image: url(../img/unsplash_e0uCDHd19U4.png);
   width: 100vw;
   height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
  
 
   form{
     display: flex;
     border-radius: 10px;
     flex-direction: column;
-    background: rgba(43, 42, 42, 0.7);
+    background: rgba(138, 138, 138, .7);
     width: 95vw;
     padding: 40px 10px 10px 10px;
     position: absolute;
-    top: -230px;
+    bottom: -180px;
     
     .form-text{
       display: flex;
@@ -623,9 +622,7 @@ a {
     }
     input{
       padding: 14px 0;
-      gap: 5px;
-      display: flex;
-      flex-basis: 100%;
+      margin: 2px;
       border-radius: 3px;
     }
     input[type="text"]::placeholder {  
@@ -644,188 +641,3 @@ a {
   }
   }
 }
-// om oss page
-
-
-@media  screen and (max-width:767px) {
-  
-  div.container-aboutUsPage {
-      width: 100%;
-      
-      div.box{
-         
-          background-image:url(img/unsplash_trYl7JYATH0.png);
-          background-repeat:no-repeat;
-          background-position: center top;
-          padding: 20px;
-      section {
-          width: 100%;
-          height: 128px;
-          p {
-              font-size: 20px;
-              color:white;
-          }
-      }
-    h4{
-        color:#62ECFF;
-        margin-bottom: 5px;
-    } 
-    p.describe{
-        width: 85%;
-        color:white;
-        font-size: 14px;
-        background-color: black;
-        padding: 10px 2px 20px 2px;
-       
-    }
-  }
-  div.box-2 {
-      background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
-      padding: 20px;
-      h4{
-      color:#62ECFF;
-     
-      }
-      p {
-          font-size: 14px;
-          color:white;
-      }
-      p.person {
-          font-size: 12px;
-          margin-bottom: 3px;
-      }
-    div.information {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        section{
-            margin-bottom: 25px;
-            a{
-                font-size: 14px;
-                color: white;
-                text-decoration: none;
-                img{
-                    width: 12px;
-                    vertical-align: middle;
-                }
-            }
-        img{
-            width: 100%;
-            margin-bottom: 5px;
-            
-        }
-      }
-    }
-  }
-  
-  }
-
-  }     
-
-@media screen and (min-width:768px){
- 
-  div.container {
-      
-      width: 750px;
-  }
-  
- 
-  
-  
-}
-@media screen and (min-width:992px){
- 
-
-  div.container-aboutUsPage {
-      
-      div.box{
-          background-image:url(../img/unsplash_trYl7JYATH0.png);
-          background-repeat:no-repeat;
-          background-position: center top;
-          padding: 40px;
-          border: 1px solid white;
-      section {
-          width: 100%;
-          height: 200px;
-          p {
-              font-size: 28px;
-              color:white;
-          }
-      }
-    h4{
-        color:#62ECFF;
-        margin-bottom: 10px;
-    } 
-    p.describe{
-        width: 70%;
-        
-        color:white;
-        font-size: 18px;
-        line-height:25px ;
-        background-color: black;
-        padding-top: 10px;
-        padding-left: 5px;
-        padding-bottom: 30px;
-        padding-right: 5px;
-    }
-  }
-  div.box-2 {
-      background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
-      padding: 40px;
-      h4{
-      color:#62ECFF;
-      margin-bottom: 10px;
-      }
-      p {
-          font-size: 18px;
-          color:white;
-          margin-bottom: 5px;
-      }
-      p.person {
-          font-size: 14px;
-          margin-bottom: 5px;
-      }
-    div.information {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:flex-start;
-        
-        section{
-            width: 425px;
-            margin-bottom: 25px;
-            
-           
-            a {
-                font-size: 18px;
-                color: white;
-                
-                text-decoration: none;
-                
-                  img{
-                      width: 24px;
-                      vertical-align: middle;
-                  }
-            }             
-        }
-        section.odd{
-            margin-right: 40px;
-        }
-
-    }
-  }
-  
-  }
-
-  
-}
-@media screen and (min-width:1200px){
-  div.container {
-      width: 1170px;
-  }
-}
-
-// end om oss
