@@ -206,7 +206,7 @@ a {
 
 
 //style index mobile
-@media (max-width: 1240px){
+//@media (max-width: 1240px){
   .photo-index-container {
     height: 134px;
     width: 100%;
@@ -322,7 +322,7 @@ a {
   //end of footer
 }
 
-}
+//}
 
 
 
@@ -567,10 +567,10 @@ a {
 .contact-head {
   background-image: url(../img/unsplash_mk7D-4UCfmg.png);
   width: 100vw;
-  height: 40vh;
-  background-size: cover;
+  height: 60vh;
   background-repeat: no-repeat;
-
+  background-size: cover;
+  background-position: center center;
  .contact-head-text{
    padding:20px;
    h1{
