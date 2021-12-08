@@ -206,7 +206,7 @@ a {
 
 
 //style index mobile
-@media (max-width: 1240px){
+//@media (max-width: 1240px){
   .photo-index-container {
     height: 134px;
     width: 100%;
@@ -277,7 +277,7 @@ a {
 /* this is the footer for mobile */
 .footer-container {
   background-color: #000000;
-  height: 100px;
+  height: 200px;
   width: inherit;
   margin-bottom: 0;
 
@@ -322,7 +322,7 @@ a {
   //end of footer
 }
 
-}
+//}
 
 
 
@@ -567,10 +567,11 @@ a {
 .contact-head {
   background-image: url(../img/unsplash_mk7D-4UCfmg.png);
   width: 100vw;
-  height: 40vh;
-  background-size: cover;
+  height: 60vh;
   background-repeat: no-repeat;
-
+  background-size: cover;
+  background-position: center center;
+  
  .contact-head-text{
    padding:20px;
    h1{
@@ -583,25 +584,25 @@ a {
  }
 }
 .contact-main{
-  background-image: url(../img/unsplash_e0uCDHd19U4.png);
+  background-color: $darkGreen;
   width: 100vw;
   height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   display: flex;
   justify-content: center;
+  position: relative;
  
 
   form{
     display: flex;
     border-radius: 10px;
     flex-direction: column;
-    background: rgba(138, 138, 138, .7);
+    background: rgba(43, 42, 42, 0.7);
     width: 95vw;
     padding: 40px 10px 10px 10px;
     position: absolute;
-    bottom: -180px;
+    top: -230px;
     
     .form-text{
       display: flex;
@@ -613,7 +614,9 @@ a {
     }
     input{
       padding: 14px 0;
-      margin: 2px;
+      gap: 5px;
+      display: flex;
+      flex-basis: 100%;
       border-radius: 3px;
     }
     input[type="text"]::placeholder {  
