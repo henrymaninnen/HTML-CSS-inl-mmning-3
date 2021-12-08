@@ -571,7 +571,6 @@ a {
     }
   }
 }
-//CONTACT PAGE
 .contact-head {
   background-image: url(../img/unsplash_mk7D-4UCfmg.png);
   width: 100vw;
@@ -579,9 +578,10 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  
+
  .contact-head-text{
    padding:20px;
+   max-width: 6210px;
    h1{
      margin-bottom: 20px;
      @include primaryTextDark();
@@ -606,28 +606,40 @@ a {
     display: flex;
     border-radius: 10px;
     flex-direction: column;
+
+    background: rgba(22, 21, 21, 0.7);
+    width: 95w;
+    padding: 40px 10px 10px 10px;
+    position: absolute;
+    bottom: -230px;
+
+
     background: rgba(138, 138, 138, .7);
     width: 95vw;
     padding: 40px 10px 10px 10px;
     position: absolute;
     bottom: -180px;
     
+
     .form-text{
       display: flex;
       flex-direction: column;
-      width: 100%;
     }
     .form-name{
       display: flex;
     }
     input{
       padding: 14px 0;
+
+      display: flex;
+      flex-basis: 100%;
+      gap: 5px;
+
       margin: 2px;
+
       border-radius: 3px;
     }
-    input[type="text"]::placeholder {  
-                  
-      /* Firefox, Chrome, Opera */ 
+    input[type="text"]::placeholder {
       padding-left: 14px; 
   } 
   button{
@@ -641,3 +653,16 @@ a {
   }
   }
 }
+.contact-offices{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img{
+    height: 100px;
+    background-size: cover;
+    width: 90%;
+  }
+}
+
+  
