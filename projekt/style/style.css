@@ -625,6 +625,7 @@ a {
 
 .contact-head .contact-head-text {
   padding: 20px;
+  max-width: 6210px;
 }
 
 .contact-head .contact-head-text h1 {
@@ -668,11 +669,19 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
+  background: rgba(22, 21, 21, 0.7);
+  width: 95w;
+  padding: 40px 10px 10px 10px;
+  position: absolute;
+  bottom: -230px;
+
   background: rgba(138, 138, 138, 0.7);
   width: 95vw;
   padding: 40px 10px 10px 10px;
   position: absolute;
   bottom: -180px;
+
 }
 
 .contact-main form .form-text {
@@ -683,7 +692,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .contact-main form .form-name {
@@ -694,27 +702,32 @@ a {
 
 .contact-main form input {
   padding: 14px 0;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  gap: 5px;
+
   margin: 2px;
+
   border-radius: 3px;
 }
 
 .contact-main form input[type="text"]::-webkit-input-placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
 .contact-main form input[type="text"]:-ms-input-placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
 .contact-main form input[type="text"]::-ms-input-placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
 .contact-main form input[type="text"]::placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
@@ -728,5 +741,27 @@ a {
   border: none;
   background-color: #62ECFF;
   border-radius: 3px;
+}
+
+.contact-offices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-offices img {
+  height: 100px;
+  background-size: cover;
+  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */
