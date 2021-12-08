@@ -735,13 +735,14 @@ a {
 
 
  
-
+  @media(min-width: 768px){
   .container-aboutUsPage {
      
       div.box{
           background-image:url(../img/unsplash_trYl7JYATH0.png);
           background-repeat:no-repeat;
           background-position: center top;
+          background-size: cover;
           padding: 40px;
           
       section {
@@ -817,9 +818,7 @@ a {
   }
   
   }
-
-@media screen and (max-width:1200px){
- 
 }
+
 
 // end om oss

@@ -827,91 +827,82 @@ a {
   margin-bottom: 5px;
 }
 
-.container-aboutUsPage div.box {
-  background-image: url(../img/unsplash_trYl7JYATH0.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding: 40px;
-}
-
-.container-aboutUsPage div.box section {
-  width: 100%;
-  height: 200px;
-}
-
-.container-aboutUsPage div.box section p {
-  font-size: 28px;
-  color: white;
-}
-
-.container-aboutUsPage div.box h4 {
-  color: #62ECFF;
-  margin-bottom: 10px;
-}
-
-.container-aboutUsPage div.box p.describe {
-  width: 70%;
-  color: white;
-  font-size: 18px;
-  line-height: 25px;
-  background-color: black;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-bottom: 30px;
-  padding-right: 5px;
-}
-
-.container-aboutUsPage div.box-2 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
-  background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
-  padding: 40px;
-}
-
-.container-aboutUsPage div.box-2 h4 {
-  color: #62ECFF;
-  margin-bottom: 10px;
-}
-
-.container-aboutUsPage div.box-2 p {
-  font-size: 18px;
-  color: white;
-  margin-bottom: 5px;
-}
-
-.container-aboutUsPage div.box-2 p.person {
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.container-aboutUsPage div.box-2 div.information {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.container-aboutUsPage div.box-2 div.information section {
-  width: 400px;
-  margin-bottom: 25px;
-}
-
-.container-aboutUsPage div.box-2 div.information section a {
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-}
-
-.container-aboutUsPage div.box-2 div.information section a img {
-  width: 24px;
-  vertical-align: middle;
+@media (min-width: 768px) {
+  .container-aboutUsPage div.box {
+    background-image: url(../img/unsplash_trYl7JYATH0.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 40px;
+  }
+  .container-aboutUsPage div.box section {
+    width: 100%;
+    height: 200px;
+  }
+  .container-aboutUsPage div.box section p {
+    font-size: 28px;
+    color: white;
+  }
+  .container-aboutUsPage div.box h4 {
+    color: #62ECFF;
+    margin-bottom: 10px;
+  }
+  .container-aboutUsPage div.box p.describe {
+    width: 70%;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: black;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    padding-right: 5px;
+  }
+  .container-aboutUsPage div.box-2 {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
+    background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
+    padding: 40px;
+  }
+  .container-aboutUsPage div.box-2 h4 {
+    color: #62ECFF;
+    margin-bottom: 10px;
+  }
+  .container-aboutUsPage div.box-2 p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .container-aboutUsPage div.box-2 p.person {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .container-aboutUsPage div.box-2 div.information {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container-aboutUsPage div.box-2 div.information section {
+    width: 400px;
+    margin-bottom: 25px;
+  }
+  .container-aboutUsPage div.box-2 div.information section a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  .container-aboutUsPage div.box-2 div.information section a img {
+    width: 24px;
+    vertical-align: middle;
+  }
 }
 /*# sourceMappingURL=style.css.map */
