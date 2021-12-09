@@ -666,6 +666,10 @@ a {
   border-radius: 3px;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
 .icons {
   margin: 10px 0 20px 0px;
   display: -webkit-box;
@@ -681,6 +685,16 @@ a {
   font-size: 24px;
 }
 
+=======
+
+.container-aboutUsPage {
+  width: 100%;
+}
+
+.container-aboutUsPage div.box {
+  background-image: url(../img/unsplash_trYl7JYATH0.png);
+
+>>>>>>> d596f2634f749586caaf6466937416da0db06466
 .contact-offices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,8 +760,19 @@ a {
   margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.container-aboutUsPage div.box p.describe {
+=======
 
 .container-aboutUsPage div.box p.describe {
+  width: 90%;
+.contact-offices .container-aboutUsPage div.box p.describe {
+>>>>>>> d596f2634f749586caaf6466937416da0db06466
+=======
+
+.container-aboutUsPage div.box p.describe {
+>>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
   width: 85%;
 
 .contact-offices .container-aboutUsPage div.box p.describe {
@@ -817,11 +842,23 @@ a {
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  .container-aboutUsPage .container-aboutUsPage div.box {
+=======
+
+  .container-aboutUsPage div.box {
+
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box {
+
+>>>>>>> d596f2634f749586caaf6466937416da0db06466
+=======
 
   .container-aboutUsPage .container-aboutUsPage div.box {
 =======
   .contact-offices .container-aboutUsPage div.box {
 
+>>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
