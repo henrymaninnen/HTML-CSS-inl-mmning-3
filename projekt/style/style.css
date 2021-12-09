@@ -134,7 +134,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -142,28 +141,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 5px;
 }
 
-.photo-index-container h1 {
-  font-size: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-
-.photo-index-container h2 {
-  color: #fff;
-  font-size: 16px;
-  font-family: sans-serif;
-  font-weight: 500;
-  opacity: 0.6;
-}
-
-.index-main-container1 {
-  background-image: url(../img/unsplash_9SoCnyQmkzI.png);
-  background-size: cover;
+.photo-index-container .photo-index-text {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 10px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +155,41 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photo-index-container .photo-index-text h1 {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.photo-index-container .photo-index-text h2 {
+  color: #fff;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.index-main-container1 {
+  background-image: url(../img/unsplash_bZZp1PmHI0E.png);
+  background-size: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-position: center center;
   gap: 50px;
   height: 700px;
   padding-left: 20px;
@@ -255,9 +274,16 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .photo-index-container .photo-index-text {
     background: rgba(0, 0, 0, 0.6);
@@ -297,7 +323,6 @@ a {
     height: 1000px;
     gap: 110px;
     background-position: center center;
-    /* padding-left: 200px; */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -316,6 +341,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
   }
   .index-main-container1 .index-main-boxes h2 {
     font-family: "jost", Times, serif;
@@ -641,6 +667,9 @@ a {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
 .icons {
   margin: 10px 0 20px 0px;
   display: -webkit-box;
@@ -704,8 +733,12 @@ a {
   width: 100%;
 }
 
+
 .container-aboutUsPage div.box {
   background-image: url(img/unsplash_trYl7JYATH0.png);
+
+.contact-offices .container-aboutUsPage div.box {
+  background-image: url(../img/unsplash_trYl7JYATH0.png);
 
   background-repeat: no-repeat;
   background-position: center top;
@@ -728,6 +761,7 @@ a {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container-aboutUsPage div.box p.describe {
 =======
 
@@ -735,7 +769,14 @@ a {
   width: 90%;
 .contact-offices .container-aboutUsPage div.box p.describe {
 >>>>>>> d596f2634f749586caaf6466937416da0db06466
+=======
+
+.container-aboutUsPage div.box p.describe {
+>>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
   width: 85%;
+
+.contact-offices .container-aboutUsPage div.box p.describe {
+  width: 90%;
 
   color: white;
   font-size: 14px;
@@ -802,6 +843,7 @@ a {
 
 @media (min-width: 768px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   .container-aboutUsPage .container-aboutUsPage div.box {
 =======
 
@@ -810,17 +852,21 @@ a {
   .contact-offices .container-aboutUsPage .container-aboutUsPage div.box {
 
 >>>>>>> d596f2634f749586caaf6466937416da0db06466
+=======
+
+  .container-aboutUsPage .container-aboutUsPage div.box {
+=======
+  .contact-offices .container-aboutUsPage div.box {
+
+>>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-
     margin-left: 40px;
     margin-right: 40px;
-
-    padding: 40px;
-
   }
+
   .container-aboutUsPage .container-aboutUsPage div.box section {
     width: 100%;
     height: 200px;
@@ -834,6 +880,21 @@ a {
     margin-bottom: 10px;
   }
   .container-aboutUsPage .container-aboutUsPage div.box p.describe {
+
+  .contact-offices .container-aboutUsPage div.box section {
+    width: 100%;
+    height: 200px;
+  }
+  .contact-offices .container-aboutUsPage div.box section p {
+    font-size: 28px;
+    color: white;
+  }
+  .contact-offices .container-aboutUsPage div.box h4 {
+    color: #62ECFF;
+    margin-bottom: 10px;
+  }
+  .contact-offices .container-aboutUsPage div.box p.describe {
+
     width: 70%;
     color: white;
     font-size: 18px;
@@ -844,25 +905,44 @@ a {
     padding-bottom: 30px;
     padding-right: 5px;
   }
+
   .container-aboutUsPage .container-aboutUsPage div.box-2 {
+.contact-offices .container-aboutUsPage div.box-2 {
+
     background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
     background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
     padding: 40px;
   }
+
   .container-aboutUsPage .container-aboutUsPage div.box-2 h4 {
     color: #62ECFF;
     margin-bottom: 10px;
   }
   .container-aboutUsPage .container-aboutUsPage div.box-2 p {
+
+  .contact-offices .container-aboutUsPage div.box-2 h4 {
+    color: #62ECFF;
+    margin-bottom: 10px;
+  }
+  .contact-offices .container-aboutUsPage div.box-2 p {
+
     font-size: 18px;
     color: white;
     margin-bottom: 10px;
   }
+
   .container-aboutUsPage .container-aboutUsPage div.box-2 p.person {
     font-size: 14px;
     margin-bottom: 5px;
   }
   .container-aboutUsPage .container-aboutUsPage div.box-2 div.information {
+
+  .contact-offices .container-aboutUsPage div.box-2 p.person {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .contact-offices .container-aboutUsPage div.box-2 div.information {
+
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -873,29 +953,32 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .container-aboutUsPage div.box-2 div.information section {
-    width: 350px;
 
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
   .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section {
     width: 400px;
-
     margin-bottom: 25px;
   }
   .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a {
+
+  .contact-offices .container-aboutUsPage div.box-2 div.information section {
+    width: 350px;
+    margin-bottom: 25px;
+  }
+  .contact-offices .container-aboutUsPage div.box-2 div.information section a {
+
     font-size: 18px;
     color: white;
     text-decoration: none;
   }
+
   .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a img {
+
+  .contact-offices .container-aboutUsPage div.box-2 div.information section a img {
+
     width: 24px;
     vertical-align: middle;
   }
