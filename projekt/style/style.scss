@@ -662,7 +662,7 @@ a {
       
       div.box{
          
-          background-image:url(img/unsplash_trYl7JYATH0.png);
+          background-image:url(../img/unsplash_trYl7JYATH0.png);
           background-repeat:no-repeat;
           background-position: center top;
           padding: 20px;
@@ -679,7 +679,7 @@ a {
         margin-bottom: 5px;
     } 
     p.describe{
-        width: 85%;
+        width: 90%;
         color:white;
         font-size: 14px;
         background-color: black;
@@ -692,11 +692,13 @@ a {
       padding: 20px;
       h4{
       color:#62ECFF;
+      margin-bottom: 5px;
      
       }
       p {
           font-size: 14px;
           color:white;
+          margin-bottom: 5px;
       }
       p.person {
           font-size: 12px;
@@ -734,7 +736,7 @@ a {
   }     
 
 
-  .container-aboutUsPage {
+ 
 
  
   @media(min-width: 768px){
@@ -746,7 +748,9 @@ a {
           background-repeat:no-repeat;
           background-position: center top;
           background-size: cover;
-          padding: 40px;
+          margin-left: 40px;
+          margin-right: 40px;
+          
           
       section {
           width: 100%;
@@ -783,7 +787,7 @@ a {
       p {
           font-size: 18px;
           color:white;
-          margin-bottom: 5px;
+          margin-bottom: 10px;
       }
       p.person {
           font-size: 14px;
@@ -795,11 +799,12 @@ a {
         flex-wrap: wrap;
         flex-direction: row;
         
-        justify-content: flex-start;
+        justify-content: space-between;
         
         
         section{
-            width: 400px;
+            width: 350px;
+            
             margin-bottom: 25px;
             
            
@@ -822,6 +827,6 @@ a {
   
   }
 }
-
+  
 
 // end om oss
