@@ -639,6 +639,14 @@ a {
   border-radius: 3px;
 }
 
+
+.container-aboutUsPage {
+  width: 100%;
+}
+
+.container-aboutUsPage div.box {
+  background-image: url(../img/unsplash_trYl7JYATH0.png);
+
 .contact-offices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -666,6 +674,7 @@ a {
 
 .contact-offices .container-aboutUsPage div.box {
   background-image: url(img/unsplash_trYl7JYATH0.png);
+
   background-repeat: no-repeat;
   background-position: center top;
   padding: 20px;
@@ -686,8 +695,12 @@ a {
   margin-bottom: 5px;
 }
 
+
+.container-aboutUsPage div.box p.describe {
+  width: 90%;
 .contact-offices .container-aboutUsPage div.box p.describe {
   width: 85%;
+
   color: white;
   font-size: 14px;
   background-color: black;
@@ -702,11 +715,13 @@ a {
 
 .contact-offices .container-aboutUsPage div.box-2 h4 {
   color: #62ECFF;
+  margin-bottom: 5px;
 }
 
 .contact-offices .container-aboutUsPage div.box-2 p {
   font-size: 14px;
   color: white;
+  margin-bottom: 5px;
 }
 
 .contact-offices .container-aboutUsPage div.box-2 p.person {
@@ -750,12 +765,21 @@ a {
 }
 
 @media (min-width: 768px) {
+
+  .container-aboutUsPage div.box {
+
   .contact-offices .container-aboutUsPage .container-aboutUsPage div.box {
+
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+
+    margin-left: 40px;
+    margin-right: 40px;
+
     padding: 40px;
+
   }
   .contact-offices .container-aboutUsPage .container-aboutUsPage div.box section {
     width: 100%;
@@ -792,7 +816,7 @@ a {
   .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 p {
     font-size: 18px;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 p.person {
     font-size: 14px;
@@ -809,12 +833,21 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container-aboutUsPage div.box-2 div.information section {
+    width: 350px;
+
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section {
     width: 400px;
+
     margin-bottom: 25px;
   }
   .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a {
