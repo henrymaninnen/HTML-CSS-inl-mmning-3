@@ -103,9 +103,9 @@ body {
 }
 
 //HEADER
-.container {
+/* .container {
   margin: 10px 10px;
-}
+} */
 
 * {
   padding: 0;
@@ -203,161 +203,110 @@ a {
     left: 0;
   }
 }
-
-
-
   .photo-index-container {
     height: 134px;
     width: 100%;
     background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
     background-size: cover;
     display: flex;
+    gap: 2px;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-
-    .photo-index-text {
-      background: $darkTransparentBox;
-      width: 340px;
-      height: 60px;
-      margin-bottom: 3px;
-      display: flex;
-      gap: 2px;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      border-radius: 5px;
-    
-      
-      h1 {
-        @include primaryText;
-      }
-      h2 {
-        @include secondaryText;
-        opacity: 0.6;
-      }
+    border-radius: 5px;
+  
+    h1 {
+      @include primaryText;
+    }
+    h2 {
+      @include secondaryText;
+      opacity: 0.6;
     }
   }
-  //main content
 
-  .index-main-container {
-    height: 700px;
-    width: 100%;
-    position: relative;
+//main content
+
+.index-main-container1 {
+  
     background-image: url(../img/unsplash_9SoCnyQmkzI.png);
     background-size: cover;
-
-
-
-    .index-main-container-boxes {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-      width: 100%;
-      margin-left: 20px;
-
-      .index-main-boxes {
-        margin-top: 10px;
-        height: 100px;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        h2 {
-          @include primaryTextBlue;
-        }
-        p {
-          @include secondaryTextSmall;
-        }
-      }
-    }
-  }
-/* this is the footer for mobile */
-.footer-container {
-  background-color: #000000;
-  height: 180px;
-  width: inherit;
-  
-
-  .footer {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
-    .link-pages{
-      a{
-        color: $lightblue;
-      }
-    }
-
-    .small-text-box {
-      margin-top: 20px;
-      color: #ffffff;
-      font-family: $firstFont;
-      font-size: 0.7em;
-      
-    }
-    .footer-boxes-container {
-      gap: 20px;
+    gap: 50px;
+    height: 700px;
+    padding-left: 20px;
+   
+    .index-main-boxes {
+      margin-top: 10px;
+      height: 100px;
       display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 5px;
-
-      .footer-boxes {
-        a {
-          i {
-            margin: 10px;
-            color: #fff;
-            font-size: 1em;
-          }
-        }
+      flex-direction: column;
+      gap: 20px;
+      
+      h2 {
+        @include primaryTextBlue;
       }
-
-      .jobb {
-        margin-top: 10px;
-        text-decoration: none;
-        
+      p {
+        @include secondaryTextSmall;
       }
     }
   }
-  //end of footer
+
+
+   //footer mobile 
+    .footer {
+      height: 160px;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      #link-pages{
+        color: $lightblue;
+        word-spacing: 2px;
+        a{
+          color: $lightblue;
+        }
+      }
+      
+      #small-text-box {
+        color: #ffffff;
+        font-family: $firstFont;
+        font-size: 0.7em;
+      }
+      
+      .footer-boxes {
+        margin-top: 20px;
+          a {
+            i {
+              margin: 10px;
+              color: #fff;
+              font-size: 1em;
+            }
+          }
+        }
+  
+        .jobb {
+          color: $lightblue;
+        }
 }
 
 
 
-
-
-
-//style index desktop
-
-//picture on index page
-@media (min-width: 768px) {
+@media (min-width: $breakpointSmall) {
   .photo-index-container {
-    height: 50vh;
-    width: 100%;
+    height: 70vh;
     background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
-    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
 
     .photo-index-text {
       background: $darkTransparentBox;
       width: 1250px;
-      height: 200px;
+      height: 220px;
       margin-bottom: 30px;
-      display: flex;
       gap: 20px;
-      flex-direction: column;
       text-align: center;
-      justify-content: center;
       border-radius: 10px;
-      
       
       h1 {
         @include primaryText;
@@ -370,34 +319,28 @@ a {
       }
     }
   }
-  //main content
 
-  .index-main-container {
+  .index-main-container1 {
+    background-image: url(../img/unsplash_bZZp1PmHI0E.png);
+    background-size: cover;
     display: flex;
+    flex-direction: column;
+    height: 1000px;
+    gap: 110px;
+    background-position: center center;
+    /* padding-left: 200px; */
     justify-content: center;
     align-items: center;
-    height: 800px;
-    background-image: url(../img/unsplash_9SoCnyQmkzI.png);
-    background-size: cover;
-
-  
-
-    .index-main-container-boxes {
-      width: 80%;
+    
+    
+    
+   
+    .index-main-boxes {
+      margin-top: 10px;
+      height: 100px;
+      width: 70%;
       display: flex;
       flex-direction: column;
-      gap: 80px;
-      margin: 40px 0;
-     
-      
-
-      .index-main-boxes {
-       
-        height: 100px;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
         h2 {
           @include primaryTextBlue;
@@ -407,60 +350,59 @@ a {
           @include secondaryTextSmall;
           font-size: 20px;
         }
-      }
+      
     }
+ 
   }
-/* this is the footer for desktop */
-.footer-container {
-  background-color: #000000;
-  height: 200px;
-  width: inherit;
-
   .footer {
-    height: 100%;
+    height: 300px;
+    background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
-    .small-text-box {
-      margin: 30px 0px 10px 0px;
+    justify-content: center;
+    gap: 25px;
+    
+    
+    #link-pages{
+      color: $lightblue;
+      word-spacing: 7px;
+      a{
+        color: $lightblue;
+      }
+    }
+    
+    #small-text-box {
       color: #ffffff;
       font-family: $firstFont;
       font-size: 1em;
       letter-spacing: 0.2em;
+      
+      
     }
-    .footer-boxes-container {
-      gap: 20px;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 5px;
-      gap: 30px;
-
-      .footer-boxes {
+    
+    .footer-boxes {
+      
+      margin-top: 20px;
         a {
+          font-size: 24px;
+          
           i {
             margin: 10px;
             color: #fff;
-            font-size: 2em;
+            font-size: 1em;
           }
         }
       }
 
-      .jobb {
-        @include primaryTextBlue;
-        margin-top: 10px;
-        text-decoration: none;
-        
-        
-      }
-    }
-  }
-  //end of footer
+    
 }
 }
+
+//end of index
+
+
+
+
 
 
 // refrence page
@@ -647,6 +589,178 @@ a {
     background-size: cover;
    
   }
+
+// om oss page
+
+
+
+  
+  .container-aboutUsPage {
+      width: 100%;
+      
+      div.box{
+         
+          background-image:url(img/unsplash_trYl7JYATH0.png);
+          background-repeat:no-repeat;
+          background-position: center top;
+          padding: 20px;
+      section {
+          width: 100%;
+          height: 128px;
+          p {
+              font-size: 20px;
+              color:white;
+          }
+      }
+    h4{
+        color:#62ECFF;
+        margin-bottom: 5px;
+    } 
+    p.describe{
+        width: 85%;
+        color:white;
+        font-size: 14px;
+        background-color: black;
+        padding: 10px 2px 20px 2px;
+       
+    }
+  }
+  div.box-2 {
+      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      padding: 20px;
+      h4{
+      color:#62ECFF;
+     
+      }
+      p {
+          font-size: 14px;
+          color:white;
+      }
+      p.person {
+          font-size: 12px;
+          margin-bottom: 3px;
+      }
+    div.information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        section{
+            margin-bottom: 25px;
+            a{
+                font-size: 14px;
+                color: white;
+                text-decoration: none;
+                img{
+                    width: 12px;
+                    vertical-align: middle;
+                }
+            }
+        img{
+            width: 100%;
+            margin-bottom: 5px;
+            
+        }
+      }
+    }
+
+  
+  }
+
+  }     
+
+
+  .container-aboutUsPage {
+
+ 
+  @media(min-width: 768px){
+  .container-aboutUsPage {
+     
+
+      div.box{
+          background-image:url(../img/unsplash_trYl7JYATH0.png);
+          background-repeat:no-repeat;
+          background-position: center top;
+          background-size: cover;
+          padding: 40px;
+          
+      section {
+          width: 100%;
+          height: 200px;
+          p {
+              font-size: 28px;
+              color:white;
+          }
+      }
+    h4{
+        color:#62ECFF;
+        margin-bottom: 10px;
+    } 
+    p.describe{
+        width: 70%;
+        
+        color:white;
+        font-size: 18px;
+        line-height:25px ;
+        background-color: black;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-bottom: 30px;
+        padding-right: 5px;
+    }
+  }
+  div.box-2 {
+      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      padding: 40px;
+      h4{
+      color:#62ECFF;
+      margin-bottom: 10px;
+      }
+      p {
+          font-size: 18px;
+          color:white;
+          margin-bottom: 5px;
+      }
+      p.person {
+          font-size: 14px;
+          margin-bottom: 5px;
+      }
+    div.information {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        justify-content: flex-start;
+        
+        
+        section{
+            width: 400px;
+            margin-bottom: 25px;
+            
+           
+            a {
+                font-size: 18px;
+                color: white;
+                
+                text-decoration: none;
+                
+                  img{
+                      width: 24px;
+                      vertical-align: middle;
+                  }
+            }             
+        }
+        
+
+    }
+  }
+  
+  }
+}
+}
 }
 
   
