@@ -740,7 +740,7 @@ a {
     width: 100%;
   }
   div.container-aboutUsPage div.box {
-    background-image: url(img/unsplash_trYl7JYATH0.png);
+    background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
     padding: 20px;
@@ -809,12 +809,6 @@ a {
   div.container-aboutUsPage div.box-2 div.information section img {
     width: 100%;
     margin-bottom: 5px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  div.container {
-    width: 750px;
   }
 }
 
