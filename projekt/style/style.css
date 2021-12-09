@@ -128,22 +128,9 @@ a {
 
 .photo-index-container {
   height: 134px;
+  width: 100%;
   background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.photo-index-container .photo-index-text {
-  background: rgba(0, 0, 0, 0.6);
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +145,7 @@ a {
   border-radius: 5px;
 }
 
-.photo-index-container .photo-index-text h1 {
+.photo-index-container h1 {
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 500;
@@ -166,7 +153,7 @@ a {
   text-decoration: none;
 }
 
-.photo-index-container .photo-index-text h2 {
+.photo-index-container h2 {
   color: #fff;
   font-size: 16px;
   font-family: sans-serif;
@@ -537,9 +524,9 @@ a {
 }
 
 .contact-head {
-  background-image: url(../img/unsplash_mk7D-4UCfmg.png);
+  background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100vw;
-  height: 60vh;
+  height: 40vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -550,35 +537,36 @@ a {
 }
 
 .contact-head .contact-head-text h1 {
-  margin-bottom: 20px;
+  margin: 10px 0 30px 0;
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 500;
-  color: #3A3A3A;
+  color: white;
   text-decoration: none;
 }
 
 .contact-head .contact-head-text p {
-  font-size: 18px;
+  color: #fff;
+  font-size: 16px;
   font-family: sans-serif;
   font-weight: 500;
-  color: #3A3A3A;
-  text-decoration: none;
+  color: white;
 }
 
 .contact-main {
-  background-color: #052321;
-  width: 100vw;
-  height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
 .contact-main form {
@@ -590,11 +578,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(43, 42, 42, 0.7);
-  width: 95vw;
+  background: rgba(22, 21, 21, 0.7);
+  width: 95w;
   padding: 40px 10px 10px 10px;
-  position: absolute;
-  top: -230px;
+  margin-top: -40px;
 }
 
 .contact-main form .form-text {
@@ -605,7 +592,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .contact-main form .form-name {
@@ -616,32 +602,28 @@ a {
 
 .contact-main form input {
   padding: 14px 0;
-  gap: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  gap: 5px;
   border-radius: 3px;
 }
 
 .contact-main form input[type="text"]::-webkit-input-placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
 .contact-main form input[type="text"]:-ms-input-placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
 .contact-main form input[type="text"]::-ms-input-placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
 .contact-main form input[type="text"]::placeholder {
-  /* Firefox, Chrome, Opera */
   padding-left: 14px;
 }
 
@@ -657,63 +639,97 @@ a {
   border-radius: 3px;
 }
 
+
 .container-aboutUsPage {
   width: 100%;
 }
 
 .container-aboutUsPage div.box {
   background-image: url(../img/unsplash_trYl7JYATH0.png);
+
+.contact-offices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-offices img {
+  height: 100px;
+  background-size: cover;
+}
+
+.contact-offices .container-aboutUsPage {
+  width: 100%;
+}
+
+.contact-offices .container-aboutUsPage div.box {
+  background-image: url(img/unsplash_trYl7JYATH0.png);
+
   background-repeat: no-repeat;
   background-position: center top;
   padding: 20px;
 }
 
-.container-aboutUsPage div.box section {
+.contact-offices .container-aboutUsPage div.box section {
   width: 100%;
   height: 128px;
 }
 
-.container-aboutUsPage div.box section p {
+.contact-offices .container-aboutUsPage div.box section p {
   font-size: 20px;
   color: white;
 }
 
-.container-aboutUsPage div.box h4 {
+.contact-offices .container-aboutUsPage div.box h4 {
   color: #62ECFF;
   margin-bottom: 5px;
 }
 
+
 .container-aboutUsPage div.box p.describe {
   width: 90%;
+.contact-offices .container-aboutUsPage div.box p.describe {
+  width: 85%;
+
   color: white;
   font-size: 14px;
   background-color: black;
   padding: 10px 2px 20px 2px;
 }
 
-.container-aboutUsPage div.box-2 {
+.contact-offices .container-aboutUsPage div.box-2 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
   background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
   padding: 20px;
 }
 
-.container-aboutUsPage div.box-2 h4 {
+.contact-offices .container-aboutUsPage div.box-2 h4 {
   color: #62ECFF;
   margin-bottom: 5px;
 }
 
-.container-aboutUsPage div.box-2 p {
+.contact-offices .container-aboutUsPage div.box-2 p {
   font-size: 14px;
   color: white;
   margin-bottom: 5px;
 }
 
-.container-aboutUsPage div.box-2 p.person {
+.contact-offices .container-aboutUsPage div.box-2 p.person {
   font-size: 12px;
   margin-bottom: 3px;
 }
 
-.container-aboutUsPage div.box-2 div.information {
+.contact-offices .container-aboutUsPage div.box-2 div.information {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,32 +744,41 @@ a {
       justify-content: space-around;
 }
 
-.container-aboutUsPage div.box-2 div.information section {
+.contact-offices .container-aboutUsPage div.box-2 div.information section {
   margin-bottom: 25px;
 }
 
-.container-aboutUsPage div.box-2 div.information section a {
+.contact-offices .container-aboutUsPage div.box-2 div.information section a {
   font-size: 14px;
   color: white;
   text-decoration: none;
 }
 
-.container-aboutUsPage div.box-2 div.information section a img {
+.contact-offices .container-aboutUsPage div.box-2 div.information section a img {
   width: 12px;
   vertical-align: middle;
 }
 
-.container-aboutUsPage div.box-2 div.information section img {
+.contact-offices .container-aboutUsPage div.box-2 div.information section img {
   width: 100%;
   margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
   .container-aboutUsPage div.box {
+=======
+
+  .container-aboutUsPage div.box {
+
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box {
+
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+<<<<<<< HEAD
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -770,6 +795,28 @@ a {
     margin-bottom: 10px;
   }
   .container-aboutUsPage div.box p.describe {
+=======
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    padding: 40px;
+
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box section {
+    width: 100%;
+    height: 200px;
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box section p {
+    font-size: 28px;
+    color: white;
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box h4 {
+    color: #62ECFF;
+    margin-bottom: 10px;
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box p.describe {
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     width: 70%;
     color: white;
     font-size: 18px;
@@ -780,25 +827,45 @@ a {
     padding-bottom: 30px;
     padding-right: 5px;
   }
+<<<<<<< HEAD
   .container-aboutUsPage div.box-2 {
+=======
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 {
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
     background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
     padding: 40px;
   }
+<<<<<<< HEAD
   .container-aboutUsPage div.box-2 h4 {
     color: #62ECFF;
     margin-bottom: 10px;
   }
   .container-aboutUsPage div.box-2 p {
+=======
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 h4 {
+    color: #62ECFF;
+    margin-bottom: 10px;
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 p {
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     font-size: 18px;
     color: white;
     margin-bottom: 10px;
   }
+<<<<<<< HEAD
   .container-aboutUsPage div.box-2 p.person {
     font-size: 14px;
     margin-bottom: 5px;
   }
   .container-aboutUsPage div.box-2 div.information {
+=======
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 p.person {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information {
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -809,20 +876,42 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .container-aboutUsPage div.box-2 div.information section {
     width: 350px;
+<<<<<<< HEAD
     margin-bottom: 25px;
   }
   .container-aboutUsPage div.box-2 div.information section a {
+=======
+
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section {
+    width: 400px;
+
+    margin-bottom: 25px;
+  }
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a {
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     font-size: 18px;
     color: white;
     text-decoration: none;
   }
+<<<<<<< HEAD
   .container-aboutUsPage div.box-2 div.information section a img {
+=======
+  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a img {
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
     width: 24px;
     vertical-align: middle;
   }

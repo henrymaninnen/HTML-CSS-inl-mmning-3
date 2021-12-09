@@ -203,21 +203,11 @@ a {
     left: 0;
   }
 }
-
-
-
- //index style mobile
-.photo-index-container {
-  height: 134px;
-  background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  .photo-index-text {
-    background: $darkTransparentBox;
-    height: 60px;
+  .photo-index-container {
+    height: 134px;
+    width: 100%;
+    background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
+    background-size: cover;
     display: flex;
     gap: 2px;
     flex-direction: column;
@@ -232,7 +222,6 @@ a {
       opacity: 0.6;
     }
   }
-}
 
 //main content
 
@@ -300,14 +289,6 @@ a {
           color: $lightblue;
         }
 }
-
-
- 
-  
-
-
- 
-
 
 
 
@@ -532,65 +513,59 @@ a {
     }
   }
 }
-//CONTACT PAGE
 .contact-head {
-  background-image: url(../img/unsplash_mk7D-4UCfmg.png);
+  background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100vw;
-  height: 60vh;
+  height: 40vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  
+
  .contact-head-text{
    padding:20px;
    h1{
-     margin-bottom: 20px;
-     @include primaryTextDark();
+    margin: 10px 0 30px 0;
+     @include primaryText();
    }
    p{
-    @include secondaryTextDark();
+    @include secondaryText();
+    color: white;
    }
  }
 }
 .contact-main{
-  background-color: $darkGreen;
-  width: 100vw;
-  height: 40vh;
+
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
  
 
   form{
     display: flex;
     border-radius: 10px;
     flex-direction: column;
-    background: rgba(43, 42, 42, 0.7);
-    width: 95vw;
+    background: rgba(22, 21, 21, 0.7);
+    width: 95w;
     padding: 40px 10px 10px 10px;
-    position: absolute;
-    top: -230px;
-    
+    margin-top: -40px;
     .form-text{
       display: flex;
       flex-direction: column;
-      width: 100%;
     }
     .form-name{
       display: flex;
     }
     input{
       padding: 14px 0;
-      gap: 5px;
       display: flex;
       flex-basis: 100%;
+      gap: 5px;
       border-radius: 3px;
     }
-    input[type="text"]::placeholder {  
-                  
-      /* Firefox, Chrome, Opera */ 
+    input[type="text"]::placeholder {
       padding-left: 14px; 
   } 
   button{
@@ -604,6 +579,17 @@ a {
   }
   }
 }
+.contact-offices{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img{
+    height: 100px;
+    background-size: cover;
+   
+  }
+
 // om oss page
 
 
@@ -779,6 +765,15 @@ a {
   
   }
 }
-  
+<<<<<<< HEAD
+=======
+
 
 // end om oss
+
+}
+}
+
+>>>>>>> 24bde120736f789a02aaf8fd34ccf4d624f0f0d7
+  
+
