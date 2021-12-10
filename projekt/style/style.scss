@@ -99,6 +99,13 @@ $breakpointDesktop: 1000px;
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin flexSpeceBetweenColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 @mixin flexSpaceAround {
   display: flex;
   justify-content: space-around;
@@ -435,21 +442,39 @@ a {
   width: 100%;
   height: auto;
   position: absolute;
+  z-index: 0;
+  margin-top: 70px;
 }
+#referenceHeader{
+  z-index: 1;
+}
+  .reference-body{
+ 
+ 
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ 
+ 
 
-.main-reference {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+ }
+ #refrence-footer{
+   margin-bottom: 0;
+ }
+
+
+.main-reference{
+  @include flexSpeceBetweenColumn();
   width: 100%;
+  height: 90%;
+  box-sizing: border-box;
   
-
   @include mainGradient();
 
   .contentBox-reference-1 {
-    position: absolute;
-    z-index: 1;
+    box-sizing: border-box;
+    z-index: 2;
+    height: 80%;
 
     color: #fff;
 
@@ -500,37 +525,37 @@ a {
         .grades {
           @include flexSpaceBetween();
           width: 50%;
-          margin-right: 40%;
+          margin-right: 20%;
 
-          @media screen and (max-width: $breakpointSmall) {
+          @media screen and (min-width: $breakpointSmall) {
             
-            margin-right: 20%;
+            margin-right: 40%;
           }
 
         
 
           .gradeRect {
-            height: 20px;
-            width: 20px;
+            height: 15px;
+            width: 15px;
             background-color: $lightblue;
 
-            @media screen and (max-width: $breakpointSmall) {
+            @media screen and (min-width: $breakpointSmall) {
             
-              height: 15px;
-            width: 15px;
+              height: 20px;
+            width: 20px;
             }
 
             
           }
           .gradeRectWhite {
-            height: 20px;
-            width: 20px;
+            height: 15px;
+            width: 15px;
             background-color: #fff;
 
-            @media screen and (max-width: $breakpointSmall) {
+            @media screen and (min-width: $breakpointSmall) {
             
-              height: 15px;
-            width: 15px;
+              height: 20px;
+            width: 20px;
             }
           }
         }
@@ -538,7 +563,10 @@ a {
     }
   }
 }
-//CONTACT US
+
+// contact page
+
+
 .contact-head {
   background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100vw;
@@ -828,49 +856,7 @@ a {
   }
 }
 // end om oss
-//HOMEPAGE
-.hero{
-  background-image: url(../img/unsplash_bZZp1PmHI0E.png);
-  height: 230px;
-  width: 100vw;
-  max-height: 1200px;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1{
-    @include primaryText();
-    margin: 60px 0 10px 0
-  }
-  p{
-    @include secondaryText();
-  }
-}
-.home-main{
-  display: flex;
-  flex-direction: column;
-  width: 90vw;
-  margin: 0 auto;
-  button{
-    padding: 60px 10px;
-    border: none;
-    @include primaryText()
-  }
-  button:nth-child(1){
-    background-color: #074249;
-  }
-  button:nth-child(2){
-    background-color: #06363C;
-  }
-  button:nth-child(3){
-    background-color: #042E33;
-  }
-  button:nth-child(4){
-    background-color: #04262B;
-  }
 
-
-}
 //CONTACT DESKTOP
 @media (min-width: $breakpointDesktop) {
   .contact-head{
