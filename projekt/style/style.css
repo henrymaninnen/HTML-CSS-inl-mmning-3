@@ -608,7 +608,7 @@ a {
   background: rgba(22, 21, 21, 0.6);
   width: 95w;
   padding: 40px 10px 10px 10px;
-  margin-top: -40px;
+  margin-top: -7em;
 }
 
 .contact-main form .form-text {
@@ -666,10 +666,6 @@ a {
   border-radius: 3px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
 .icons {
   margin: 10px 0 20px 0px;
   display: -webkit-box;
@@ -685,16 +681,6 @@ a {
   font-size: 24px;
 }
 
-=======
-
-.container-aboutUsPage {
-  width: 100%;
-}
-
-.container-aboutUsPage div.box {
-  background-image: url(../img/unsplash_trYl7JYATH0.png);
-
->>>>>>> d596f2634f749586caaf6466937416da0db06466
 .contact-offices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,21 +711,22 @@ a {
 }
 
 .contact-offices img {
-  height: 100px;
+  height: 90%;
+  width: 90%;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .container-aboutUsPage {
   width: 100%;
 }
 
-
 .container-aboutUsPage div.box {
-  background-image: url(img/unsplash_trYl7JYATH0.png);
-
-.contact-offices .container-aboutUsPage div.box {
   background-image: url(../img/unsplash_trYl7JYATH0.png);
-
   background-repeat: no-repeat;
   background-position: center top;
   padding: 20px;
@@ -760,24 +747,8 @@ a {
   margin-bottom: 5px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.container-aboutUsPage div.box p.describe {
-=======
-
 .container-aboutUsPage div.box p.describe {
   width: 90%;
-.contact-offices .container-aboutUsPage div.box p.describe {
->>>>>>> d596f2634f749586caaf6466937416da0db06466
-=======
-
-.container-aboutUsPage div.box p.describe {
->>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
-  width: 85%;
-
-.contact-offices .container-aboutUsPage div.box p.describe {
-  width: 90%;
-
   color: white;
   font-size: 14px;
   background-color: black;
@@ -842,23 +813,7 @@ a {
 }
 
 @media (min-width: 768px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .container-aboutUsPage .container-aboutUsPage div.box {
-=======
-
   .container-aboutUsPage div.box {
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box {
-
->>>>>>> d596f2634f749586caaf6466937416da0db06466
-=======
-
-  .container-aboutUsPage .container-aboutUsPage div.box {
-=======
-  .contact-offices .container-aboutUsPage div.box {
-
->>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -866,35 +821,19 @@ a {
     margin-left: 40px;
     margin-right: 40px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box section {
+  .container-aboutUsPage div.box section {
     width: 100%;
     height: 200px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box section p {
+  .container-aboutUsPage div.box section p {
     font-size: 28px;
     color: white;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box h4 {
+  .container-aboutUsPage div.box h4 {
     color: #62ECFF;
     margin-bottom: 10px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box p.describe {
-
-  .contact-offices .container-aboutUsPage div.box section {
-    width: 100%;
-    height: 200px;
-  }
-  .contact-offices .container-aboutUsPage div.box section p {
-    font-size: 28px;
-    color: white;
-  }
-  .contact-offices .container-aboutUsPage div.box h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
-  .contact-offices .container-aboutUsPage div.box p.describe {
-
+  .container-aboutUsPage div.box p.describe {
     width: 70%;
     color: white;
     font-size: 18px;
@@ -905,44 +844,25 @@ a {
     padding-bottom: 30px;
     padding-right: 5px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 {
-.contact-offices .container-aboutUsPage div.box-2 {
-
+  .container-aboutUsPage div.box-2 {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
     background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
     padding: 40px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 h4 {
+  .container-aboutUsPage div.box-2 h4 {
     color: #62ECFF;
     margin-bottom: 10px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box-2 p {
-
-  .contact-offices .container-aboutUsPage div.box-2 h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
-  .contact-offices .container-aboutUsPage div.box-2 p {
-
+  .container-aboutUsPage div.box-2 p {
     font-size: 18px;
     color: white;
     margin-bottom: 10px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 p.person {
+  .container-aboutUsPage div.box-2 p.person {
     font-size: 14px;
     margin-bottom: 5px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information {
-
-  .contact-offices .container-aboutUsPage div.box-2 p.person {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .contact-offices .container-aboutUsPage div.box-2 div.information {
-
+  .container-aboutUsPage div.box-2 div.information {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -957,28 +877,16 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section {
-    width: 400px;
-    margin-bottom: 25px;
-  }
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a {
-
-  .contact-offices .container-aboutUsPage div.box-2 div.information section {
+  .container-aboutUsPage div.box-2 div.information section {
     width: 350px;
     margin-bottom: 25px;
   }
-  .contact-offices .container-aboutUsPage div.box-2 div.information section a {
-
+  .container-aboutUsPage div.box-2 div.information section a {
     font-size: 18px;
     color: white;
     text-decoration: none;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a img {
-
-  .contact-offices .container-aboutUsPage div.box-2 div.information section a img {
-
+  .container-aboutUsPage div.box-2 div.information section a img {
     width: 24px;
     vertical-align: middle;
   }
