@@ -122,10 +122,17 @@ a {
     margin: 16px 0;
   }
   .nav-menu.active {
-    left: 0;
+    left: 0px;
   }
 }
 
+<<<<<<< HEAD
+/* this is the footer */
+.footer-container {
+  background-color: #000000;
+  height: 100px;
+  width: inherit;
+=======
 .photo-index-container {
   height: 134px;
   width: 100%;
@@ -193,6 +200,7 @@ a {
   gap: 50px;
   height: 700px;
   padding-left: 20px;
+>>>>>>> cb43fc3ce828c2eed9f204dfb2df8b7b9912d7ce
 }
 
 .index-main-container1 .index-main-boxes {
@@ -310,9 +318,21 @@ a {
     font-size: 36px;
     opacity: 0.6;
   }
+<<<<<<< HEAD
+  .index-main-container {
+    height: 750px;
+    width: 100%;
+    position: relative;
+  }
+  .index-main-container .index-main-photo {
+    width: 100%;
+  }
+  .index-main-container .index-main-container-boxes {
+=======
   .index-main-container1 {
     background-image: url(../img/unsplash_bZZp1PmHI0E.png);
     background-size: cover;
+>>>>>>> cb43fc3ce828c2eed9f204dfb2df8b7b9912d7ce
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

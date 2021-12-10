@@ -140,11 +140,16 @@ a {
   justify-content: space-between;
   align-items: center;
 
+<<<<<<< HEAD
+body{
+  background-color: $darkGreen;
+=======
   gap: 60px;
 }
 
 .nav-link {
   transition: 0.3s ease-out;
+>>>>>>> cb43fc3ce828c2eed9f204dfb2df8b7b9912d7ce
 }
 
 .nav-link:hover {
@@ -181,6 +186,22 @@ a {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+<<<<<<< HEAD
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-link{
+    transition: 0.3s ease-out;
+  }
+  
+  .nav-link:hover{
+    color: $lightblue;
+=======
 
   .nav-menu {
     position: absolute;
@@ -193,6 +214,7 @@ a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+>>>>>>> cb43fc3ce828c2eed9f204dfb2df8b7b9912d7ce
   }
 
   .nav-item {
@@ -213,6 +235,42 @@ a {
     justify-content: center;
     
   
+<<<<<<< HEAD
+  @media(max-width:768px){
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 80px;
+      gap: 10px;
+      z-index: 10;
+      flex-direction: column;
+      background-color: $darkGreen;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0px;
+=======
     .photo-index-text {
       background: $darkTransparentBox;
       text-align: center;
@@ -232,6 +290,7 @@ a {
         font-size: 18px;
         opacity: 0.6;
       }
+>>>>>>> cb43fc3ce828c2eed9f204dfb2df8b7b9912d7ce
     }
   }
 
@@ -485,9 +544,17 @@ a {
         margin-top: 5%;
         width: 100%;
 
+<<<<<<< HEAD
+        .index-main-photo{
+       
+            width: 100%;
+            
+            
+=======
         h4 {
           font-weight: 300;
           width: 50%;
+>>>>>>> cb43fc3ce828c2eed9f204dfb2df8b7b9912d7ce
         }
         .grades {
           @include flexSpaceBetween();
@@ -636,8 +703,21 @@ a {
   }
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  .main-reference{
+    @include flexCenterColumn();
+=======
+// om oss page
+>>>>>>> cb43fc3ce828c2eed9f204dfb2df8b7b9912d7ce
+
+
+
+  
+=======
 // ABOUT US PAGE
  
+>>>>>>> 6aca3e4dfdc0b1fb7b7d1a418f6cd7f4deda44c7
   .container-aboutUsPage {
       width: 100%;
       
