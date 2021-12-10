@@ -514,32 +514,52 @@ a {
         }
       }
     }
-    //CONTACT US
-    .contact-head {
-      background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
-      width: 100vw;
-      height: 40vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-
-      .contact-head-text {
-        padding: 20px;
-        max-width: 600px;
-        h1 {
-          margin: 10px 0 30px 0;
-          @include primaryText();
-        }
-        p {
-          @include secondaryText();
-          color: white;
-        }
-      }
-    }
-    .contact-main {
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
+  }
+}
+.contact-head {
+  background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  width: 100vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  img{
+  display: none;
+  }
+ .contact-head-text{
+   padding:20px;
+   max-width: 600px;
+   h1{
+    margin: 10px 0 30px 0;
+     @include primaryText();
+   }
+   p{
+    @include secondaryText();
+    color: white;
+   }
+ }
+}
+.contact-main{
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img{
+    max-height: 650px;
+    background-size: cover;
+    width: 100%;
+  }
+  form{
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+    background: rgba(22, 21, 21, 0.6);
+    max-width: 1000px;
+    padding: 40px 10px 10px 10px;
+    margin: -7em auto 0 auto;
+    .form-text{
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -614,17 +634,97 @@ a {
         background-size: cover;
       }
     }
-    .main-reference {
-      @include flexCenterColumn();
-
-      // ABOUT US PAGE
+    input[type="text"]::placeholder {
+      padding-left: 14px; 
+  } 
+  button{
+    margin-top: 10px;
+    width: 50%;
+    align-self: center;
+    padding: 14px 0;
+    border: none;
+    background-color: #62ECFF;
+    border-radius: 1px;
+  }
+  }
+}
+@media (min-width: $breakpointDesktop) {
+  .contact-head{
+    background-image: none;
+    display: flex;
+    flex-direction: row-reverse;
+    img{
+      display: block;
+      height: 100%;
+      width: 50vw;
+      background-size: cover;
+    }
+    .contact-head-text{
+      max-width: none;
+      width: 50vw;
+      h1{
+        font-size: 28px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+  .contact-main{
+    form{
+      margin-top: -20em;
+      padding: 100px 80px 30px 80px;
+      .form-text{
+        gap: 7px;
+        .form-name{
+          gap: 7px;
+        }
+        input{
+          padding: 24px 0;
+        }
+        button{
+          padding: 24px 0;
+        }
+      }
+    }
+  }
+  .contact-offices{
+    div{
+      div{ 
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 40px 0;
+        width: 60vw;
+        justify-content: space-between;
+        h2{
+          font-size: 26px;
+          margin: 0;
+        }
+        p{
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+     
+  }
+}
 
       .container-aboutUsPage {
         width: 100%;
 
-        div.box {
-          background-image: url(../img/unsplash_trYl7JYATH0.png);
-          background-repeat: no-repeat;
+// om oss page
+
+
+
+  
+  .container-aboutUsPage {
+      width: 100%;
+      
+      div.box{
+         
+          background-image:url(../img/unsplash_trYl7JYATH0.png);
+          background-repeat:no-repeat;
           background-position: center top;
           padding: 20px;
           section {
@@ -798,109 +898,10 @@ a {
         p {
           @include secondaryText();
         }
-      }
-      .home-main {
-        display: flex;
-        flex-direction: column;
-        width: 90vw;
-        margin: 0 auto;
-        button {
-          padding: 60px 10px;
-          border: none;
-          @include primaryText();
-        }
-        button:nth-child(1) {
-          background-color: #074249;
-        }
-        button:nth-child(2) {
-          background-color: #06363c;
-        }
-        button:nth-child(3) {
-          background-color: #042e33;
-        }
-        button:nth-child(4) {
-          background-color: #04262b;
-        }
-      }
-      //CONTACT DESKTOP
-      @media (min-width: $breakpointDesktop) {
-        .contact-head {
-          background-image: none;
-          display: flex;
-          flex-direction: row-reverse;
-          img {
-            display: block;
-            height: 100%;
-            width: 50vw;
-            background-size: cover;
-          }
-          .contact-head-text {
-            max-width: none;
-            width: 50vw;
-            h1 {
-              font-size: 28px;
-            }
-            p {
-              font-size: 20px;
-            }
-          }
-        }
-        .contact-main {
-          form {
-            margin-top: -20em;
-            padding: 100px 80px 30px 80px;
-            .form-text {
-              gap: 7px;
-              .form-name {
-                gap: 7px;
-              }
-              input {
-                padding: 24px 0;
-              }
-              button {
-                padding: 24px 0;
-              }
-            }
-          }
-        }
-        .contact-offices {
-          div {
-            div {
-              display: flex;
-              flex-direction: row;
-              margin: 20px 0 40px 0;
-              width: 60vw;
-              justify-content: space-between;
-              h2 {
-                font-size: 26px;
-                margin: 0;
-              }
-              p {
-                font-size: 20px;
-                margin: 0;
-              }
-            }
-          }
-        }
-        //HOME
-        .hero {
-          justify-content: center;
-          height: 90vh;
-          h1 {
-            font-size: 50px;
-            margin: -3em 0px 25px 0;
-          }
-          p {
-            font-size: 36px;
-          }
-        }
-        .home-main {
-          button {
-            display: none;
-          }
-        }
-      }
+        
+
     }
   }
-}
+
+
 // end om oss

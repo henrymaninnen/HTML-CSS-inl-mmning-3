@@ -610,6 +610,73 @@ a {
   border-radius: 1px;
 }
 
+@media (min-width: 1000px) {
+  .contact-head {
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .contact-head img {
+    display: block;
+    height: 100%;
+    width: 50vw;
+    background-size: cover;
+  }
+  .contact-head .contact-head-text {
+    max-width: none;
+    width: 50vw;
+  }
+  .contact-head .contact-head-text h1 {
+    font-size: 28px;
+  }
+  .contact-head .contact-head-text p {
+    font-size: 20px;
+  }
+  .contact-main form {
+    margin-top: -20em;
+    padding: 100px 80px 30px 80px;
+  }
+  .contact-main form .form-text {
+    gap: 7px;
+  }
+  .contact-main form .form-text .form-name {
+    gap: 7px;
+  }
+  .contact-main form .form-text input {
+    padding: 24px 0;
+  }
+  .contact-main form .form-text button {
+    padding: 24px 0;
+  }
+  .contact-offices div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 0 40px 0;
+    width: 60vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-offices div div h2 {
+    font-size: 26px;
+    margin: 0;
+  }
+  .contact-offices div div p {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
 .icons {
   margin: 10px 0 20px 0px;
   display: -webkit-box;
@@ -827,161 +894,6 @@ a {
   .container-aboutUsPage div.box-2 div.information section a img {
     width: 24px;
     vertical-align: middle;
-  }
-}
-
-.hero {
-  background-image: url(../img/unsplash_bZZp1PmHI0E.png);
-  height: 230px;
-  width: 100vw;
-  max-height: 1200px;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero h1 {
-  font-size: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-  margin: 60px 0 10px 0;
-}
-
-.hero p {
-  color: #fff;
-  font-size: 16px;
-  font-family: sans-serif;
-  font-weight: 500;
-}
-
-.home-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 90vw;
-  margin: 0 auto;
-}
-
-.home-main button {
-  padding: 60px 10px;
-  border: none;
-  font-size: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-
-.home-main button:nth-child(1) {
-  background-color: #074249;
-}
-
-.home-main button:nth-child(2) {
-  background-color: #06363C;
-}
-
-.home-main button:nth-child(3) {
-  background-color: #042E33;
-}
-
-.home-main button:nth-child(4) {
-  background-color: #04262B;
-}
-
-@media (min-width: 1000px) {
-  .contact-head {
-    background-image: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .contact-head img {
-    display: block;
-    height: 100%;
-    width: 50vw;
-    background-size: cover;
-  }
-  .contact-head .contact-head-text {
-    max-width: none;
-    width: 50vw;
-  }
-  .contact-head .contact-head-text h1 {
-    font-size: 28px;
-  }
-  .contact-head .contact-head-text p {
-    font-size: 20px;
-  }
-  .contact-main form {
-    margin-top: -20em;
-    padding: 100px 80px 30px 80px;
-  }
-  .contact-main form .form-text {
-    gap: 7px;
-  }
-  .contact-main form .form-text .form-name {
-    gap: 7px;
-  }
-  .contact-main form .form-text input {
-    padding: 24px 0;
-  }
-  .contact-main form .form-text button {
-    padding: 24px 0;
-  }
-  .contact-offices div div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 20px 0 40px 0;
-    width: 60vw;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .contact-offices div div h2 {
-    font-size: 26px;
-    margin: 0;
-  }
-  .contact-offices div div p {
-    font-size: 20px;
-    margin: 0;
-  }
-  .hero {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 90vh;
-  }
-  .hero h1 {
-    font-size: 50px;
-    margin: -3em 0px 25px 0;
-  }
-  .hero p {
-    font-size: 36px;
-  }
-  .home-main button {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
