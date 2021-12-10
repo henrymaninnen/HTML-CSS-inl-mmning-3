@@ -14,6 +14,7 @@ $lightblue: #62ecff;
 $darkGreen: #052321;
 $firstFont: "Roboto", sans-serif;
 $breakpointSmall: 687px;
+$breakpointDesktop: 1000px;
 
 //MIXING
 @mixin secondaryTextSmall { //mobile font size (use 20px for desktop)
@@ -33,6 +34,13 @@ $breakpointSmall: 687px;
 
 @mixin primaryText { //mobile font size (use 50px for desktop)
   font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+@mixin primaryTextDesktop { 
+  font-size: 280px;
   font-family: sans-serif;
   font-weight: 500;
   color: white;
@@ -533,11 +541,13 @@ a {
 .contact-head {
   background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
+  img{
+  display: none;
+  }
  .contact-head-text{
    padding:20px;
    max-width: 600px;
@@ -558,28 +568,36 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  img{
+    max-height: 650px;
+    background-size: cover;
+    width: 100%;
+  }
   form{
     display: flex;
-    border-radius: 10px;
+    border-radius: 6px;
     flex-direction: column;
     background: rgba(22, 21, 21, 0.6);
-    width: 95w;
+    max-width: 1000px;
     padding: 40px 10px 10px 10px;
-    margin-top: -7em;
+    margin: -7em auto 0 auto;
     .form-text{
       display: flex;
       flex-direction: column;
+      gap: 5px;
     }
     .form-name{
       display: flex;
+      gap: 5px;
     }
     input{
       padding: 14px 0;
       display: flex;
       flex-basis: 100%;
       gap: 7px;
-      border-radius: 3px;
+      border-radius: 1px;
+      border-width:0px;
+      border:none;
     }
     input[type="text"]::placeholder {
       padding-left: 14px; 
@@ -591,13 +609,72 @@ a {
     padding: 14px 0;
     border: none;
     background-color: #62ECFF;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   }
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: $breakpointDesktop) {
+  .contact-head{
+    background-image: none;
+    display: flex;
+    flex-direction: row-reverse;
+    img{
+      display: block;
+      height: 100%;
+      width: 50vw;
+      background-size: cover;
+    }
+    .contact-head-text{
+      max-width: none;
+      width: 50vw;
+      h1{
+        font-size: 28px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+  .contact-main{
+    form{
+      margin-top: -20em;
+      padding: 100px 80px 30px 80px;
+      .form-text{
+        gap: 7px;
+        .form-name{
+          gap: 7px;
+        }
+        input{
+          padding: 24px 0;
+        }
+        button{
+          padding: 24px 0;
+        }
+      }
+    }
+  }
+  .contact-offices{
+    div{
+      div{ 
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 40px 0;
+        width: 60vw;
+        justify-content: space-between;
+        h2{
+          font-size: 26px;
+          margin: 0;
+        }
+        p{
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+     
+  }
+}
 
-}
 .icons{
   margin: 10px 0 20px 0px;
   display: flex;
@@ -610,26 +687,31 @@ a {
 .contact-offices{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; 
   color: white;
-  h2{
-    font-size: 16px;
-    font-weight: 500;
-    margin: 10px 0 0 0;
+  div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      font-size: 16px;
+      font-weight: 500;
+      margin: 10px 0 0 0;
+    }
+    p{
+      font-size: 12px;
+      font-weight: 300;
+      margin: 10px 0 10px 0;
+    }
+    img{
+      height: 90%;
+      width: 90%;
+      background-size: cover;  
+      max-height: 200px;
+      max-width: 1000px;
+    }
   }
-  p{
-    font-size: 12px;
-    font-weight: 300;
-    margin: 10px 0 10px 0;
-  }
-  img{
-    height: 90%;
-    width: 90%;
-   background-size: cover;  
-   display: flex; 
-   align-self: center;
-  }
+  
 }
 
 // om oss page
@@ -804,26 +886,9 @@ a {
 
     }
   }
-<<<<<<< HEAD
-=======
-}
-
-
-
-// end om oss
-
->>>>>>> 2191857f7a2b07ba320bd4d60f6829763fe5840a
   
   }
 }
-<<<<<<< HEAD
 
 
 // end om oss
-=======
-}
-
-  
-  
-
->>>>>>> 2191857f7a2b07ba320bd4d60f6829763fe5840a
