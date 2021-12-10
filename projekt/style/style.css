@@ -812,7 +812,15 @@ a {
   margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
 @media (min-width: 768px) {
+=======
+
+@media (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
+
+>>>>>>> 2191857f7a2b07ba320bd4d60f6829763fe5840a
   .container-aboutUsPage div.box {
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
@@ -878,9 +886,21 @@ a {
             justify-content: space-between;
   }
   .container-aboutUsPage div.box-2 div.information section {
+<<<<<<< HEAD
     width: 350px;
     margin-bottom: 25px;
   }
+=======
+
+
+    width: 350px;
+    margin-bottom: 25px;
+  }
+  .container-aboutUsPage div.box-2 div.information section img {
+
+    width: 350px;
+  }
+>>>>>>> 2191857f7a2b07ba320bd4d60f6829763fe5840a
   .container-aboutUsPage div.box-2 div.information section a {
     font-size: 18px;
     color: white;
