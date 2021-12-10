@@ -564,7 +564,7 @@ a {
 
 .contact-head .contact-head-text {
   padding: 20px;
-  max-width: 600px;
+  max-width: 50px;
 }
 
 .contact-head .contact-head-text h1 {
@@ -1005,9 +1005,10 @@ a {
   .contact-head .contact-head-text {
     max-width: none;
     width: 50vw;
+    margin-top: 4em;
   }
   .contact-head .contact-head-text h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
   .contact-head .contact-head-text p {
     font-size: 20px;
@@ -1017,10 +1018,10 @@ a {
     padding: 100px 80px 30px 80px;
   }
   .contact-main form .form-text {
-    gap: 7px;
+    gap: 16px;
   }
   .contact-main form .form-text .form-name {
-    gap: 7px;
+    gap: 8px;
   }
   .contact-main form .form-text input {
     padding: 24px 0;
