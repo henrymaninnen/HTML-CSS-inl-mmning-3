@@ -826,19 +826,30 @@ a {
   margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
+@media (min-width: 768px) {
+=======
 @media screen and (min-width: 768px) {
+>>>>>>> d5ace97a2bb79ccd49a6b938a288ee4ed4c4191f
   .container-aboutUsPage div.box {
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
+<<<<<<< HEAD
+    background-size: cover;
+=======
+>>>>>>> d5ace97a2bb79ccd49a6b938a288ee4ed4c4191f
     margin-left: 40px;
     margin-right: 40px;
   }
   .container-aboutUsPage div.box section {
     width: 100%;
     height: 200px;
+<<<<<<< HEAD
+=======
     padding-top: 5px;
     padding-left: 2px;
+>>>>>>> d5ace97a2bb79ccd49a6b938a288ee4ed4c4191f
   }
   .container-aboutUsPage div.box section p {
     font-size: 28px;
@@ -846,7 +857,10 @@ a {
   }
   .container-aboutUsPage div.box h4 {
     color: #62ECFF;
+<<<<<<< HEAD
+=======
     margin-left: 2px;
+>>>>>>> d5ace97a2bb79ccd49a6b938a288ee4ed4c4191f
     margin-bottom: 10px;
   }
   .container-aboutUsPage div.box p.describe {
@@ -897,9 +911,12 @@ a {
     width: 350px;
     margin-bottom: 25px;
   }
+<<<<<<< HEAD
+=======
   .container-aboutUsPage div.box-2 div.information section img {
     width: 350px;
   }
+>>>>>>> d5ace97a2bb79ccd49a6b938a288ee4ed4c4191f
   .container-aboutUsPage div.box-2 div.information section a {
     font-size: 18px;
     color: white;
