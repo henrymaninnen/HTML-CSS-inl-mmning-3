@@ -552,14 +552,10 @@ a {
 .contact-head {
   background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-
-.contact-head img {
-  display: none;
 }
 
 .contact-head .contact-head-text {
@@ -600,25 +596,19 @@ a {
           justify-content: center;
 }
 
-.contact-main img {
-  max-height: 650px;
-  background-size: cover;
-  width: 100%;
-}
-
 .contact-main form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 6px;
+  border-radius: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background: rgba(22, 21, 21, 0.6);
-  max-width: 1000px;
+  width: 95w;
   padding: 40px 10px 10px 10px;
-  margin: -7em auto 0 auto;
+  margin-top: -40px;
 }
 
 .contact-main form .form-text {
@@ -629,14 +619,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 5px;
 }
 
 .contact-main form .form-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
 }
 
 .contact-main form input {
@@ -647,9 +635,7 @@ a {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   gap: 7px;
-  border-radius: 1px;
-  border-width: 0px;
-  border: none;
+  border-radius: 3px;
 }
 
 .contact-main form input[type="text"]::-webkit-input-placeholder {
@@ -677,74 +663,7 @@ a {
   padding: 14px 0;
   border: none;
   background-color: #62ECFF;
-  border-radius: 1px;
-}
-
-@media (min-width: 1000px) {
-  .contact-head {
-    background-image: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .contact-head img {
-    display: block;
-    height: 100%;
-    width: 50vw;
-    background-size: cover;
-  }
-  .contact-head .contact-head-text {
-    max-width: none;
-    width: 50vw;
-  }
-  .contact-head .contact-head-text h1 {
-    font-size: 28px;
-  }
-  .contact-head .contact-head-text p {
-    font-size: 20px;
-  }
-  .contact-main form {
-    margin-top: -20em;
-    padding: 100px 80px 30px 80px;
-  }
-  .contact-main form .form-text {
-    gap: 7px;
-  }
-  .contact-main form .form-text .form-name {
-    gap: 7px;
-  }
-  .contact-main form .form-text input {
-    padding: 24px 0;
-  }
-  .contact-main form .form-text button {
-    padding: 24px 0;
-  }
-  .contact-offices div div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 20px 0 40px 0;
-    width: 60vw;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .contact-offices div div h2 {
-    font-size: 26px;
-    margin: 0;
-  }
-  .contact-offices div div p {
-    font-size: 20px;
-    margin: 0;
-  }
+  border-radius: 3px;
 }
 
 .icons {
@@ -770,43 +689,30 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: white;
-}
-
-.contact-offices div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 
-.contact-offices div h2 {
+.contact-offices h2 {
   font-size: 16px;
   font-weight: 500;
   margin: 10px 0 0 0;
 }
 
-.contact-offices div p {
+.contact-offices p {
   font-size: 12px;
   font-weight: 300;
   margin: 10px 0 10px 0;
 }
 
-.contact-offices div img {
-  height: 90%;
-  width: 90%;
+.contact-offices img {
+  height: 100px;
   background-size: cover;
-  max-height: 200px;
-  max-width: 1000px;
 }
 
 .container-aboutUsPage {
@@ -900,51 +806,19 @@ a {
   margin-bottom: 5px;
 }
 
-@media (min-width: 768px) {
-
-  .container-aboutUsPage div.box {
-
-
-@media (min-width: 768px) {
-
 @media screen and (min-width: 768px) {
-
-
-    background-image: url(../img/unsplash_trYl7JYATH0.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .container-aboutUsPage div.box section {
-    width: 100%;
-    height: 200px;
-  }
-  .container-aboutUsPage div.box section p {
-    font-size: 28px;
-    color: white;
-  }
-  .container-aboutUsPage div.box h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
-  .container-aboutUsPage div.box p.describe {
-
   .container-aboutUsPage div.box {
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
-
-    background-size: cover;
-
     margin-left: 40px;
     margin-right: 40px;
   }
   .container-aboutUsPage div.box section {
     width: 100%;
     height: 200px;
+    padding-top: 5px;
+    padding-left: 2px;
   }
   .container-aboutUsPage div.box section p {
     font-size: 28px;
@@ -952,13 +826,10 @@ a {
   }
   .container-aboutUsPage div.box h4 {
     color: #62ECFF;
+    margin-left: 2px;
     margin-bottom: 10px;
   }
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box p.describe {
-
   .container-aboutUsPage div.box p.describe {
-
     width: 70%;
     color: white;
     font-size: 18px;
@@ -969,59 +840,25 @@ a {
     padding-bottom: 30px;
     padding-right: 5px;
   }
-
   .container-aboutUsPage div.box-2 {
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 {
-
-  .container-aboutUsPage div.box-2 {
-
     background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
     background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
     padding: 40px;
   }
-
   .container-aboutUsPage div.box-2 h4 {
     color: #62ECFF;
     margin-bottom: 10px;
   }
   .container-aboutUsPage div.box-2 p {
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 p {
-
-  .container-aboutUsPage div.box-2 h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
-  .container-aboutUsPage div.box-2 p {
-
     font-size: 18px;
     color: white;
     margin-bottom: 10px;
   }
-
   .container-aboutUsPage div.box-2 p.person {
     font-size: 14px;
     margin-bottom: 5px;
   }
   .container-aboutUsPage div.box-2 div.information {
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 p.person {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information {
-
-  .container-aboutUsPage div.box-2 p.person {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .container-aboutUsPage div.box-2 div.information {
-
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1032,49 +869,23 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .container-aboutUsPage div.box-2 div.information section {
-
     width: 350px;
     margin-bottom: 25px;
   }
-
-
-    width: 350px;
-
-    margin-bottom: 25px;
-  }
-  .container-aboutUsPage div.box-2 div.information section a {
-
-
-
-    width: 350px;
-    margin-bottom: 25px;
-  }
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a {
   .container-aboutUsPage div.box-2 div.information section img {
-
     width: 350px;
   }
-
   .container-aboutUsPage div.box-2 div.information section a {
-
     font-size: 18px;
     color: white;
     text-decoration: none;
   }
-
   .container-aboutUsPage div.box-2 div.information section a img {
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a img {
-
-  .container-aboutUsPage div.box-2 div.information section a img {
-
     width: 24px;
     vertical-align: middle;
   }
