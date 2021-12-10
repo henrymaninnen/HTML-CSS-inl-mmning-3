@@ -403,6 +403,27 @@ a {
   width: 100%;
   height: auto;
   position: absolute;
+  z-index: 0;
+  margin-top: 70px;
+}
+
+#referenceHeader {
+  z-index: 1;
+}
+
+.reference-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#refrence-footer {
+  margin-bottom: 0;
 }
 
 .main-reference {
@@ -420,13 +441,18 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
   background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
 }
 
 .main-reference .contentBox-reference-1 {
-  position: absolute;
-  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2;
+  height: 80%;
   color: #fff;
 }
 
@@ -666,10 +692,6 @@ a {
   border-radius: 3px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
 .icons {
   margin: 10px 0 20px 0px;
   display: -webkit-box;
@@ -685,16 +707,6 @@ a {
   font-size: 24px;
 }
 
-=======
-
-.container-aboutUsPage {
-  width: 100%;
-}
-
-.container-aboutUsPage div.box {
-  background-image: url(../img/unsplash_trYl7JYATH0.png);
-
->>>>>>> d596f2634f749586caaf6466937416da0db06466
 .contact-offices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -733,13 +745,8 @@ a {
   width: 100%;
 }
 
-
 .container-aboutUsPage div.box {
-  background-image: url(img/unsplash_trYl7JYATH0.png);
-
-.contact-offices .container-aboutUsPage div.box {
   background-image: url(../img/unsplash_trYl7JYATH0.png);
-
   background-repeat: no-repeat;
   background-position: center top;
   padding: 20px;
@@ -760,24 +767,8 @@ a {
   margin-bottom: 5px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.container-aboutUsPage div.box p.describe {
-=======
-
 .container-aboutUsPage div.box p.describe {
   width: 90%;
-.contact-offices .container-aboutUsPage div.box p.describe {
->>>>>>> d596f2634f749586caaf6466937416da0db06466
-=======
-
-.container-aboutUsPage div.box p.describe {
->>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
-  width: 85%;
-
-.contact-offices .container-aboutUsPage div.box p.describe {
-  width: 90%;
-
   color: white;
   font-size: 14px;
   background-color: black;
@@ -842,23 +833,7 @@ a {
 }
 
 @media (min-width: 768px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .container-aboutUsPage .container-aboutUsPage div.box {
-=======
-
   .container-aboutUsPage div.box {
-
-  .contact-offices .container-aboutUsPage .container-aboutUsPage div.box {
-
->>>>>>> d596f2634f749586caaf6466937416da0db06466
-=======
-
-  .container-aboutUsPage .container-aboutUsPage div.box {
-=======
-  .contact-offices .container-aboutUsPage div.box {
-
->>>>>>> 8691517580d70ef992076126a0548d4cf7a0da12
     background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -866,35 +841,19 @@ a {
     margin-left: 40px;
     margin-right: 40px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box section {
+  .container-aboutUsPage div.box section {
     width: 100%;
     height: 200px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box section p {
+  .container-aboutUsPage div.box section p {
     font-size: 28px;
     color: white;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box h4 {
+  .container-aboutUsPage div.box h4 {
     color: #62ECFF;
     margin-bottom: 10px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box p.describe {
-
-  .contact-offices .container-aboutUsPage div.box section {
-    width: 100%;
-    height: 200px;
-  }
-  .contact-offices .container-aboutUsPage div.box section p {
-    font-size: 28px;
-    color: white;
-  }
-  .contact-offices .container-aboutUsPage div.box h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
-  .contact-offices .container-aboutUsPage div.box p.describe {
-
+  .container-aboutUsPage div.box p.describe {
     width: 70%;
     color: white;
     font-size: 18px;
@@ -905,44 +864,25 @@ a {
     padding-bottom: 30px;
     padding-right: 5px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 {
-.contact-offices .container-aboutUsPage div.box-2 {
-
+  .container-aboutUsPage div.box-2 {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
     background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
     padding: 40px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 h4 {
+  .container-aboutUsPage div.box-2 h4 {
     color: #62ECFF;
     margin-bottom: 10px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box-2 p {
-
-  .contact-offices .container-aboutUsPage div.box-2 h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
-  .contact-offices .container-aboutUsPage div.box-2 p {
-
+  .container-aboutUsPage div.box-2 p {
     font-size: 18px;
     color: white;
     margin-bottom: 10px;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 p.person {
+  .container-aboutUsPage div.box-2 p.person {
     font-size: 14px;
     margin-bottom: 5px;
   }
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information {
-
-  .contact-offices .container-aboutUsPage div.box-2 p.person {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .contact-offices .container-aboutUsPage div.box-2 div.information {
-
+  .container-aboutUsPage div.box-2 div.information {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -957,28 +897,16 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section {
-    width: 400px;
-    margin-bottom: 25px;
-  }
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a {
-
-  .contact-offices .container-aboutUsPage div.box-2 div.information section {
+  .container-aboutUsPage div.box-2 div.information section {
     width: 350px;
     margin-bottom: 25px;
   }
-  .contact-offices .container-aboutUsPage div.box-2 div.information section a {
-
+  .container-aboutUsPage div.box-2 div.information section a {
     font-size: 18px;
     color: white;
     text-decoration: none;
   }
-
-  .container-aboutUsPage .container-aboutUsPage div.box-2 div.information section a img {
-
-  .contact-offices .container-aboutUsPage div.box-2 div.information section a img {
-
+  .container-aboutUsPage div.box-2 div.information section a img {
     width: 24px;
     vertical-align: middle;
   }
