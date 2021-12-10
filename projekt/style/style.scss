@@ -530,6 +530,7 @@ a {
     }
   }
 }
+//CONTACT US
 .contact-head {
   background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100vw;
@@ -592,11 +593,16 @@ a {
     padding: 14px 0;
     border: none;
     background-color: #62ECFF;
-    border-radius: 3px;
+    border-radius: 1px;
+  }
+  }
+}
+
   }
   }
 }
 @media only screen and (min-width: 768px) {
+
 
 }
 .icons{
@@ -630,11 +636,8 @@ a {
   }
 }
 
-// om oss page
-
-
-
-  
+// ABOUT US PAGE
+ 
   .container-aboutUsPage {
       width: 100%;
       
@@ -811,4 +814,130 @@ p.describe{
 }
   
 }
+// end om oss
+//HOMEPAGE
+.hero{
+  background-image: url(../img/unsplash_bZZp1PmHI0E.png);
+  height: 230px;
+  width: 100vw;
+  max-height: 1200px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    @include primaryText();
+    margin: 60px 0 10px 0
+  }
+  p{
+    @include secondaryText();
+  }
 }
+.home-main{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto;
+  button{
+    padding: 60px 10px;
+    border: none;
+    @include primaryText()
+  }
+  button:nth-child(1){
+    background-color: #074249;
+  }
+  button:nth-child(2){
+    background-color: #06363C;
+  }
+  button:nth-child(3){
+    background-color: #042E33;
+  }
+  button:nth-child(4){
+    background-color: #04262B;
+  }
+
+
+}
+//CONTACT DESKTOP
+@media (min-width: $breakpointDesktop) {
+  .contact-head{
+    background-image: none;
+    display: flex;
+    flex-direction: row-reverse;
+    img{
+      display: block;
+      height: 100%;
+      width: 50vw;
+      background-size: cover;
+    }
+    .contact-head-text{
+      max-width: none;
+      width: 50vw;
+      h1{
+        font-size: 28px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+  .contact-main{
+    form{
+      margin-top: -20em;
+      padding: 100px 80px 30px 80px;
+      .form-text{
+        gap: 7px;
+        .form-name{
+          gap: 7px;
+        }
+        input{
+          padding: 24px 0;
+        }
+        button{
+          padding: 24px 0;
+        }
+      }
+    }
+  }
+  .contact-offices{
+    div{
+      div{ 
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 40px 0;
+        width: 60vw;
+        justify-content: space-between;
+        h2{
+          font-size: 26px;
+          margin: 0;
+        }
+        p{
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+     
+  }
+  //HOME
+  .hero {
+    justify-content: center;
+    height: 90vh;
+    h1{
+      font-size: 50px;
+      margin: -3em 0px 25px 0;
+    }
+    p{
+      font-size: 36px;
+    }
+  }
+  .home-main{
+    button{
+      display: none;
+    }
+  }
+}
+// end om oss
+
+}
+
