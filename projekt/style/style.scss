@@ -476,6 +476,11 @@ a {
     box-sizing: border-box;
     z-index: 2;
     height: 80%;
+    margin-top: 20%;
+    @media screen and (min-width: $breakpointSmall) {
+            
+      margin-top: 5%;
+    }
 
     color: #fff;
 
@@ -504,7 +509,7 @@ a {
       width: 100%;
     }
     .reference {
-      @include flexCenterColumn();
+      // @include flexCenterColumn();
       margin-top: 5%;
       padding: 5%;
 
@@ -518,6 +523,10 @@ a {
         @include flexSpaceBetween();
         margin-top: 5%;
         width: 100%;
+
+        .referenceText{
+          margin-left: 0;
+        }
 
         h4 {
           font-weight: 300;
