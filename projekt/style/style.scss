@@ -205,12 +205,14 @@ a {
 }
 
 //index mobile
+
   .photo-index-container {
-    height: 134px;
+    height: 20vh;
     width: 100%;
     background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
     background-size: cover;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     
@@ -219,7 +221,7 @@ a {
       background: $darkTransparentBox;
       text-align: center;
       border-radius: 10px;
-      height: 70px;
+      height: 50%;
       display: flex;
       flex-direction: column;
       gap: 6px;
@@ -243,20 +245,19 @@ a {
     background-image: url(../img/unsplash_9SoCnyQmkzI.png);
     background-size: cover;
     display: flex;
-    
     flex-direction: column;
     background-position: center center;
     gap: 60px;
-    height: 70vh;
+    height: 100%;
     padding-left: 20px;
     
    
     .index-main-boxes {
-      margin-top: 10px;
-      height: 80px;
+      margin-top: 5%;
+      height: 30%;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 25px;
       
       h3 {
         @include primaryTextBlue;
@@ -270,15 +271,17 @@ a {
 
    //footer mobile
 
-  
-    .footer {
 
+    footer {
       
+      height: 30%;
       margin-top: 25px;
       background-color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
+      
+      
       
       
       #link-pages{
@@ -322,29 +325,26 @@ a {
   .photo-index-container {
     height: 70vh;
     background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
     
     
 
     .photo-index-text {
       background: $darkTransparentBox;
-      width: 1250px;
+      width: 80%;
       height: 220px;
       margin-bottom: 30px;
       gap: 20px;
-      text-align: center;
+      
       border-radius: 10px;
       
       h1 {
         @include primaryText;
-        font-size: 50px;
+        font-size: 45px;
       }
       h2 {
         @include secondaryText;
-        font-size: 36px;
+        font-size: 34px;
         opacity: 0.6;
       }
     }
@@ -352,12 +352,12 @@ a {
 
   .index-main-container1 {
     background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
-    background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 1500px;
-    gap: 160px;
+    height: 160vh;
+    gap: 80px;
     align-items: center;
+   
     
     
     
@@ -386,18 +386,13 @@ a {
     }
  
   }
-  .footer {
-    height: 300px;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
+  footer {
+    height: 350px;
     justify-content: flex-end;
-    
     gap: 30px;
     
     
     #link-pages{
-      color: $lightblue;
       word-spacing: 7px;
       a{
         @include primaryTextBlue;
@@ -408,25 +403,17 @@ a {
     }
     
     #small-text-box {
-      color: #ffffff;
-      font-family: $firstFont;
+      
+      
       font-size: 1em;
       letter-spacing: 0.2em;
-      
-      
-    }
+      }
     
     .footer-boxes {
-      
-     
-        a {
+      a {
           font-size: 24px;
           
-          i {
-            margin: 10px;
-            color: #fff;
-            font-size: 1em;
-          }
+      
         }
       }
       .jobb:hover{
@@ -436,7 +423,7 @@ a {
 
     
 }
-}
+ } 
 
 //end of index desktop
 
@@ -804,8 +791,7 @@ a {
   }
   
   }
-}
-
+  }
 
 // end om oss
 
