@@ -268,14 +268,16 @@ a {
   }
 
 
-   //footer mobile 
+   //footer mobile
+   footer{ 
+     height: 140px;
     .footer {
-      height: 160px;
+      height: 120px;
       background-color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+      
       
       #link-pages{
         color: $lightblue;
@@ -308,6 +310,7 @@ a {
           font-size: 14px;
 
         }
+}
 }
 // end index mobile and footer mobile
 
