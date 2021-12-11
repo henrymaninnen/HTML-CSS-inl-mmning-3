@@ -220,6 +220,7 @@ a {
     .photo-index-text {
       background: $darkTransparentBox;
       text-align: center;
+
       height: 50%;
       display: flex;
       flex-direction: column;
@@ -247,15 +248,21 @@ a {
     flex-direction: column;
     background-position: center center;
     gap: 60px;
+
     height: 80%;
     
+
+    height: 100%;
+
     padding-left: 20px;
     
    
     .index-main-boxes {
       margin-top: 5%;
       height: 30%;
+
       width: 100%;
+
       display: flex;
       flex-direction: column;
       gap: 25px;
@@ -337,7 +344,7 @@ a {
       margin-bottom: 30px;
       gap: 20px;
       
-      
+
       
       h1 {
         @include primaryText;
