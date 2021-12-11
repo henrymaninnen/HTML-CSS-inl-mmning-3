@@ -699,6 +699,8 @@ a {
           height: 128px;
           p {
               font-size: 20px;
+              font-family: Roboto;
+              font-weight: 400;
               color:white;
           }
       }
@@ -769,6 +771,7 @@ a {
  
   @media(min-width: 768px){
   .container-aboutUsPage {
+    width: 100%;
      
 
       div.box{
@@ -785,20 +788,27 @@ a {
           height: 200px;
           p {
               font-size: 28px;
+              font-family: Roboto,'Times New Roman', Times, serif;
+              font-weight: 400;
               color:white;
           }
       }
     h4{
         color:#62ECFF;
         margin-bottom: 10px;
+        font-size: 20px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
     } 
     p.describe{
         width: 70%;
         
         color:white;
         font-size: 18px;
+        font-weight: 300;
+        font-family: Roboto,'Times New Roman', Times, serif;
         line-height:25px ;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.7);;
         padding-top: 10px;
         padding-left: 5px;
         padding-bottom: 30px;
@@ -809,16 +819,26 @@ a {
       background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
       padding: 40px;
       h4{
-      color:#62ECFF;
-      margin-bottom: 10px;
+        font-size: 20px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
+        color:#62ECFF;
+        margin-bottom: 10px;
       }
       p {
           font-size: 18px;
+          font-weight: 300;
+          font-family: Roboto,'Times New Roman', Times, serif;
           color:white;
+          margin-top: 15px;
           margin-bottom: 10px;
       }
       p.person {
+        width: 80%;
           font-size: 14px;
+          font-weight: 300;
+          font-family: Roboto,'Times New Roman', Times, serif;
+          margin-top: 10px;
           margin-bottom: 5px;
       }
     div.information {
@@ -835,9 +855,14 @@ a {
             
             margin-bottom: 25px;
             
-           
+           img{
+             width: 80%;
+           }
             a {
+                width: 80%;
                 font-size: 18px;
+                font-weight: 300;
+                font-family: Roboto,'Times New Roman', Times, serif;
                 color: white;
                 
                 text-decoration: none;
@@ -858,7 +883,7 @@ a {
 // end om oss
 
 
-}
+
 //CONTACT DESKTOP
 @media (min-width: $breakpointDesktop) {
   .contact-head{
