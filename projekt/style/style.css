@@ -127,13 +127,16 @@ a {
 }
 
 .photo-index-container {
-  height: 134px;
+  height: 20vh;
   width: 100%;
   background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -147,7 +150,7 @@ a {
   background: rgba(0, 0, 0, 0.6);
   text-align: center;
   border-radius: 10px;
-  height: 70px;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,13 +194,13 @@ a {
           flex-direction: column;
   background-position: center center;
   gap: 60px;
-  height: 70vh;
+  height: 100%;
   padding-left: 20px;
 }
 
 .index-main-container1 .index-main-boxes {
-  margin-top: 10px;
-  height: 80px;
+  margin-top: 5%;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +208,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .index-main-container1 .index-main-boxes h3 {
@@ -223,7 +226,8 @@ a {
   font-weight: 500;
 }
 
-.footer {
+footer {
+  height: 30%;
   margin-top: 25px;
   background-color: #000;
   display: -webkit-box;
@@ -238,12 +242,12 @@ a {
           align-items: center;
 }
 
-.footer #link-pages {
+footer #link-pages {
   color: #62ecff;
   word-spacing: 2px;
 }
 
-.footer #link-pages a {
+footer #link-pages a {
   font-family: "jost", Times, serif;
   font-size: 24px;
   color: #62ecff;
@@ -252,23 +256,23 @@ a {
   font-size: 14px;
 }
 
-.footer #small-text-box {
+footer #small-text-box {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 0.7em;
 }
 
-.footer .footer-boxes {
+footer .footer-boxes {
   margin-top: 20px;
 }
 
-.footer .footer-boxes a i {
+footer .footer-boxes a i {
   margin: 10px;
   color: #fff;
   font-size: 1em;
 }
 
-.footer .jobb {
+footer .jobb {
   font-family: "jost", Times, serif;
   font-size: 24px;
   color: #62ecff;
@@ -281,27 +285,16 @@ a {
   .photo-index-container {
     height: 70vh;
     background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
   .photo-index-container .photo-index-text {
     background: rgba(0, 0, 0, 0.6);
-    width: 1250px;
+    width: 80%;
     height: 220px;
     margin-bottom: 30px;
     gap: 20px;
-    text-align: center;
     border-radius: 10px;
   }
   .photo-index-container .photo-index-text h1 {
@@ -310,19 +303,18 @@ a {
     font-weight: 500;
     color: white;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 45px;
   }
   .photo-index-container .photo-index-text h2 {
     color: #fff;
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 34px;
     opacity: 0.6;
   }
   .index-main-container1 {
     background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
-    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -330,8 +322,8 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 1500px;
-    gap: 160px;
+    height: 160vh;
+    gap: 80px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -366,50 +358,34 @@ a {
     font-weight: 500;
     font-size: 20px;
   }
-  .footer {
-    height: 300px;
-    background-color: #000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  footer {
+    height: 350px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     gap: 30px;
   }
-  .footer #link-pages {
-    color: #62ecff;
+  footer #link-pages {
     word-spacing: 7px;
   }
-  .footer #link-pages a {
+  footer #link-pages a {
     font-family: "jost", Times, serif;
     font-size: 24px;
     color: #62ecff;
     font-weight: 500;
     line-height: 35px;
   }
-  .footer #link-pages a:hover {
+  footer #link-pages a:hover {
     text-decoration: underline;
   }
-  .footer #small-text-box {
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
+  footer #small-text-box {
     font-size: 1em;
     letter-spacing: 0.2em;
   }
-  .footer .footer-boxes a {
+  footer .footer-boxes a {
     font-size: 24px;
   }
-  .footer .footer-boxes a i {
-    margin: 10px;
-    color: #fff;
-    font-size: 1em;
-  }
-  .footer .jobb:hover {
+  footer .jobb:hover {
     text-decoration: underline;
   }
 }
