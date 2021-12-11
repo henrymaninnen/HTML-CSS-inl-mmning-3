@@ -241,19 +241,19 @@ a {
 
 .index-main-container1 {
     background-image: url(../img/unsplash_9SoCnyQmkzI.png);
-    background-size: 550px;
+    background-size: cover;
     display: flex;
-    background-repeat: no-repeat;
+    
     flex-direction: column;
     background-position: center center;
     gap: 60px;
-    height: 700px;
+    height: 70vh;
     padding-left: 20px;
     
    
     .index-main-boxes {
       margin-top: 10px;
-      height: 100px;
+      height: 80px;
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -269,10 +269,12 @@ a {
 
 
    //footer mobile
-   footer{ 
-     height: 140px;
+
+  
     .footer {
-      height: 120px;
+
+      
+      margin-top: 25px;
       background-color: #000;
       display: flex;
       flex-direction: column;
@@ -311,7 +313,7 @@ a {
 
         }
 }
-}
+
 // end index mobile and footer mobile
 
 
@@ -427,6 +429,10 @@ a {
           }
         }
       }
+      .jobb:hover{
+        text-decoration: underline;
+      
+    }
 
     
 }
