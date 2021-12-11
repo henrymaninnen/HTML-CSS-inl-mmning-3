@@ -219,6 +219,8 @@ a {
     left: 0;
   }
 }
+
+//index mobile
   .photo-index-container {
     height: 134px;
     width: 100%;
@@ -254,24 +256,25 @@ a {
 //main content
 
 .index-main-container1 {
-    background-image: url(../img/unsplash_bZZp1PmHI0E.png);
-    background-size: 200px;
+    background-image: url(../img/unsplash_9SoCnyQmkzI.png);
+    background-size: 550px;
     display: flex;
+    background-repeat: no-repeat;
     flex-direction: column;
     background-position: center center;
-    
-    gap: 50px;
+    gap: 60px;
     height: 700px;
     padding-left: 20px;
+    
    
     .index-main-boxes {
       margin-top: 10px;
       height: 100px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 30px;
       
-      h2 {
+      h3 {
         @include primaryTextBlue;
       }
       p {
@@ -288,12 +291,14 @@ a {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-end;
       
       #link-pages{
         color: $lightblue;
-        word-spacing: 2px;
+        word-spacing: 2px;  
         a{
-          color: $lightblue;
+          @include primaryTextBlue;
+          font-size: 14px;
         }
       }
       
@@ -315,12 +320,15 @@ a {
         }
   
         .jobb {
-          color: $lightblue;
+          @include primaryTextBlue;
+          font-size: 14px;
+          margin-top: 20px;
         }
 }
+// end index mobile and footer mobile
 
 
-
+// index desktop
 @media (min-width: $breakpointSmall) {
   .photo-index-container {
     height: 70vh;
@@ -329,6 +337,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    
     
 
     .photo-index-text {
@@ -353,14 +362,12 @@ a {
   }
 
   .index-main-container1 {
-    background-image: url(../img/unsplash_bZZp1PmHI0E.png);
+    background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 1000px;
-    gap: 110px;
-    background-position: center center;
-    justify-content: center;
+    height: 1500px;
+    gap: 160px;
     align-items: center;
     
     
@@ -368,21 +375,24 @@ a {
     
    
     .index-main-boxes {
-      margin-top: 10px;
-      height: 100px;
-      width: 70%;
+      margin-top: 50px;
+      height: 150px;
+      width: 60%;
       display: flex;
       flex-direction: column;
-      background-color: $darkTransparentBox;
-
-        h2 {
+     
+        
+        h3 {
           @include primaryTextBlue;
           font-size: 30px;
         }
+        h3:hover{text-decoration: underline}
+      
         p {
           @include secondaryTextSmall;
           font-size: 20px;
         }
+      
       
     }
  
@@ -392,15 +402,19 @@ a {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 25px;
+    justify-content: flex-end;
+    
+    gap: 30px;
     
     
     #link-pages{
       color: $lightblue;
       word-spacing: 7px;
       a{
-        color: $lightblue;
+        @include primaryTextBlue;
+      }
+      a:hover{
+        text-decoration: underline;
       }
     }
     
@@ -415,7 +429,7 @@ a {
     
     .footer-boxes {
       
-      margin-top: 20px;
+     
         a {
           font-size: 24px;
           
@@ -431,7 +445,7 @@ a {
 }
 }
 
-//end of index
+//end of index desktop
 
 
 
