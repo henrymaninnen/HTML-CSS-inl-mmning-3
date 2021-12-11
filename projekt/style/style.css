@@ -180,17 +180,18 @@ a {
 }
 
 .index-main-container1 {
-  background-image: url(../img/unsplash_bZZp1PmHI0E.png);
-  background-size: 200px;
+  background-image: url(../img/unsplash_9SoCnyQmkzI.png);
+  background-size: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-repeat: no-repeat;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-position: center center;
-  gap: 50px;
+  gap: 60px;
   height: 700px;
   padding-left: 20px;
 }
@@ -205,10 +206,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
-.index-main-container1 .index-main-boxes h2 {
+.index-main-container1 .index-main-boxes h3 {
   font-family: "jost", Times, serif;
   font-size: 24px;
   color: #62ecff;
@@ -236,6 +237,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer #link-pages {
@@ -244,7 +248,12 @@ a {
 }
 
 .footer #link-pages a {
+  font-family: "jost", Times, serif;
+  font-size: 24px;
   color: #62ecff;
+  font-weight: 500;
+  line-height: 35px;
+  font-size: 14px;
 }
 
 .footer #small-text-box {
@@ -264,7 +273,13 @@ a {
 }
 
 .footer .jobb {
+  font-family: "jost", Times, serif;
+  font-size: 24px;
   color: #62ecff;
+  font-weight: 500;
+  line-height: 35px;
+  font-size: 14px;
+  margin-top: 20px;
 }
 
 @media (min-width: 687px) {
@@ -311,7 +326,7 @@ a {
     opacity: 0.6;
   }
   .index-main-container1 {
-    background-image: url(../img/unsplash_bZZp1PmHI0E.png);
+    background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -320,20 +335,16 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 1000px;
-    gap: 110px;
-    background-position: center center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: 1500px;
+    gap: 160px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .index-main-container1 .index-main-boxes {
-    margin-top: 10px;
-    height: 100px;
-    width: 70%;
+    margin-top: 50px;
+    height: 150px;
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -341,15 +352,17 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.6);
   }
-  .index-main-container1 .index-main-boxes h2 {
+  .index-main-container1 .index-main-boxes h3 {
     font-family: "jost", Times, serif;
     font-size: 24px;
     color: #62ecff;
     font-weight: 500;
     line-height: 35px;
     font-size: 30px;
+  }
+  .index-main-container1 .index-main-boxes h3:hover {
+    text-decoration: underline;
   }
   .index-main-container1 .index-main-boxes p {
     color: #fff;
@@ -368,26 +381,30 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 25px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 30px;
   }
   .footer #link-pages {
     color: #62ecff;
     word-spacing: 7px;
   }
   .footer #link-pages a {
+    font-family: "jost", Times, serif;
+    font-size: 24px;
     color: #62ecff;
+    font-weight: 500;
+    line-height: 35px;
+  }
+  .footer #link-pages a:hover {
+    text-decoration: underline;
   }
   .footer #small-text-box {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     letter-spacing: 0.2em;
-  }
-  .footer .footer-boxes {
-    margin-top: 20px;
   }
   .footer .footer-boxes a {
     font-size: 24px;
