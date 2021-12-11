@@ -150,8 +150,12 @@ a {
 .photo-index-container .photo-index-text {
   background: rgba(0, 0, 0, 0.6);
   text-align: center;
+
   border-radius: 10px;
-  height: 70px;
+
+
+  height: 50%;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,14 +198,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   background-position: center center;
-  gap: 50px;
-  height: 700px;
+
   padding-left: 20px;
 }
 
 .index-main-container1 .index-main-boxes {
-  margin-top: 10px;
-  height: 100px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,8 +297,7 @@ a {
     height: 220px;
     margin-bottom: 30px;
     gap: 20px;
-    text-align: center;
-    border-radius: 10px;
+
   }
   .photo-index-container .photo-index-text h1 {
     font-size: 22px;
@@ -362,20 +363,7 @@ a {
     font-weight: 500;
     font-size: 20px;
   }
-  .footer {
-    height: 300px;
-    background-color: #000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 25px;
+
   }
   .footer #link-pages {
     color: #62ecff;
