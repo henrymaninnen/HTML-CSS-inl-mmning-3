@@ -181,24 +181,23 @@ a {
 
 .index-main-container1 {
   background-image: url(../img/unsplash_9SoCnyQmkzI.png);
-  background-size: 550px;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-repeat: no-repeat;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-position: center center;
   gap: 60px;
-  height: 700px;
+  height: 70vh;
   padding-left: 20px;
 }
 
 .index-main-container1 .index-main-boxes {
   margin-top: 10px;
-  height: 100px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,12 +223,8 @@ a {
   font-weight: 500;
 }
 
-footer {
-  height: 140px;
-}
-
-footer .footer {
-  height: 120px;
+.footer {
+  margin-top: 25px;
   background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,12 +238,12 @@ footer .footer {
           align-items: center;
 }
 
-footer .footer #link-pages {
+.footer #link-pages {
   color: #62ecff;
   word-spacing: 2px;
 }
 
-footer .footer #link-pages a {
+.footer #link-pages a {
   font-family: "jost", Times, serif;
   font-size: 24px;
   color: #62ecff;
@@ -257,23 +252,23 @@ footer .footer #link-pages a {
   font-size: 14px;
 }
 
-footer .footer #small-text-box {
+.footer #small-text-box {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 0.7em;
 }
 
-footer .footer .footer-boxes {
+.footer .footer-boxes {
   margin-top: 20px;
 }
 
-footer .footer .footer-boxes a i {
+.footer .footer-boxes a i {
   margin: 10px;
   color: #fff;
   font-size: 1em;
 }
 
-footer .footer .jobb {
+.footer .jobb {
   font-family: "jost", Times, serif;
   font-size: 24px;
   color: #62ecff;
@@ -413,6 +408,9 @@ footer .footer .jobb {
     margin: 10px;
     color: #fff;
     font-size: 1em;
+  }
+  .footer .jobb:hover {
+    text-decoration: underline;
   }
 }
 
