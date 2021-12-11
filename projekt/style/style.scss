@@ -447,7 +447,7 @@ a {
   margin-top: 70px;
 }
 #referenceHeader{
-  z-index: 1;
+  z-index: 10;
 }
   .reference-body{
  
@@ -552,7 +552,7 @@ a {
             @media screen and (min-width: $breakpointSmall) {
             
               height: 20px;
-            width: 20px;
+              width: 20px;
             }
 
             
@@ -866,6 +866,11 @@ a {
   }
 }
 // end om oss
+<<<<<<< HEAD
+
+
+
+=======
 //HOMEPAGE
 .hero{
   background-image: url(../img/unsplash_bZZp1PmHI0E.png);
@@ -908,6 +913,7 @@ a {
     background-color: #04262B;
   }
 }
+>>>>>>> 3735dfd76be065a0afcad875782a2afc5d0d560e
 //CONTACT DESKTOP
 @media (min-width: $breakpointDesktop) {
   .contact-head{
