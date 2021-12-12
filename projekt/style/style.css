@@ -767,7 +767,7 @@ a {
 
 .container-aboutUsPage div.box section p {
   font-size: 20px;
-  font-family: Roboto;
+  font-family: Roboto,'Times New Roman', Times, serif;
   font-weight: 400;
   color: white;
 }
@@ -775,13 +775,18 @@ a {
 .container-aboutUsPage div.box h4 {
   color: #62ECFF;
   margin-bottom: 5px;
+  font-size: 18px;
+  font-family: Roboto,'Times New Roman', Times, serif;
+  font-weight: 300;
 }
 
 .container-aboutUsPage div.box p.describe {
   width: 90%;
   color: white;
   font-size: 14px;
-  background-color: black;
+  font-weight: 300;
+  font-family: Roboto,'Times New Roman', Times, serif;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 2px 20px 2px;
 }
 
@@ -792,18 +797,26 @@ a {
 }
 
 .container-aboutUsPage div.box-2 h4 {
+  font-size: 18px;
+  font-family: Roboto,'Times New Roman', Times, serif;
+  font-weight: 300;
   color: #62ECFF;
   margin-bottom: 5px;
 }
 
 .container-aboutUsPage div.box-2 p {
   font-size: 14px;
+  font-family: Roboto,'Times New Roman', Times, serif;
+  font-weight: 300;
   color: white;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .container-aboutUsPage div.box-2 p.person {
   font-size: 12px;
+  font-family: Roboto,'Times New Roman', Times, serif;
+  font-weight: 300;
   margin-bottom: 3px;
 }
 
@@ -828,6 +841,8 @@ a {
 
 .container-aboutUsPage div.box-2 div.information section a {
   font-size: 14px;
+  font-family: Roboto,'Times New Roman', Times, serif;
+  font-weight: 300;
   color: white;
   text-decoration: none;
 }

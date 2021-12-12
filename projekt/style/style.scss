@@ -701,7 +701,7 @@ a {
           height: 128px;
           p {
               font-size: 20px;
-              font-family: Roboto;
+              font-family: Roboto,'Times New Roman', Times, serif;
               font-weight: 400;
               color:white;
           }
@@ -709,31 +709,44 @@ a {
     h4{
         color:#62ECFF;
         margin-bottom: 5px;
+        font-size: 18px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
     } 
     p.describe{
         width: 90%;
         color:white;
         font-size: 14px;
-        background-color: black;
+        font-weight: 300;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 10px 2px 20px 2px;
        
     }
   }
   div.box-2 {
-      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      @include mainGradient ;
       padding: 20px;
       h4{
-      color:#62ECFF;
-      margin-bottom: 5px;
+        font-size: 18px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
+        color:#62ECFF;
+        margin-bottom: 5px;
      
       }
       p {
           font-size: 14px;
+          font-family: Roboto,'Times New Roman', Times, serif;
+          font-weight: 300;
           color:white;
-          margin-bottom: 5px;
+          margin-top: 10px;
+          margin-bottom: 10px;
       }
       p.person {
           font-size: 12px;
+          font-family: Roboto,'Times New Roman', Times, serif;
+          font-weight: 300;
           margin-bottom: 3px;
       }
     div.information {
@@ -747,6 +760,8 @@ a {
             margin-bottom: 25px;
             a{
                 font-size: 14px;
+                font-family: Roboto,'Times New Roman', Times, serif;
+                font-weight: 300;
                 color: white;
                 text-decoration: none;
                 img{
@@ -810,7 +825,7 @@ a {
         font-weight: 300;
         font-family: Roboto,'Times New Roman', Times, serif;
         line-height:25px ;
-        background-color: rgba(0, 0, 0, 0.7);;
+        background-color: rgba(0, 0, 0, 0.7);
         padding-top: 10px;
         padding-left: 5px;
         padding-bottom: 30px;
@@ -818,7 +833,7 @@ a {
     }
   }
   div.box-2 {
-      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      @include mainGradient ;
       padding: 40px;
       h4{
         font-size: 20px;
