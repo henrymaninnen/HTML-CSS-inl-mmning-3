@@ -219,198 +219,110 @@ a {
     left: 0;
   }
 }
-  .photo-index-container {
-    height: 134px;
-    width: 100%;
-    background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
-    background-size: cover;
+.photo-index-container {
+  height: 20vh;
+  width: 100%;
+  background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+
+  .photo-index-text {
+    background: $darkTransparentBox;
+    text-align: center;
+
+    height: 50%;
     display: flex;
     flex-direction: column;
+    gap: 6px;
     justify-content: center;
     
-  
-    .photo-index-text {
-      background: $darkTransparentBox;
-      text-align: center;
-
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      justify-content: center;
-      
-      h1 {
-        @include primaryText;
-        font-size: 22px;
-      }
-      h2 {
-        @include secondaryText;
-        font-size: 18px;
-        opacity: 0.6;
-      }
+    h1 {
+      @include primaryText;
+      font-size: 22px;
+    }
+    h2 {
+      @include secondaryText;
+      font-size: 18px;
+      opacity: 0.6;
     }
   }
+}
 
 //main content
 
 .index-main-container1 {
-    background-image: url(../img/unsplash_bZZp1PmHI0E.png);
-    background-size: 200px;
+  background-image: url(../img/unsplash_9SoCnyQmkzI.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center center;
+  gap: 60px;
+
+  height: 80%;
+  
+
+  height: 100%;
+
+  padding-left: 20px;
+  
+ 
+  .index-main-boxes {
+    margin-top: 5%;
+    height: 30%;
+
+    width: 100%;
+
     display: flex;
     flex-direction: column;
-    background-position: center center;
-
+    gap: 25px;
     
-    gap: 50px;
-    height: 700px;
-    padding-left: 20px;
-   
-    .index-main-boxes {
-
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      
-      h2 {
-        @include primaryTextBlue;
-      }
-      p {
-        @include secondaryTextSmall;
-      }
+    h3 {
+      @include primaryTextBlue;
+    }
+    p {
+      @include secondaryTextSmall;
     }
   }
-
-
-   //footer mobile 
-    .footer {
-      height: 160px;
-      background-color: #000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      
-      #link-pages{
-        color: $lightblue;
-        word-spacing: 2px;
-        a{
-          color: $lightblue;
-        }
-      }
-      
-      #small-text-box {
-        color: #ffffff;
-        font-family: $firstFont;
-        font-size: 0.7em;
-      }
-      
-      .footer-boxes {
-        margin-top: 20px;
-          a {
-            i {
-              margin: 10px;
-              color: #fff;
-              font-size: 1em;
-            }
-          }
-        }
-  
-        .jobb {
-          color: $lightblue;
-        }
 }
 
 
+ //footer mobile
 
-@media (min-width: $breakpointSmall) {
-  .photo-index-container {
-    height: 70vh;
-    background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
+
+  footer {
+    
+    height: 30%;
+    margin-top: 25px;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    
-
-    .photo-index-text {
-      background: $darkTransparentBox;
-      width: 1250px;
-      height: 220px;
-      margin-bottom: 30px;
-      gap: 20px;
-
-      
-      h1 {
-        @include primaryText;
-        font-size: 50px;
-      }
-      h2 {
-        @include secondaryText;
-        font-size: 36px;
-        opacity: 0.6;
-      }
-    }
-  }
-
-  .index-main-container1 {
-    background-image: url(../img/unsplash_bZZp1PmHI0E.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-    gap: 110px;
-    background-position: center center;
-    justify-content: center;
-    align-items: center;
     
     
-    
-    
-   
-    .index-main-boxes {
-      margin-top: 10px;
-      height: 100px;
-      width: 70%;
-      display: flex;
-      flex-direction: column;
-      background-color: $darkTransparentBox;
-
-        h2 {
-          @include primaryTextBlue;
-          font-size: 30px;
-        }
-        p {
-          @include secondaryTextSmall;
-          font-size: 20px;
-        }
-      
-    }
- 
-  }
-
     
     
     #link-pages{
       color: $lightblue;
-      word-spacing: 7px;
+      word-spacing: 2px;  
       a{
-        color: $lightblue;
+        @include primaryTextBlue;
+        font-size: 14px;
       }
     }
     
     #small-text-box {
       color: #ffffff;
       font-family: $firstFont;
-      font-size: 1em;
-      letter-spacing: 0.2em;
-      
-      
+      font-size: 0.7em;
     }
     
     .footer-boxes {
-      
       margin-top: 20px;
         a {
-          font-size: 24px;
-          
           i {
             margin: 10px;
             color: #fff;
@@ -419,9 +331,121 @@ a {
         }
       }
 
+      .jobb {
+        @include primaryTextBlue;
+        font-size: 14px;
+
+      }
+}
+
+// end index mobile and footer mobile
+
+
+// index desktop
+@media (min-width: $breakpointSmall) {
+.photo-index-container {
+  height: 70vh;
+  background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
+  justify-content: flex-end;
+  
+  
+
+  .photo-index-text {
+    background: $darkTransparentBox;
+    width: 80%;
+    height: 220px;
+    margin-bottom: 30px;
+    gap: 20px;
     
+
+    
+    h1 {
+      @include primaryText;
+      font-size: 45px;
+    }
+    h2 {
+      @include secondaryText;
+      font-size: 34px;
+      opacity: 0.6;
+    }
+  }
 }
+
+.index-main-container1 {
+  background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 160vh;
+  gap: 80px;
+  align-items: center;
+ 
+  
+  
+  
+  
+ 
+  .index-main-boxes {
+    margin-top: 50px;
+    height: 150px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+   
+      
+      h3 {
+        @include primaryTextBlue;
+        font-size: 30px;
+      }
+      h3:hover{text-decoration: underline}
+    
+      p {
+        @include secondaryTextSmall;
+        font-size: 20px;
+      }
+    
+    
+  }
+
 }
+footer {
+  height: 350px;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 100%;
+  
+  
+  #link-pages{
+    word-spacing: 7px;
+    a{
+      @include primaryTextBlue;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  
+  #small-text-box {
+    
+    
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    }
+  
+  .footer-boxes {
+    a {
+        font-size: 24px;
+        
+    
+      }
+    }
+    .jobb:hover{
+      text-decoration: underline;
+    
+  }
+
+  
+}
+} 
 
 //end of index
 
