@@ -32,7 +32,7 @@ $breakpointDesktop: 1000px;
 }
 
 
-@mixin primaryText { //mobile font size (use 50px for desktop)
+@mixin primaryText { //mobile font size (use 44px for desktop)
   font-size: 22px;
   font-family: sans-serif;
   font-weight: 500;
@@ -219,9 +219,10 @@ a {
     left: 0;
   }
 }
+
+//start index
 .photo-index-container {
   height: 20vh;
-  width: 100%;
   background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
   background-size: cover;
   display: flex;
@@ -229,15 +230,13 @@ a {
   flex-direction: column;
   justify-content: center;
   
-
   .photo-index-text {
     background: $darkTransparentBox;
     text-align: center;
-
-    height: 50%;
+    height: 45%;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10%;
     justify-content: center;
     
     h1 {
@@ -261,24 +260,14 @@ a {
   flex-direction: column;
   background-position: center center;
   gap: 60px;
-
-  height: 80%;
+  padding: 10px 0 0 20px;
   
-
-  height: 100%;
-
-  padding-left: 20px;
-  
- 
-  .index-main-boxes {
-    margin-top: 5%;
+ .index-main-boxes {
     height: 30%;
-
     width: 100%;
-
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
     
     h3 {
       @include primaryTextBlue;
@@ -294,16 +283,12 @@ a {
 
 
   footer {
-    
     height: 30%;
     margin-top: 25px;
     background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-    
     
     #link-pages{
       color: $lightblue;
@@ -334,8 +319,7 @@ a {
       .jobb {
         @include primaryTextBlue;
         font-size: 14px;
-
-      }
+}
 }
 
 // end index mobile and footer mobile
@@ -345,27 +329,20 @@ a {
 @media (min-width: $breakpointSmall) {
 .photo-index-container {
   height: 70vh;
-  background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
   justify-content: flex-end;
   
-  
-
   .photo-index-text {
     background: $darkTransparentBox;
     width: 80%;
-    height: 220px;
     margin-bottom: 30px;
-    gap: 20px;
-    
-
     
     h1 {
       @include primaryText;
-      font-size: 45px;
+      font-size: 44px;
     }
     h2 {
       @include secondaryText;
-      font-size: 34px;
+      font-size: 36px;
       opacity: 0.6;
     }
   }
@@ -373,46 +350,25 @@ a {
 
 .index-main-container1 {
   background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
-  display: flex;
-  flex-direction: column;
-  height: 160vh;
-  gap: 80px;
   align-items: center;
- 
-  
-  
-  
-  
  
   .index-main-boxes {
     margin-top: 50px;
     height: 150px;
     width: 60%;
-    display: flex;
-    flex-direction: column;
-   
-      
+  
       h3 {
-        @include primaryTextBlue;
         font-size: 30px;
       }
       h3:hover{text-decoration: underline}
     
       p {
-        @include secondaryTextSmall;
         font-size: 20px;
       }
-    
-    
   }
-
 }
 footer {
-  height: 350px;
-  justify-content: flex-end;
-  gap: 30px;
-  width: 100%;
-  
+  gap: 20px;
   
   #link-pages{
     word-spacing: 7px;
@@ -425,8 +381,6 @@ footer {
   }
   
   #small-text-box {
-    
-    
     font-size: 1em;
     letter-spacing: 0.2em;
     }
@@ -434,16 +388,11 @@ footer {
   .footer-boxes {
     a {
         font-size: 24px;
-        
-    
-      }
+    }
     }
     .jobb:hover{
       text-decoration: underline;
-    
-  }
-
-  
+    }
 }
 } 
 
