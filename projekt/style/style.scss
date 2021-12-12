@@ -367,34 +367,6 @@ a {
       }
   }
 }
-footer {
-  gap: 20px;
-  
-  #link-pages{
-    word-spacing: 7px;
-    a{
-      @include primaryTextBlue;
-    }
-    a:hover{
-      text-decoration: underline;
-    }
-  }
-  
-  #small-text-box {
-    font-size: 1em;
-    letter-spacing: 0.2em;
-    }
-  
-  .footer-boxes {
-    a {
-        font-size: 24px;
-    }
-    }
-    .jobb:hover{
-      text-decoration: underline;
-    }
-}
-} 
 
 //end of index
 
@@ -674,37 +646,52 @@ footer {
           height: 128px;
           p {
               font-size: 20px;
+              font-family: Roboto,'Times New Roman', Times, serif;
+              font-weight: 400;
               color:white;
           }
       }
     h4{
         color:#62ECFF;
         margin-bottom: 5px;
+        font-size: 18px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
     } 
     p.describe{
         width: 90%;
         color:white;
         font-size: 14px;
-        background-color: black;
+        font-weight: 300;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 10px 2px 20px 2px;
        
     }
   }
   div.box-2 {
-      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      @include mainGradient ;
       padding: 20px;
       h4{
-      color:#62ECFF;
-      margin-bottom: 5px;
+        font-size: 18px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
+        color:#62ECFF;
+        margin-bottom: 5px;
      
       }
       p {
           font-size: 14px;
+          font-family: Roboto,'Times New Roman', Times, serif;
+          font-weight: 300;
           color:white;
-          margin-bottom: 5px;
+          margin-top: 10px;
+          margin-bottom: 10px;
       }
       p.person {
           font-size: 12px;
+          font-family: Roboto,'Times New Roman', Times, serif;
+          font-weight: 300;
           margin-bottom: 3px;
       }
     div.information {
@@ -718,6 +705,8 @@ footer {
             margin-bottom: 25px;
             a{
                 font-size: 14px;
+                font-family: Roboto,'Times New Roman', Times, serif;
+                font-weight: 300;
                 color: white;
                 text-decoration: none;
                 img{
@@ -744,6 +733,7 @@ footer {
  
   @media(min-width: 768px){
   .container-aboutUsPage {
+    width: 100%;
      
 
       div.box{
@@ -760,20 +750,27 @@ footer {
           height: 200px;
           p {
               font-size: 28px;
+              font-family: Roboto,'Times New Roman', Times, serif;
+              font-weight: 400;
               color:white;
           }
       }
     h4{
         color:#62ECFF;
         margin-bottom: 10px;
+        font-size: 20px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
     } 
     p.describe{
         width: 70%;
         
         color:white;
         font-size: 18px;
+        font-weight: 300;
+        font-family: Roboto,'Times New Roman', Times, serif;
         line-height:25px ;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.7);
         padding-top: 10px;
         padding-left: 5px;
         padding-bottom: 30px;
@@ -781,19 +778,29 @@ footer {
     }
   }
   div.box-2 {
-      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      @include mainGradient ;
       padding: 40px;
       h4{
-      color:#62ECFF;
-      margin-bottom: 10px;
+        font-size: 20px;
+        font-family: Roboto,'Times New Roman', Times, serif;
+        font-weight: 300;
+        color:#62ECFF;
+        margin-bottom: 10px;
       }
       p {
           font-size: 18px;
+          font-weight: 300;
+          font-family: Roboto,'Times New Roman', Times, serif;
           color:white;
+          margin-top: 15px;
           margin-bottom: 10px;
       }
       p.person {
+        width: 80%;
           font-size: 14px;
+          font-weight: 300;
+          font-family: Roboto,'Times New Roman', Times, serif;
+          margin-top: 10px;
           margin-bottom: 5px;
       }
     div.information {
@@ -810,9 +817,14 @@ footer {
             
             margin-bottom: 25px;
             
-           
+           img{
+             width: 80%;
+           }
             a {
+                width: 80%;
                 font-size: 18px;
+                font-weight: 300;
+                font-family: Roboto,'Times New Roman', Times, serif;
                 color: white;
                 
                 text-decoration: none;
@@ -832,3 +844,87 @@ footer {
 }
 // end om oss
 
+
+
+//CONTACT DESKTOP
+@media (min-width: $breakpointDesktop) {
+  .contact-head{
+    background-image: none;
+    display: flex;
+    flex-direction: row-reverse;
+    img{
+      display: block;
+      height: 100%;
+      width: 50vw;
+      background-size: cover;
+    }
+    .contact-head-text{
+      max-width: none;
+      width: 50vw;
+ margin-top: 4em;
+      h1{
+        font-size: 30px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+  .contact-main{
+    form{
+      margin-top: -20em;
+      padding: 100px 80px 30px 80px;
+      .form-text{
+        gap: 16px;
+        .form-name{
+          gap: 8px;
+        }
+        input{
+          padding: 24px 0;
+        }
+        button{
+          padding: 24px 0;
+        }
+      }
+    }
+  }
+  .contact-offices{
+    div{
+      div{ 
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0 40px 0;
+        width: 60vw;
+        justify-content: space-between;
+        h2{
+          font-size: 26px;
+          margin: 0;
+        }
+        p{
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+     
+  }
+  //HOME
+  .hero {
+    justify-content: center;
+    height: 90vh;
+    h1{
+      font-size: 50px;
+      margin: -3em 0px 25px 0;
+    }
+    p{
+      font-size: 36px;
+    }
+  }
+  .home-main{
+    button{
+      display: none;
+    }
+  }
+}
+
+}
