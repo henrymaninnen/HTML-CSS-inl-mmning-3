@@ -5,58 +5,61 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  letter-spacing: 0.5px;
 }
 
 //VARIABLES
 $darkTransparentBox:rgba(0, 0, 0, 0.6);
-
 $lightblue: #62ecff;
 $darkGreen: #052321;
 $firstFont: "Roboto", sans-serif;
-$breakpointSmall: 687px;
-$breakpointDesktop: 1000px;
+$breakpointMedium: 641px;
+$breakpointLarge: 1008px;
+
+
+
 
 //MIXING
 @mixin secondaryTextSmall { //mobile font size (use 20px for desktop)
   color: #fff;
   font-size: 14px;
-  font-family: "jost", Times, serif;
-  font-weight: 500;
+  font-family: $firstFont;
+  font-weight: 300;
 }
 @mixin primaryTextBlue { //mobile font size (use 30px for desktop)
-  font-family: "jost", Times, serif;
+  font-family: $firstFont;
   font-size: 24px;
   color: $lightblue;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 35px;
 }
 
 
 @mixin primaryText { //mobile font size (use 44px for desktop)
   font-size: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: $firstFont;
+  font-weight: 300;
   color: white;
   text-decoration: none;
 }
 @mixin primaryTextDesktop { 
   font-size: 280px;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: $firstFont;
+  font-weight: 300;
   color: white;
   text-decoration: none;
 }
 @mixin primaryTextDark {
   font-size: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: $firstFont;
+  font-weight: 300;
   color: #3A3A3A;
   text-decoration: none;
 }
 @mixin secondaryTextDark {
   font-size: 18px;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: $firstFont;
+  font-weight: 300;
   color: #3A3A3A;
   text-decoration: none;
 }
@@ -69,8 +72,8 @@ $breakpointDesktop: 1000px;
 @mixin secondaryText { //mobile font size(use 36px for desktop)
   color: #fff;
   font-size: 16px;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: $firstFont;
+  font-weight: 300;
 }
 
 @mixin darkTransparent {
@@ -87,12 +90,6 @@ $breakpointDesktop: 1000px;
   justify-content: center;
   align-items: center;
 }
-@mixin flexCenterColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 @mixin flexSpaceBetween {
   display: flex;
@@ -106,27 +103,17 @@ $breakpointDesktop: 1000px;
   justify-content: space-between;
   align-items: center;
 }
-@mixin flexSpaceAround {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 body {
   background-color: $darkGreen;
   margin: 0;
+  letter-spacing: 0.5;
 }
-
-//HEADER
-/* .container {
-  margin: 10px 10px;
-} */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: $firstFont;
 }
 
 li {
@@ -137,6 +124,7 @@ a {
   color: white;
   text-decoration: none;
 }
+//START
 
 .navbar {
   min-height: 70px;
@@ -168,11 +156,42 @@ a {
 }
 
 .hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
+  display: block;
 }
 
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{ 
+ display: none;
+}
+.nav-menu.active {
+  position: absolute;
+  left: -100%;
+  top: 69px;
+  gap: 10px;
+  z-index: 10;
+  flex-direction: column;
+  background-color: $darkGreen;
+  width: 100%;
+  text-align: center;
+  transition: left ease 3s;
+  display: flex;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 0;
+}
 .bar {
   display: block;
   width: 25px;
@@ -182,56 +201,28 @@ a {
   transition: all 0.3s ease;
   background-color: white;
 }
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
+@media (min-width: $breakpointMedium) {
+  .hamburger{
+    display: none;
   }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
   .nav-menu {
-    position: absolute;
-    left: -100%;
-    top: 69px;
-    gap: 10px;
-    z-index: 10;
-    flex-direction: column;
-    background-color: $darkGreen;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 
-  .nav-item {
-    margin: 16px 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
+  
 }
 
 //start index
 .photo-index-container {
   height: 20vh;
-  background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
+  background-image: url(../img/andre.png);
   background-size: cover;
-  display: flex;
-  align-items: center;
+  @include flexCenter();
   flex-direction: column;
-  justify-content: center;
-  
   .photo-index-text {
-    background: $darkTransparentBox;
     text-align: center;
     height: 45%;
     display: flex;
@@ -246,7 +237,7 @@ a {
     h2 {
       @include secondaryText;
       font-size: 18px;
-      opacity: 0.6;
+      opacity: 0.75;
     }
   }
 }
@@ -260,7 +251,8 @@ a {
   flex-direction: column;
   background-position: center center;
   gap: 60px;
-  padding: 10px 0 0 20px;
+  padding: 15px 0 30px 20px;
+
   
  .index-main-boxes {
     height: 30%;
@@ -280,16 +272,13 @@ a {
 
 
  //footer mobile
-
-
   footer {
     height: 30%;
-    margin-top: 25px;
     background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    @include primaryTextBlue;
     #link-pages{
       color: $lightblue;
       word-spacing: 2px;  
@@ -301,7 +290,6 @@ a {
     
     #small-text-box {
       color: #ffffff;
-      font-family: $firstFont;
       font-size: 0.7em;
     }
     
@@ -321,14 +309,38 @@ a {
         font-size: 14px;
 }
 }
-
-// end index mobile and footer mobile
-
-
 // index desktop
-@media (min-width: $breakpointSmall) {
+//BREAKPOINT MEDIUM
+@media (min-width: $breakpointMedium) {
+  .photo-index-container{
+    height: 40vh;
+    .photo-index-text{
+    h1{
+      font-size: 30px;
+    }
+    h2{
+      font-size: 22px;
+    }
+  }
+  }
+  .index-main-container1{
+
+    .index-main-boxes{
+      margin: 1em 0 0 2.5em;
+      width: 70vw;
+      h3{
+
+      }
+      p{
+
+      }
+    }
+  }
+}
+@media (min-width: $breakpointLarge) {
 .photo-index-container {
   height: 70vh;
+  background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
   justify-content: flex-end;
   
   .photo-index-text {
@@ -367,6 +379,34 @@ a {
       }
   }
 }
+footer {
+  gap: 20px;
+  padding: 2em 0 1em 0;
+  #link-pages{
+    word-spacing: 7px;
+    a{
+      @include primaryTextBlue;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  
+  #small-text-box {
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    }
+  
+  .footer-boxes {
+    a {
+        font-size: 24px;
+    }
+    }
+    .jobb:hover{
+      text-decoration: underline;
+    }
+}
+} 
 
 //end of index
 
@@ -414,7 +454,7 @@ a {
     z-index: 2;
     height: 80%;
     margin-top: 20%;
-    @media screen and (min-width: $breakpointSmall) {
+    @media screen and (min-width: $breakpointLarge) {
             
       margin-top: 5%;
     }
@@ -472,9 +512,9 @@ a {
         .grades {
           @include flexSpaceBetween();
           width: 50%;
-          margin-right: 20%;
+          margin-right: 10px;
 
-          @media screen and (min-width: $breakpointSmall) {
+          @media screen and (min-width: $breakpointLarge) {
             
             margin-right: 40%;
           }
@@ -486,7 +526,7 @@ a {
             width: 15px;
             background-color: $lightblue;
 
-            @media screen and (min-width: $breakpointSmall) {
+            @media screen and (min-width: $breakpointLarge) {
             
               height: 20px;
               width: 20px;
@@ -499,7 +539,7 @@ a {
             width: 15px;
             background-color: #fff;
 
-            @media screen and (min-width: $breakpointSmall) {
+            @media screen and (min-width: $breakpointLarge) {
             
               height: 20px;
             width: 20px;
@@ -510,13 +550,12 @@ a {
     }
   }
 }
-
 // contact page
 
 
 .contact-head {
   background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,7 +564,7 @@ a {
   display: none;
   }
  .contact-head-text{
-   padding:20px;
+   padding: 20px;
    h1{
     margin: 10px 0 30px 0;
      @include primaryText();
@@ -539,7 +578,6 @@ a {
 .contact-main{
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -603,6 +641,7 @@ a {
   display: flex;
   flex-direction: column;
   color: white;
+  margin-top: 5em;
   div{
     display: flex;
     justify-content: center;
@@ -628,7 +667,6 @@ a {
   }
   
 }
-
 // ABOUT US PAGE
  
   .container-aboutUsPage {
@@ -842,11 +880,50 @@ a {
   }
 }
 // end om oss
-
-
-
+//HOMEPAGE
+.hero{
+  background-image: url(../img/unsplash_bZZp1PmHI0E.png);
+  height: 230px;
+  width: 100%;
+  max-height: 1200px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    @include primaryText();
+    margin: 60px 0 10px 0
+  }
+  p{
+    @include secondaryText();
+  }
+}
+.home-main{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto;
+  
+  button{
+    padding: 60px 10px;
+    border: none;
+    @include primaryText()
+  }
+  button:nth-child(1){
+    background-color: #074249;
+  }
+  button:nth-child(2){
+    background-color: #06363C;
+  }
+  button:nth-child(3){
+    background-color: #042E33;
+  }
+  button:nth-child(4){
+    background-color: #04262B;
+  }
+}
 //CONTACT DESKTOP
-@media (min-width: $breakpointDesktop) {
+@media (min-width: $breakpointLarge) {
   .contact-head{
     background-image: none;
     display: flex;
@@ -860,7 +937,7 @@ a {
     .contact-head-text{
       max-width: none;
       width: 50vw;
- margin-top: 4em;
+      margin-top: 4em;
       h1{
         font-size: 30px;
       }
@@ -893,7 +970,7 @@ a {
         display: flex;
         flex-direction: row;
         margin: 20px 0 40px 0;
-        width: 60vw;
+        gap: 80px;
         justify-content: space-between;
         h2{
           font-size: 26px;
@@ -924,6 +1001,4 @@ a {
       display: none;
     }
   }
-}
-
 }
