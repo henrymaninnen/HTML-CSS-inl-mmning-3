@@ -7,7 +7,6 @@ ol {
   padding: 0;
   letter-spacing: 0.5px;
 }
-
 //VARIABLES
 $darkTransparentBox:rgba(0, 0, 0, 0.6);
 $lightblue: #62ecff;
@@ -73,34 +72,28 @@ a {
  @include flexSpaceBetween();
   padding: 0 24px;
 }
-
 .nav-branding {
   font-size: 28px;
 }
-
 .nav-menu {
   @include flexSpaceBetween();
   gap: 60px;
 }
-
 .nav-link {
   transition: 0.3s ease-out;
 }
 .nav-now{
   color: $lightblue;
 }
-
 .nav-item a {
   font-size: 18px;
 }
 .nav-link:hover {
   color: $lightblue;
 }
-
 .hamburger {
   display: block;
 }
-
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -129,7 +122,6 @@ a {
 .nav-item {
   margin: 16px 0;
 }
-
 .nav-menu.active {
   left: 0;
 }
@@ -309,7 +301,6 @@ footer {
         text-decoration: underline;
       }
     }
-
     .footer-boxes {
       a {
         font-size: 24px;
@@ -320,7 +311,6 @@ footer {
     }
   }
 }
-
 // refrence page
 .back-img-stars {
   width: 100%;
@@ -329,33 +319,23 @@ footer {
   z-index: 0;
   max-height: 90vh;
   margin-top: 70px;
-  
 }
 @media screen and (min-width: $breakpointLarge) {
   .back-img-stars{
    max-height: 120vh;
   } 
-
- 
  }
 #referenceHeader{
   z-index: 10;
 }
   .reference-body{
- 
- 
  display: flex;
  flex-direction: column;
  width: 100%;
- 
- 
-
  }
  #refrence-footer{
    margin-bottom: 0;
  }
-
-
 .main-reference{
   display: flex;
   flex-direction: column;
@@ -364,29 +344,19 @@ footer {
   width: 100%;
   height: 90%;
   box-sizing: border-box;
-  
   @include mainGradient();
-
   .contentBox-reference-1 {
     box-sizing: border-box;
     z-index: 2;
     height: 80%;
     margin-top: 5%;
-    @media screen and (min-width: $breakpointLarge) {
-   
-    
-    }
-
     color: #fff;
-
     #textBox1 {
       padding: 5%;
       width: 100%;
     }
-
     .reference-h1 {
       @include primaryText();
-      
     }
     .reference-p {
       margin-top: 10%;
@@ -401,7 +371,6 @@ footer {
       .reference-p{
         @include primaryText();
       }
-    
     }
     .reference-h2 {
       color: $lightblue;
@@ -425,11 +394,9 @@ footer {
         @include flexSpaceBetween();
         margin-top: 5%;
         width: 100%;
-
         .referenceText{
           margin-left: 0;
         }
-
         h4 {
           font-weight: 300;
           width: 50%;
@@ -438,34 +405,23 @@ footer {
           @include flexSpaceBetween();
           width: 50%;
           margin-right: 10px;
-
-          @media screen and (min-width: $breakpointLarge) {
-            
+          @media screen and (min-width: $breakpointLarge) {           
             margin-right: 40%;
           }
-
-        
-
           .gradeRect {
             height: 15px;
             width: 15px;
             background-color: $lightblue;
-
             @media screen and (min-width: $breakpointLarge) {
-            
               height: 20px;
               width: 20px;
-            }
-
-            
+            }           
           }
           .gradeRectWhite {
             height: 15px;
             width: 15px;
             background-color: #fff;
-
             @media screen and (min-width: $breakpointLarge) {
-            
               height: 20px;
             width: 20px;
             }
@@ -538,12 +494,10 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 5px;
-
       .dropdown {
         position: relative;
         display: inline-block;
       }
-
       .dropdown-content {
         display: none;
         position: absolute;
@@ -611,7 +565,6 @@ footer {
     border-radius: 1px;
   }
 }
-
 .icons {
   margin: 10px 0 20px 0px;
   display: flex;
@@ -650,15 +603,11 @@ footer {
 }// ABOUT US PAGE
 .container-aboutUsPage {
     width: 100%;
-   
-   
     div.box{
     background-image:url(../img/unsplash_trYl7JYATH0.png);
     background-repeat:no-repeat;
     background-position: center top;
     padding: 20px;
-   
-   
     h1 {
     @include primaryText();
     margin-top: 5%;
@@ -672,12 +621,10 @@ footer {
     section {
     width: 100%;
     height: 128px;
-   
     }
     h3{
       @include primaryTextBlue();
     margin-bottom: 5%;
-   
     }
     p.describe{
     width: 90%;
@@ -734,36 +681,25 @@ footer {
     img{
     width: 100%;
     margin-bottom: 5px;
-    
     }
     }
     }
-   
     }
     }
     @media(min-width: $breakpointMedium){
-    .container-aboutUsPage {
-   
-    div.box{
-   
+    .container-aboutUsPage { 
+    div.box{ 
     background-repeat:no-repeat;
     background-position: center top;
     background-size: cover;
-   
     section {
     width: 100%;
     height: 200px;
-  
     }
-   
     p.describe{
     width: 70%;
-   
-   
     font-size: 18px;
     line-height:25px ;
-   
-   
     }
     }
     div.box-2 {
@@ -789,17 +725,14 @@ footer {
     width: 350px;
     margin-bottom: 25px;
     a {
-  
     img{
     width: 24px;
     vertical-align: middle;
     }
     }
     }
-   
     }
     }
-   
     }
    }
 // end om oss
@@ -818,7 +751,6 @@ footer {
     @include primaryText();
     font-size: 22px;
     margin: 60px 0 10px 0;
-    
   }
   p {
     @include secondaryText();
