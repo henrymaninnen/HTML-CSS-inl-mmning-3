@@ -18,15 +18,15 @@ $breakpointLarge: 1008px;
 
 
 
-
+//validera koden och lägg till i alt på bilder
 //MIXING
-@mixin secondaryTextSmall { //mobile font size (use 20px for desktop)
+@mixin secondaryTextSmall { // bara jag som använder. byt ut min klar
   color: #fff;
   font-size: 14px;
   font-family: $firstFont;
   font-weight: 300;
 }
-@mixin primaryTextBlue { //mobile font size (use 30px for desktop)
+@mixin primaryTextBlue { //använder flera gånger
   font-family: $firstFont;
   font-size: 24px;
   color: $lightblue;
@@ -35,28 +35,28 @@ $breakpointLarge: 1008px;
 }
 
 
-@mixin primaryText { //mobile font size (use 44px for desktop)
+@mixin primaryText { //används flera gånger
   font-size: 22px;
   font-family: $firstFont;
   font-weight: 300;
   color: white;
   text-decoration: none;
 }
-@mixin primaryTextDesktop { 
+@mixin primaryTextDesktop {  //ingen använder klar
   font-size: 280px;
   font-family: $firstFont;
   font-weight: 300;
   color: white;
   text-decoration: none;
 }
-@mixin primaryTextDark {
+@mixin primaryTextDark {  //ingen använder klar
   font-size: 22px;
   font-family: $firstFont;
   font-weight: 300;
   color: #3A3A3A;
   text-decoration: none;
 }
-@mixin secondaryTextDark {
+@mixin secondaryTextDark { //ingen använder klar
   font-size: 18px;
   font-family: $firstFont;
   font-weight: 300;
@@ -66,45 +66,45 @@ $breakpointLarge: 1008px;
 
 
 
-@mixin mainGradient {
-  background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+@mixin mainGradient { //klar
+  background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%); //används. sätt på om oss sidan
 }
-@mixin secondaryText { //mobile font size(use 36px for desktop)
+@mixin secondaryText { //används av flera
   color: #fff;
   font-size: 16px;
   font-family: $firstFont;
   font-weight: 300;
 }
 
-@mixin darkTransparent {
+@mixin darkTransparent {  //finns redan variabel högst upp
   background:rgba(0, 0, 0, 0.4);
 }
 
-@mixin lightTransparent {
+@mixin lightTransparent {  //ingen använder
   background: #ffffff;
   opacity: 0.4;
 }
 
-@mixin flexCenter {
+@mixin flexCenter { //används och kan användas på en till klar
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flexSpaceBetween {
+@mixin flexSpaceBetween {  //kan användas
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin flexSpeceBetweenColumn {
+@mixin flexSpeceBetweenColumn {  // ingen använder
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 body {
-  background-color: $darkGreen;
+  background-color: $darkGreen;  //ta bort men sätt färgen högst upp
   margin: 0;
   letter-spacing: 0.5;
 }
@@ -129,7 +129,7 @@ a {
 .navbar {
   min-height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; //använd mixin flexspacebetween
   align-items: center;
   padding: 0 24px;
 }
@@ -140,7 +140,7 @@ a {
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; //använd mixin flexspacebetween
   align-items: center;
   gap: 60px;
 }
@@ -207,7 +207,7 @@ a {
   }
   .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; //använd mixin flexspacebetween
     align-items: center;
     flex-direction: row;
   }
@@ -328,10 +328,10 @@ a {
     .index-main-boxes{
       margin: 1em 0 0 2.5em;
       width: 70vw;
-      h3{
+      h3{ //ta bort
 
       }
-      p{
+      p{ //ta bort
 
       }
     }
@@ -343,17 +343,17 @@ a {
   background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
   justify-content: flex-end;
   
-  .photo-index-text {
-    background: $darkTransparentBox;
+  .photo-index-text { //klar
+    background: $darkTransparentBox; //ta bort variabeln och mixin. det är bara jag som använder den
     width: 80%;
     margin-bottom: 30px;
     
     h1 {
-      @include primaryText;
+      @include primaryText;  //ta bort include
       font-size: 44px;
     }
     h2 {
-      @include secondaryText;
+      @include secondaryText;  //ta bort include 
       font-size: 36px;
       opacity: 0.6;
     }
@@ -383,9 +383,9 @@ footer {
   gap: 20px;
   padding: 2em 0 1em 0;
   #link-pages{
-    word-spacing: 7px;
+    word-spacing: 7px;  
     a{
-      @include primaryTextBlue;
+      @include primaryTextBlue; //kan nog ta bort. används redean i mobile
     }
     a:hover{
       text-decoration: underline;
@@ -643,7 +643,7 @@ footer {
   color: white;
   margin-top: 5em;
   div{
-    display: flex;
+    display: flex;  //använd mixin flexcenter klar
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -700,7 +700,7 @@ footer {
     }
   }
   div.box-2 {
-      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);  //använd mixin
       padding: 20px;
       h4{
       color:#62ECFF;
@@ -790,7 +790,7 @@ footer {
     }
   }
   div.box-2 {
-      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+      background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);  //byt till mixin klar
       padding: 40px;
       h4{
       color:#62ECFF;
