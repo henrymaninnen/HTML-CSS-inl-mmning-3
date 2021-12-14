@@ -641,7 +641,7 @@ footer .jobb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(22, 21, 21, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   max-width: 1000px;
   padding: 40px 10px 10px 10px;
   margin: -7em auto 0 auto;
@@ -656,6 +656,60 @@ footer .jobb {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+}
+
+.contact-main form .form-text .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-main form .form-text .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.contact-main form .form-text .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contact-main form .form-text .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.contact-main form .form-text .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.contact-main form .form-text .dropdown:hover .dropbtn {
+  background-color: #f1f1f1;
+}
+
+.contact-main form .form-text .dropbtn {
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+  padding: 14px 0 14px 13px;
+  font-family: "Roboto", sans-serif;
+  color: #5e5858;
+  background-color: white;
+  border: none;
+  margin: 0;
+  cursor: pointer;
 }
 
 .contact-main form .form-name {
@@ -675,26 +729,27 @@ footer .jobb {
   gap: 7px;
   border-radius: 1px;
   border-width: 0px;
+  color: white;
   border: none;
 }
 
-.contact-main form input[type="text"]::-webkit-input-placeholder {
+.contact-main input[type="text"]::-webkit-input-placeholder {
   padding-left: 14px;
 }
 
-.contact-main form input[type="text"]:-ms-input-placeholder {
+.contact-main input[type="text"]:-ms-input-placeholder {
   padding-left: 14px;
 }
 
-.contact-main form input[type="text"]::-ms-input-placeholder {
+.contact-main input[type="text"]::-ms-input-placeholder {
   padding-left: 14px;
 }
 
-.contact-main form input[type="text"]::placeholder {
+.contact-main input[type="text"]::placeholder {
   padding-left: 14px;
 }
 
-.contact-main form button {
+.contact-main button {
   margin-top: 10px;
   width: 50%;
   -ms-flex-item-align: center;
@@ -702,7 +757,7 @@ footer .jobb {
       align-self: center;
   padding: 14px 0;
   border: none;
-  background-color: #62ECFF;
+  background-color: #62ecff;
   border-radius: 1px;
 }
 
@@ -740,13 +795,13 @@ footer .jobb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contact-offices div h2 {
@@ -777,7 +832,16 @@ footer .jobb {
   background-image: url(../img/unsplash_trYl7JYATH0.png);
   background-repeat: no-repeat;
   background-position: center top;
-  padding: 20px;
+  height: 100vh;
+}
+
+.container-aboutUsPage div.box div {
+  padding: 2em 0 0 2.5em;
+}
+
+.container-aboutUsPage div.box h1 {
+  font-weight: 300;
+  color: white;
 }
 
 .container-aboutUsPage div.box section {
@@ -785,44 +849,55 @@ footer .jobb {
   height: 128px;
 }
 
-.container-aboutUsPage div.box section p {
-  font-size: 20px;
-  color: white;
-}
-
-.container-aboutUsPage div.box h4 {
-  color: #62ECFF;
-  margin-bottom: 5px;
+.container-aboutUsPage div.box h3 {
+  color: #62ecff;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 5%;
+  padding: 2em 0 0 2em;
 }
 
 .container-aboutUsPage div.box p.describe {
   width: 90%;
+  padding: 5%;
   color: white;
   font-size: 14px;
-  background-color: black;
-  padding: 10px 2px 20px 2px;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .container-aboutUsPage div.box-2 {
+  margin-top: 5%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
   background: linear-gradient(180deg, #052321 35.42%, #000000 100%);
-  padding: 20px;
+  padding: 5%;
 }
 
-.container-aboutUsPage div.box-2 h4 {
-  color: #62ECFF;
+.container-aboutUsPage div.box-2 .underTitleBox-2 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.container-aboutUsPage div.box-2 h3 {
+  color: #62ecff;
+  font-weight: 300;
   margin-bottom: 5px;
 }
 
-.container-aboutUsPage div.box-2 p {
-  font-size: 14px;
+.container-aboutUsPage div.box-2 h4 {
+  margin-top: 5%;
   color: white;
+  font-weight: 300;
   margin-bottom: 5px;
 }
 
 .container-aboutUsPage div.box-2 p.person {
-  font-size: 12px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5rem;
   margin-bottom: 3px;
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 
 .container-aboutUsPage div.box-2 div.information {
@@ -838,6 +913,11 @@ footer .jobb {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.container-aboutUsPage div.box-2 div.information .personBox {
+  margin: 5%;
+  margin-left: 0;
 }
 
 .container-aboutUsPage div.box-2 div.information section {
@@ -862,12 +942,9 @@ footer .jobb {
 
 @media (min-width: 768px) {
   .container-aboutUsPage div.box {
-    background-image: url(../img/unsplash_trYl7JYATH0.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    margin-left: 40px;
-    margin-right: 40px;
   }
   .container-aboutUsPage div.box section {
     width: 100%;
@@ -877,20 +954,10 @@ footer .jobb {
     font-size: 28px;
     color: white;
   }
-  .container-aboutUsPage div.box h4 {
-    color: #62ECFF;
-    margin-bottom: 10px;
-  }
   .container-aboutUsPage div.box p.describe {
     width: 70%;
-    color: white;
     font-size: 18px;
     line-height: 25px;
-    background-color: black;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-bottom: 30px;
-    padding-right: 5px;
   }
   .container-aboutUsPage div.box-2 {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(35.42%, #052321), to(#000000));
@@ -898,7 +965,7 @@ footer .jobb {
     padding: 40px;
   }
   .container-aboutUsPage div.box-2 h4 {
-    color: #62ECFF;
+    color: #62ecff;
     margin-bottom: 10px;
   }
   .container-aboutUsPage div.box-2 p {
@@ -1001,15 +1068,15 @@ footer .jobb {
 }
 
 .home-main button:nth-child(2) {
-  background-color: #06363C;
+  background-color: #06363c;
 }
 
 .home-main button:nth-child(3) {
-  background-color: #042E33;
+  background-color: #042e33;
 }
 
 .home-main button:nth-child(4) {
-  background-color: #04262B;
+  background-color: #04262b;
 }
 
 @media (min-width: 1008px) {
@@ -1046,6 +1113,9 @@ footer .jobb {
   }
   .contact-main form .form-text {
     gap: 16px;
+  }
+  .contact-main form .form-text .dropbtn {
+    padding: 24px 0 24px 14px;
   }
   .contact-main form .form-text .form-name {
     gap: 8px;
