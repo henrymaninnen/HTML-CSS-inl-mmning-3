@@ -1,121 +1,14 @@
 //CSS RESET
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0.5px;
-}
-
-//VARIABLES
-$darkTransparentBox:rgba(0, 0, 0, 0.6);
-$lightblue: #62ecff;
-$darkGreen: #052321;
-$firstFont: "Roboto", sans-serif;
-$breakpointMedium: 641px;
-$breakpointLarge: 1008px;
-
-
-
-
-//MIXING
-@mixin secondaryTextSmall { //mobile font size (use 20px for desktop)
-  color: #fff;
-  font-size: 14px;
-  font-family: $firstFont;
-  font-weight: 300;
-}
-@mixin primaryTextBlue { //mobile font size (use 30px for desktop)
-  font-family: $firstFont;
-  font-size: 24px;
-  color: $lightblue;
-  font-weight: 300;
-  line-height: 35px;
-}
-
-
-@mixin primaryText { //mobile font size (use 44px for desktop)
-  font-size: 22px;
-  font-family: $firstFont;
-  font-weight: 300;
-  color: white;
-  text-decoration: none;
-}
-@mixin primaryTextDesktop { 
-  font-size: 280px;
-  font-family: $firstFont;
-  font-weight: 300;
-  color: white;
-  text-decoration: none;
-}
-@mixin primaryTextDark {
-  font-size: 22px;
-  font-family: $firstFont;
-  font-weight: 300;
-  color: #3A3A3A;
-  text-decoration: none;
-}
-@mixin secondaryTextDark {
-  font-size: 18px;
-  font-family: $firstFont;
-  font-weight: 300;
-  color: #3A3A3A;
-  text-decoration: none;
-}
-
-
-
-@mixin mainGradient {
-  background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
-}
-@mixin secondaryText { //mobile font size(use 36px for desktop)
-  color: #fff;
-  font-size: 16px;
-  font-family: $firstFont;
-  font-weight: 300;
-}
-
-@mixin darkTransparent {
-  background:rgba(0, 0, 0, 0.4);
-}
-
-@mixin lightTransparent {
-  background: #ffffff;
-  opacity: 0.4;
-}
-
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flexSpaceBetween {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin flexSpeceBetweenColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-body {
-  background-color: $darkGreen;
-  margin: 0;
-  letter-spacing: 0.5;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: $firstFont;
 }
-
+body {
+  background-color: $darkGreen;
+  letter-spacing: 0.5;
+}
 li {
   list-style: none;
 }
@@ -124,13 +17,54 @@ a {
   color: white;
   text-decoration: none;
 }
-//START
-
-.navbar {
-  min-height: 70px;
+//VARIABLES
+$darkTransparentBox: rgba(0, 0, 0, 0.6);
+$lightblue: #62ecff;
+$darkGreen: #052321;
+$firstFont: "Roboto", sans-serif;
+$breakpointMedium: 641px;
+$breakpointLarge: 1008px;
+//MIXING
+@mixin primaryTextBlue {
+  //mobile font size (use 30px for desktop)
+  font-family: $firstFont;
+  font-size: 24px;
+  color: $lightblue;
+  font-weight: 300;
+  line-height: 35px;
+}
+@mixin primaryText {
+  //mobile font size (use 44px for desktop)
+  font-size: 22px;
+  font-family: $firstFont;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+@mixin mainGradient {
+  background: linear-gradient(180deg, $darkGreen 35.42%, #000000 100%);
+}
+@mixin secondaryText {
+  //mobile font size(use 36px for desktop)
+  color: #fff;
+  font-size: 16px;
+  font-family: $firstFont;
+  font-weight: 300;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexSpaceBetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+//START
+.navbar {
+  min-height: 70px;
+ @include flexSpaceBetween();
   padding: 0 24px;
 }
 
@@ -139,16 +73,14 @@ a {
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexSpaceBetween();
   gap: 60px;
 }
 
 .nav-link {
   transition: 0.3s ease-out;
 }
-.nav-item a{
+.nav-item a {
   font-size: 18px;
 }
 .nav-link:hover {
@@ -168,8 +100,8 @@ a {
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-.nav-menu{ 
- display: none;
+.nav-menu {
+  display: none;
 }
 .nav-menu.active {
   position: absolute;
@@ -184,7 +116,6 @@ a {
   transition: left ease 3s;
   display: flex;
 }
-
 .nav-item {
   margin: 16px 0;
 }
@@ -202,7 +133,7 @@ a {
   background-color: white;
 }
 @media (min-width: $breakpointMedium) {
-  .hamburger{
+  .hamburger {
     display: none;
   }
   .nav-menu {
@@ -211,10 +142,7 @@ a {
     align-items: center;
     flex-direction: row;
   }
-
-  
 }
-
 //start index
 .photo-index-container {
   height: 20vh;
@@ -229,7 +157,6 @@ a {
     flex-direction: column;
     gap: 10%;
     justify-content: center;
-    
     h1 {
       @include primaryText;
       font-size: 22px;
@@ -241,9 +168,7 @@ a {
     }
   }
 }
-
 //main content
-
 .index-main-container1 {
   background-image: url(../img/unsplash_9SoCnyQmkzI.png);
   background-size: cover;
@@ -252,169 +177,144 @@ a {
   background-position: center center;
   gap: 60px;
   padding: 15px 0 30px 20px;
-
-  
- .index-main-boxes {
+  .index-main-boxes {
     height: 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
     h3 {
       @include primaryTextBlue;
     }
     p {
-      @include secondaryTextSmall;
+      color: #fff;
+      font-size: 14px;
+      font-family: $firstFont;
+      font-weight: 300;
     }
   }
 }
-
-
- //footer mobile
-  footer {
-    height: 30%;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+//footer mobile
+footer {
+  height: 30%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include primaryTextBlue;
+  #link-pages {
+    color: $lightblue;
+    word-spacing: 2px;
+    a {
+      @include primaryTextBlue;
+      font-size: 14px;
+    }
+  }
+  #small-text-box {
+    color: #ffffff;
+    font-size: 0.7em;
+  }
+  .footer-boxes {
+    margin-top: 20px;
+    a {
+      i {
+        margin: 10px;
+        color: #fff;
+        font-size: 1em;
+      }
+    }
+  }
+  .jobb {
     @include primaryTextBlue;
-    #link-pages{
-      color: $lightblue;
-      word-spacing: 2px;  
-      a{
-        @include primaryTextBlue;
-        font-size: 14px;
-      }
-    }
-    
-    #small-text-box {
-      color: #ffffff;
-      font-size: 0.7em;
-    }
-    
-    .footer-boxes {
-      margin-top: 20px;
-        a {
-          i {
-            margin: 10px;
-            color: #fff;
-            font-size: 1em;
-          }
-        }
-      }
-
-      .jobb {
-        @include primaryTextBlue;
-        font-size: 14px;
-}
+    font-size: 14px;
+  }
 }
 // index desktop
 //BREAKPOINT MEDIUM
 @media (min-width: $breakpointMedium) {
-  .photo-index-container{
+  .photo-index-container {
     height: 40vh;
-    .photo-index-text{
-    h1{
-      font-size: 30px;
-    }
-    h2{
-      font-size: 22px;
+    .photo-index-text {
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 22px;
+      }
     }
   }
-  }
-  .index-main-container1{
-
-    .index-main-boxes{
+  .index-main-container1 {
+    .index-main-boxes {
       margin: 1em 0 0 2.5em;
       width: 70vw;
-      h3{
-
-      }
-      p{
-
-      }
     }
   }
 }
 @media (min-width: $breakpointLarge) {
-.photo-index-container {
-  height: 70vh;
-  background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
-  justify-content: flex-end;
-  
-  .photo-index-text {
-    background: $darkTransparentBox;
-    width: 80%;
-    margin-bottom: 30px;
-    
-    h1 {
-      @include primaryText;
-      font-size: 44px;
-    }
-    h2 {
-      @include secondaryText;
-      font-size: 36px;
-      opacity: 0.6;
+  .photo-index-container {
+    height: 70vh;
+    background-image: url(../img/unsplash_Kj2SaNHG-hg.png);
+    justify-content: flex-end;
+    .photo-index-text {
+      background: $darkTransparentBox;
+      width: 80%;
+      margin-bottom: 30p
+      h1 {
+        font-size: 44px;
+      }
+      h2 {
+        font-size: 36px;
+        opacity: 0.6;
+      }
     }
   }
-}
+  .index-main-container1 {
+    background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+    align-items: center;
 
-.index-main-container1 {
-  background-image: url(../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
-  align-items: center;
- 
-  .index-main-boxes {
-    margin-top: 50px;
-    height: 150px;
-    width: 60%;
-  
+    .index-main-boxes {
+      margin-top: 50px;
+      height: 150px;
+      width: 60%;
       h3 {
         font-size: 30px;
       }
-      h3:hover{text-decoration: underline}
-    
+      h3:hover {
+        text-decoration: underline;
+      }
       p {
         font-size: 20px;
       }
-  }
-}
-footer {
-  gap: 20px;
-  padding: 2em 0 1em 0;
-  #link-pages{
-    word-spacing: 7px;
-    a{
-      @include primaryTextBlue;
-    }
-    a:hover{
-      text-decoration: underline;
     }
   }
-  
-  #small-text-box {
-    font-size: 1em;
-    letter-spacing: 0.2em;
+  footer {
+    gap: 20px;
+    padding: 2em 0 1em 0;
+    #link-pages {
+      word-spacing: 7px;
+      a {
+        @include primaryTextBlue;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     }
-  
-  .footer-boxes {
-    a {
+
+    #small-text-box {
+      font-size: 4em;
+      letter-spacing: 20px;
+    }
+
+    .footer-boxes {
+      a {
         font-size: 24px;
+      }
     }
-    }
-    .jobb:hover{
+    .jobb:hover {
       text-decoration: underline;
     }
+  }
 }
-} 
-
-//end of index
-
-
-
-
-
-
 // refrence page
 .back-img-stars {
   width: 100%;
@@ -423,49 +323,36 @@ footer {
   z-index: 0;
   margin-top: 70px;
 }
-#referenceHeader{
+#referenceHeader {
   z-index: 10;
 }
-  .reference-body{
- 
- 
- display: flex;
- flex-direction: column;
- width: 100%;
- 
- 
-
- }
- #refrence-footer{
-   margin-bottom: 0;
- }
-
-
-.main-reference{
+.reference-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#refrence-footer {
+  margin-bottom: 0;
+}
+.main-reference {
   @include flexSpeceBetweenColumn();
   width: 100%;
   height: 90%;
   box-sizing: border-box;
-  
   @include mainGradient();
-
   .contentBox-reference-1 {
     box-sizing: border-box;
     z-index: 2;
     height: 80%;
     margin-top: 20%;
     @media screen and (min-width: $breakpointLarge) {
-            
       margin-top: 5%;
     }
-
     color: #fff;
-
     #textBox1 {
       padding: 5%;
       width: 100%;
     }
-
     .reference-h1 {
       font-weight: 300;
     }
@@ -489,7 +376,6 @@ footer {
       // @include flexCenterColumn();
       margin-top: 5%;
       padding: 5%;
-
       h2 {
         font-weight: 300;
       }
@@ -500,11 +386,9 @@ footer {
         @include flexSpaceBetween();
         margin-top: 5%;
         width: 100%;
-
-        .referenceText{
+        .referenceText {
           margin-left: 0;
         }
-
         h4 {
           font-weight: 300;
           width: 50%;
@@ -513,26 +397,17 @@ footer {
           @include flexSpaceBetween();
           width: 50%;
           margin-right: 10px;
-
           @media screen and (min-width: $breakpointLarge) {
-            
             margin-right: 40%;
           }
-
-        
-
           .gradeRect {
             height: 15px;
             width: 15px;
             background-color: $lightblue;
-
             @media screen and (min-width: $breakpointLarge) {
-            
               height: 20px;
               width: 20px;
             }
-
-            
           }
           .gradeRectWhite {
             height: 15px;
@@ -540,9 +415,8 @@ footer {
             background-color: #fff;
 
             @media screen and (min-width: $breakpointLarge) {
-            
               height: 20px;
-            width: 20px;
+              width: 20px;
             }
           }
         }
@@ -551,8 +425,6 @@ footer {
   }
 }
 // contact page
-
-
 .contact-head {
   background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   width: 100%;
@@ -560,401 +432,249 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  img{
-  display: none;
+  img {
+    display: none;
   }
- .contact-head-text{
-   padding: 20px;
-   h1{
-    margin: 10px 0 30px 0;
-     @include primaryText();
-   }
-   p{
-    @include secondaryText();
-    color: white;
-   }
- }
+  .contact-head-text {
+    padding: 20px;
+    h1 {
+      margin: 10px 0 30px 0;
+      @include primaryText();
+    }
+    p {
+      @include secondaryText();
+      color: white;
+    }
+  }
 }
-.contact-main{
+.contact-main {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  img{
+  img {
     max-height: 650px;
     background-size: cover;
     width: 100%;
   }
-  form{
+  form {
     display: flex;
     border-radius: 6px;
     flex-direction: column;
-    background: rgba(22, 21, 21, 0.6);
+    background-color: $darkTransparentBox;
     max-width: 1000px;
     padding: 40px 10px 10px 10px;
     margin: -7em auto 0 auto;
-    .dropdown {
-      height: 10vh;
-      width: 60%;
-      margin: auto;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    
-    .projects,
-    .products {
-      position: relative;
-    }
-    
-    .projects ul,
-    .products ul {
-      margin-top: 10px;
-      position: absolute;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      align-items: center;
-      width: 200px;
-      height: 200px;
-      background: white;
-      left: 0px;
-      list-style: none;
-      border-radius: 5px;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(-10px);
-      transition: all 0.4s ease;
-    }
-    .projects li,
-    .products li {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .projects li:hover,
-    .products li:hover {
-      background-color: rgb(197, 173, 181);
-    }
-    
-    .projects a,
-    .products a {
-      color: black;
-      text-decoration: none;
-    }
-    
-    .dropdown button,
-    .home {
-      background: none;
-      text-decoration: none;
-      border: none;
-      color: white;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    
-    .projects button:focus + ul,
-    .products button:focus + ul {
-      opacity: 1;
-      pointer-events: all;
-      transform: translateY(0px);
-    }
-    
-    .form-text{
+    .form-text {
       display: flex;
       flex-direction: column;
       gap: 5px;
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropbtn {
+        background-color: #f1f1f1;
+      }
+      .dropbtn {
+        width: 100%;
+        text-align: left;
+        font-size: 13px;
+        padding: 14px 0 14px 13px;
+        font-family: $firstFont;
+        color: rgb(94, 88, 88);
+        background-color: white;
+        border: none;
+        margin: 0;
+        cursor: pointer;
+      }
     }
-    .form-name{
+    .form-name {
       display: flex;
       gap: 5px;
     }
-    input{
+    input {
       padding: 14px 0;
       display: flex;
       flex-basis: 100%;
       gap: 7px;
       border-radius: 1px;
-      border-width:0px;
+      border-width: 0px;
       color: white;
-      border:none;
+      border: none;
     }
-   
-    }
-    input[type="text"]::placeholder {
-      padding-left: 14px; 
-  } 
-  button{
+  }
+  input[type="text"]::placeholder {
+    padding-left: 14px;
+  }
+  button {
     margin-top: 10px;
     width: 50%;
     align-self: center;
     padding: 14px 0;
     border: none;
-    background-color: #62ECFF;
+    background-color: #62ecff;
     border-radius: 1px;
   }
-  }
+}
 
-
-
-.icons{
+.icons {
   margin: 10px 0 20px 0px;
   display: flex;
   justify-content: center;
-  gap: 20px; 
-  i{
+  gap: 20px;
+  i {
     font-size: 24px;
   }
 }
-.contact-offices{
+.contact-offices {
   display: flex;
   flex-direction: column;
   color: white;
   margin-top: 5em;
-  div{
-    display: flex;
-    justify-content: center;
+  div {
+    @include flexCenter();
     flex-direction: column;
-    align-items: center;
-    h2{
+    h2 {
       font-size: 16px;
       font-weight: 500;
       margin: 10px 0 0 0;
     }
-    p{
+    p {
       font-size: 12px;
       font-weight: 300;
       margin: 10px 0 10px 0;
     }
-    img{
+    img {
       height: 90%;
       width: 90%;
-      background-size: cover;  
+      background-size: cover;
       max-height: 200px;
       max-width: 1000px;
     }
   }
-  
 }
-// ABOUT US PAGE
- 
-  .container-aboutUsPage {
+//ABOUT US
+.container-aboutUsPage {
+  width: 100%;
+  div.box {
+    background-image: url(../img/unsplash_trYl7JYATH0.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    div {
+      padding: 2em 0 0 2.5em;
+    }
+    h1 {
+      font-weight: 300;
+      color: white;
+    }
+    section {
       width: 100%;
-      
-      div.box{
-         
-          background-image:url(../img/unsplash_trYl7JYATH0.png);
-          background-repeat:no-repeat;
-          background-position: center top;
-          padding: 20px;
-      section {
-          width: 100%;
-          height: 128px;
-          p {
-              font-size: 20px;
-              font-family: Roboto,'Times New Roman', Times, serif;
-              font-weight: 400;
-              color:white;
-          }
-      }
-    h4{
-        color:#62ECFF;
-        margin-bottom: 5px;
-        font-size: 18px;
-        font-family: Roboto,'Times New Roman', Times, serif;
-        font-weight: 300;
-    } 
-    p.describe{
-        width: 90%;
-        color:white;
-        font-size: 14px;
-        font-weight: 300;
-        font-family: Roboto,'Times New Roman', Times, serif;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px 2px 20px 2px;
-       
+      height: 128px;
+    }
+    h3 {
+      color: #62ecff;
+      font-weight: 300;
+      font-size: 24px;
+      margin-bottom: 5%;
+      padding: 2em 0 0 2em;
+    }
+    p.describe {
+      width: 90%;
+      padding: 5%;
+      color: white;
+      font-size: 14px;
+      font-weight: 300;
+      background-color: rgba(0, 0, 0, 0.4);
     }
   }
   div.box-2 {
-      @include mainGradient ;
-      padding: 20px;
-      h4{
-        font-size: 18px;
-        font-family: Roboto,'Times New Roman', Times, serif;
-        font-weight: 300;
-        color:#62ECFF;
-        margin-bottom: 5px;
-     
-      }
-      p {
-          font-size: 14px;
-          font-family: Roboto,'Times New Roman', Times, serif;
-          font-weight: 300;
-          color:white;
-          margin-top: 10px;
-          margin-bottom: 10px;
-      }
-      p.person {
-          font-size: 12px;
-          font-family: Roboto,'Times New Roman', Times, serif;
-          font-weight: 300;
-          margin-bottom: 3px;
-      }
+    margin-top: 5%;
+    @include mainGradient();
+    padding: 5%;
+    .underTitleBox-2 {
+      color: #fff;
+      font-weight: 300;
+    }
+    h3 {
+      color: #62ecff;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+    h4 {
+      margin-top: 5%;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+    p.person {
+      color: white;
+      font-size: 14px;
+      line-height: 1.5rem;
+      margin-bottom: 3px;
+      margin-top: 4%;
+      margin-bottom: 3%;
+    }
     div.information {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        section{
-            margin-bottom: 25px;
-            a{
-                font-size: 14px;
-                font-family: Roboto,'Times New Roman', Times, serif;
-                font-weight: 300;
-                color: white;
-                text-decoration: none;
-                img{
-                    width: 12px;
-                    vertical-align: middle;
-                }
-            }
-        img{
-            width: 100%;
-            margin-bottom: 5px;
-            
-        }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .personBox {
+        margin: 5%;
+        margin-left: 0;
       }
-    }
 
-  
-  }
-
-  }     
-
-
- 
-
- 
-  @media(min-width: 768px){
-  .container-aboutUsPage {
-    width: 100%;
-     
-
-      div.box{
-          background-image:url(../img/unsplash_trYl7JYATH0.png);
-          background-repeat:no-repeat;
-          background-position: center top;
-          background-size: cover;
-          margin-left: 40px;
-          margin-right: 40px;
-          
-          
       section {
-          width: 100%;
-          height: 200px;
-          p {
-              font-size: 28px;
-              font-family: Roboto,'Times New Roman', Times, serif;
-              font-weight: 400;
-              color:white;
-          }
-      }
-    h4{
-        color:#62ECFF;
-        margin-bottom: 10px;
-        font-size: 20px;
-        font-family: Roboto,'Times New Roman', Times, serif;
-        font-weight: 300;
-    } 
-    p.describe{
-        width: 70%;
-        
-        color:white;
-        font-size: 18px;
-        font-weight: 300;
-        font-family: Roboto,'Times New Roman', Times, serif;
-        line-height:25px ;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding-top: 10px;
-        padding-left: 5px;
-        padding-bottom: 30px;
-        padding-right: 5px;
-    }
-  }
-  div.box-2 {
-      @include mainGradient ;
-      padding: 40px;
-      h4{
-        font-size: 20px;
-        font-family: Roboto,'Times New Roman', Times, serif;
-        font-weight: 300;
-        color:#62ECFF;
-        margin-bottom: 10px;
-      }
-      p {
-          font-size: 18px;
-          font-weight: 300;
-          font-family: Roboto,'Times New Roman', Times, serif;
-          color:white;
-          margin-top: 15px;
-          margin-bottom: 10px;
-      }
-      p.person {
-        width: 80%;
+        margin-bottom: 25px;
+        a {
           font-size: 14px;
-          font-weight: 300;
-          font-family: Roboto,'Times New Roman', Times, serif;
-          margin-top: 10px;
+          color: white;
+          text-decoration: none;
+          img {
+            width: 12px;
+            vertical-align: middle;
+          }
+        }
+        img {
+          width: 100%;
           margin-bottom: 5px;
-      }
-    div.information {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        
-        justify-content: space-between;
-        
-        
-        section{
-            width: 350px;
-            
-            margin-bottom: 25px;
-            
-           img{
-             width: 80%;
-           }
-            a {
-                width: 80%;
-                font-size: 18px;
-                font-weight: 300;
-                font-family: Roboto,'Times New Roman', Times, serif;
-                color: white;
-                
-                text-decoration: none;
-                
-                  img{
-                      width: 24px;
-                      vertical-align: middle;
-                  }
-            }             
         }
-        
-
+      }
     }
-  }
-  
   }
 }
 // end om oss
 //HOMEPAGE
-.hero{
+.hero {
   background-image: url(../img/unsplash_bZZp1PmHI0E.png);
   height: 230px;
   width: 100%;
@@ -963,114 +683,115 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  h1{
+  h1 {
     @include primaryText();
-    margin: 60px 0 10px 0
+    margin: 60px 0 10px 0;
   }
-  p{
+  p {
     @include secondaryText();
   }
 }
-.home-main{
+.home-main {
   display: flex;
   flex-direction: column;
   width: 90vw;
   margin: 0 auto;
-  
-  button{
+  button {
     padding: 60px 10px;
     border: none;
-    @include primaryText()
+    @include primaryText();
   }
-  button:nth-child(1){
+  button:nth-child(1) {
     background-color: #074249;
   }
-  button:nth-child(2){
-    background-color: #06363C;
+  button:nth-child(2) {
+    background-color: #06363c;
   }
-  button:nth-child(3){
-    background-color: #042E33;
+  button:nth-child(3) {
+    background-color: #042e33;
   }
-  button:nth-child(4){
-    background-color: #04262B;
+  button:nth-child(4) {
+    background-color: #04262b;
   }
 }
 //CONTACT DESKTOP
 @media (min-width: $breakpointLarge) {
-  .contact-head{
+  .contact-head {
     background-image: none;
     display: flex;
     flex-direction: row-reverse;
-    img{
+    img {
       display: block;
       height: 100%;
       width: 50vw;
       background-size: cover;
     }
-    .contact-head-text{
+    .contact-head-text {
       max-width: none;
       width: 50vw;
       margin-top: 4em;
-      h1{
+      h1 {
         font-size: 30px;
       }
-      p{
+      p {
         font-size: 20px;
       }
     }
   }
-  .contact-main{
-    form{
+  .contact-main {
+    form {
       margin-top: -20em;
       padding: 100px 80px 30px 80px;
-      .form-text{
+      .form-text {
         gap: 16px;
-        .form-name{
+        .dropbtn {
+          padding: 24px 0 24px 14px;
+        }
+        .form-name {
           gap: 8px;
         }
-        input{
+        input {
           padding: 24px 0;
         }
-        button{
+        button {
           padding: 24px 0;
         }
       }
     }
   }
-  .contact-offices{
-    div{
-      div{ 
+  .contact-offices {
+    div {
+      div {
         display: flex;
         flex-direction: row;
         margin: 20px 0 40px 0;
         gap: 80px;
         justify-content: space-between;
-        h2{
+        h2 {
           font-size: 26px;
           margin: 0;
         }
-        p{
+        p {
           font-size: 20px;
           margin: 0;
         }
       }
     }
-     
   }
   //HOME
   .hero {
     justify-content: center;
     height: 90vh;
-    h1{
+    h1 {
       font-size: 50px;
       margin: -3em 0px 25px 0;
     }
-    p{
+    p {
       font-size: 36px;
     }
   }
-  .home-main{
-    button{
+  .home-main {
+    button {
       display: none;
     }
   }
