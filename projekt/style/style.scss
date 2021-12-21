@@ -311,15 +311,6 @@ footer {
     }
   }
 }
-// refrence page
-.back-img-stars {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: 0;
-  max-height: 90vh;
-  margin-top: 70px;
-}
 @media screen and (min-width: $breakpointLarge) {
   .back-img-stars{
    max-height: 120vh;
@@ -349,11 +340,13 @@ footer {
     box-sizing: border-box;
     z-index: 2;
     height: 80%;
-    margin-top: 5%;
     color: #fff;
     #textBox1 {
       padding: 5%;
       width: 100%;
+      background-image:url(../img/ref1.png);
+      background-size: cover;
+      background-position: center top;
     }
     .reference-h1 {
       @include primaryText();
@@ -364,22 +357,35 @@ footer {
       background-color: rgba(0, 0, 0, 0.4);
       line-height: 2;
     }
+    .reference-h2 {
+      @include primaryTextBlue();
+      font-weight: 300;
+      font-size: 22px;
+      margin-top: 3%;
+    }
     @media screen and (min-width: $breakpointLarge) {
+      #textBox1{
+        height: 100vh;
+      }
       .reference-h1{
         font-size: 36px;
       }
       .reference-p{
         @include primaryText();
+        margin-top: 5%;
+      }
+      .reference-h2 {
+        @include primaryTextBlue();
+        font-size: 28px;
+        font-weight: 400;
       }
     }
-    .reference-h2 {
-      color: $lightblue;
-      font-weight: 300;
-      margin-top: 3%;
-    }
+  
     .reference-companylogo {
-      margin-top: 5%;
       width: 100%;
+      max-width: 1800px;
+      display: block;
+      margin: 0 auto;
     }
     .reference {
       margin-top: 5%;
@@ -450,7 +456,8 @@ footer {
 }
 // contact page
 .contact-head {
-  background-image: url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background-image: fa;
   width: 100%;
   height: 50vh;
   background-repeat: no-repeat;
@@ -591,13 +598,6 @@ footer {
       font-size: 12px;
       font-weight: 300;
       margin: 10px 0 10px 0;
-    }
-    img {
-      height: 90%;
-      width: 90%;
-      background-size: cover;
-      max-height: 200px;
-      max-width: 1000px;
     }
   }
 }// ABOUT US PAGE
